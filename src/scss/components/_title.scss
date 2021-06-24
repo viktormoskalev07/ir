@@ -1,0 +1,15 @@
+h2{
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2%;
+  text-transform: none;
+  @include md {
+    font-size: 40px;
+  }
+  @include xxl {
+    font-size: 60px;
+  }
+}
+h3{
+
+}
