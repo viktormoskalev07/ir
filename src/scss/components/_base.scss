@@ -1,13 +1,14 @@
 $green:#00BC87;
+$blue:#487CFF;
 
 $logowidth:50px;
 
 $xs: 375px;
 $sm: 576px;
 $md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1600px;
+$lg: 1024px;
+$xl: 1440px;
+$xxl: 1920px;
 
 $font-main: 'Montserrat', sans-serif;
 $font-accent: 'Sharp Sans Display No1', sans-serif;
@@ -104,11 +105,22 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
   font-family: $font-accent;
-  font-size: 600;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+
+  @include md {
+    font-size: 2.5rem;
+  }
+  @include xl {
+    font-size: 2.825rem;
+  }
 }
 
 figure {

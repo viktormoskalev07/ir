@@ -1,0 +1,47 @@
+<section class="section-bg--accent1">
+	<div class="container cases">
+		<div class="cases__caption">
+			<h3>Use cases</h3>
+			<p>Empathetic digital companions can be everywhere. We are currently focused on the healthcare and automotive
+				verticals</p>
+		</div>
+
+
+		<div class="swiper-container">
+			<div class="swiper-cases">
+				<div class="swiper-wrapper">
+					@@include('./repited-items/swiper-cases-item.html', {
+						title:"Healthcare",
+						img:'cases-card-1.png',
+						button:'Learn more'
+					})
+					@@include('./repited-items/swiper-cases-item.html', {
+						title:"Healthcare",
+						img:'cases-card-1.png',
+						button:'Learn more'
+					})
+					@@include('./repited-items/swiper-cases-item.html', {
+						title:"Healthcare",
+						img:'cases-card-1.png',
+						button:'Learn more'
+					})
+					@@include('./repited-items/swiper-cases-item.html', {
+						title:"Healthcare",
+						img:'cases-card-1.png',
+						button:'Learn more'
+					})
+				</div>
+
+				<div class="swiper-pagination cases-pagination"></div>
+			</div>
+
+
+			<div class="swiper-button-prev cases-prev">
+				@@include('./ui/chevron.html',{})
+			</div>
+			<div class="swiper-button-next cases-next">
+				@@include('./ui/chevron.html',{})
+			</div>
+		</div>
+	</div>
+</section>
