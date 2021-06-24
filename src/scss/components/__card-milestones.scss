@@ -1,0 +1,30 @@
+.card-milestones{
+
+        &__lines{
+            height: 200px;
+            display: flex;
+            flex-wrap: nowrap; 
+            align-items: flex-end;
+        }
+        &__left-line{
+            margin-right: 6px;
+            margin-bottom: 13px;
+            flex-grow: 1;
+            height: 6px;
+            
+        }
+        &__point{
+            flex-grow: 0; 
+            flex-shrink: 0;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;  
+        }
+        &__right-line{
+            margin-bottom: 13px;
+            margin-left: 6px;
+            flex-grow: 1;
+            height: 6px;
+            background: linear-gradient(90deg, #FF8464 0%, #A688FF 33.41%, #55ACFF 59.95%, #2F3B96 85.07%, #1C1B51 100%);
+        }
+}
