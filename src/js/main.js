@@ -217,3 +217,21 @@ try {
         } 
     } 
 toggleMinImg();
+// toggle min-img 
+
+
+const swiper = new Swiper('.swiper-forming', {
+ 
+  loop: true, 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
+});
