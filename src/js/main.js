@@ -217,3 +217,37 @@ try {
         } 
     } 
 toggleMinImg();
+// toggle min-img 
+
+
+const swiperForming = new Swiper('.swiper-forming', {
+ 
+  loop: true, 
+  // If we need pagination
+  pagination: {
+    el: '.forming-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.forming-next',
+    prevEl: '.forming-prev',
+  },
+ 
+});
+const swiperCases = new Swiper('.swiper-cases', {
+  speed: 400,
+  spaceBetween: 100,
+  loop: true, 
+  // If we need pagination
+  pagination: {
+    el: '.cases-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.cases-next',
+    prevEl: '.cases-prev',
+  },
+ 
+});
