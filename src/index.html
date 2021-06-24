@@ -1,37 +1,18 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-  
-  <meta charset="UTF-8">
-  <title>Amazing page</title>
-  <link rel="stylesheet" href="css/main.css">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-</head>
+@@include('./html-templates/header.html',{}) 
 
-<body class="body">
-<div class="main-wrapper">
-  @@include('./html-templates/header.html',{})
-
-<main class="main">
-
+<main class="main"> 
   @@include('./html-templates/hero/index-hero.html',{})
 
-  <div class="container">
+  @@include('./html-templates/description.html',{})
 
-  </div>
-@@include('./html-templates/section-forming.html')
-@@include('./html-templates/section-powered.html')
-@@include('./html-templates/section-use-cases.html')
+  @@include('./html-templates/section-forming.html')
+  @@include('./html-templates/section-powered.html')
+  @@include('./html-templates/section-use-cases.html')
+
 </main>
 
-      @@include('./html-templates/footer.html',{ })
-
-</div> 
 <script src="js/swiper.min.js"> </script>
-<script src="js/main.js"> </script>
-</body>
 
-</html>
+@@include('./html-templates/footer.html',{ })
+
