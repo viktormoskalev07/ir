@@ -220,18 +220,34 @@ toggleMinImg();
 // toggle min-img 
 
 
-const swiper = new Swiper('.swiper-forming', {
+const swiperForming = new Swiper('.swiper-forming', {
  
   loop: true, 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.forming-pagination',
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.forming-next',
+    prevEl: '.forming-prev',
+  },
+ 
+});
+const swiperCases = new Swiper('.swiper-cases', {
+  speed: 400,
+  spaceBetween: 100,
+  loop: true, 
+  // If we need pagination
+  pagination: {
+    el: '.cases-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.cases-next',
+    prevEl: '.cases-prev',
   },
  
 });
