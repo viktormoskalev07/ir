@@ -1,15 +1,31 @@
-h2{
+$color-title: #000;
+$color-title-second: #161C3E;
+
+h2, h3{
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 2%;
   text-transform: none;
+  color: $color-title;
+  margin: 0;
+  padding-bottom: 15px;
+  @include sm{
+    font-size: 24px;
+  }
   @include md {
     font-size: 40px;
   }
-  @include xxl {
+  @include xl {
     font-size: 60px;
   }
 }
+h2{
+  @include md {
+    color: $color-title-second;
+  }
+}
 h3{
-
+  @include xl {
+    font-size: 45px;
+  }
 }
