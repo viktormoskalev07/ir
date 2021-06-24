@@ -1,6 +1,6 @@
  
   @import 'components/base';
-  @import 'components/accordion';
+  // @import 'components/accordion';
   @import 'components/width';
   @import 'components/nav';
   @import 'components/header';
@@ -10,8 +10,9 @@
   @import 'components/card';
   @import 'components/fonts';
    @import 'components/footer';
-   @import 'components/popup'; 
+  //  @import 'components/popup'; 
    @import 'components/list'; 
+   @import '../../node_modules/swiper/css/swiper.min.css';
 
 
 
@@ -19,8 +20,7 @@
 
 
 
-   @import '../../node_modules/swiper/css/swiper.min.css';
-
+  
  
 
 
