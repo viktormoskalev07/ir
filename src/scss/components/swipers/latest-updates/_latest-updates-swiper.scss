@@ -1,13 +1,11 @@
-.cases {
-  color: #ffffff;
+.latest-updates {
   padding: 50px 0;
 
   @include md {
-    padding: 60px 20px 50px;
+    padding: 75px 20px 80px;
   }
   @include xl {
-    padding-top: 75px;
-    padding-bottom: 80px;
+    padding-top: 85px;
   }
 
   &__caption {
@@ -18,10 +16,6 @@
 
     @include xl {
       max-width: 710px;
-    }
-
-    h3 {
-      color: #ffffff;
     }
 
     p {
@@ -41,31 +35,25 @@
     }
   }
 
-  .swiper-container {
-    margin-top: 20px;
-
-    @include md {
-      margin-top: 50px;
-    }
-    @include xl {
-      margin-top: 60px;
-    }
-  }
-
-  .swiper-cases {
-    max-width: 280px;
+  .swiper-latest-updates {
+    max-width: 320px;
     margin: 0 auto;
+    padding-top: 24px;
     padding-bottom: 80px;
 
     @include md {
       overflow: hidden;
       max-width: 620px;
+      padding-top: 40px;
       padding-bottom: 50px;
       padding-left: 20px;
       padding-right: 20px;
     }
+    @include lg {
+      max-width: 860px;
+    }
     @include xl {
-      max-width: 750px;
+      max-width: 940px;
     }
 
     .swiper {
@@ -73,6 +61,14 @@
       &-pagination {
         bottom: 0;
       }
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include md {
+      display: block;
     }
   }
 }

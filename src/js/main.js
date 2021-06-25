@@ -234,7 +234,6 @@ const swiperForming = new Swiper('.swiper-forming', {
     nextEl: '.forming-next',
     prevEl: '.forming-prev',
   }
- 
 });
 
 const swiperCases = new Swiper('.swiper-cases', {
@@ -260,5 +259,58 @@ const swiperCases = new Swiper('.swiper-cases', {
     nextEl: '.cases-next',
     prevEl: '.cases-prev',
   },
- 
+});
+
+const swiperPartners = new Swiper('.swiper-partners', {
+
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  speed: 3000,
+  loop: true, 
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  // If we need pagination
+  breakpoints: {
+    1024: {
+      spaceBetween: 0,
+      loop: false, 
+      allowTouchMove: false,
+    }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.partners-next',
+    prevEl: '.partners-prev',
+  }
+});
+
+const swiperLatestUpdates = new Swiper('.swiper-latest-updates', {
+  speed: 400,
+  spaceBetween: 15,
+  slidesPerView: 1.2,
+  centeredSlides: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 35,
+    },
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 32,
+    }
+  },
+  pagination: {
+    el: '.latest-updates-pagination',
+  },
+
+  navigation: {
+    nextEl: '.latest-updates-next',
+    prevEl: '.latest-updates-prev',
+  },
 });

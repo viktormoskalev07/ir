@@ -1,0 +1,49 @@
+<section>
+	<div class="container latest-updates">
+		<div class="latest-updates__caption">
+			<h3>Latest updates</h3>
+		</div>
+
+
+		<div class="swiper-container">
+			<div class="swiper-latest-updates">
+				<div class="swiper-wrapper">
+					@@include('./repited-items/swiper-latest-updates-item.html', {
+						title:"What Robots Can—and Can’t—Do for the Old and Lonely (The New Yorker)",
+						img:'img3.png',
+						link:'Read more'
+					})
+					@@include('./repited-items/swiper-latest-updates-item.html', {
+						title:"Beyond Companionship and Wellness: ElliQ Will Soon Extend to Healthcare",
+						img:'img2.png',
+						link:'Read more'
+					})
+					@@include('./repited-items/swiper-latest-updates-item.html', {
+						title:"Your Parent’s Next Caretaker? (San Francisco Business Times)",
+						img:'img1.png',
+						link:'Read more'
+					})
+					@@include('./repited-items/swiper-latest-updates-item.html', {
+						title:"What Robots Can—and Can’t—Do for the Old and Lonely (The New Yorker)",
+						img:'img1.png',
+						link:'Read more'
+					})
+				</div>
+
+				<div class="swiper-pagination latest-updates-pagination"></div>
+			</div>
+
+
+			<div class="swiper-button-prev latest-updates-prev">
+				@@include('./ui/chevron.html',{})
+			</div>
+			<div class="swiper-button-next latest-updates-next">
+				@@include('./ui/chevron.html',{})
+			</div>
+		</div>
+
+    <div class="latest-updates__btn button">
+      <a href="#">Read more</a>
+    </div>
+	</div>
+</section>
