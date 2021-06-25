@@ -1,6 +1,7 @@
  
   @import 'components/base';
   // @import 'components/accordion';
+
   @import 'components/width';
   @import 'components/nav';
   @import 'components/header';
@@ -13,6 +14,8 @@
   //  @import 'components/popup'; 
    @import 'components/list'; 
    @import '../../node_modules/swiper/css/swiper.min.css';
+   @import 'components/title'; 
+   @import 'components/description'; 
 
 
 
@@ -26,3 +29,12 @@
 
    @import 'components/_card-powered';
    @import 'components/_card-milestones';
+
+
+
+@import 'components/hero/index-hero';
+
+@import 'components/swipers/swiper-base';
+@import 'components/swipers/forming-swiper';
+@import 'components/swipers/use-cases/use-cases-swiper';
+@import 'components/swipers/use-cases/use-cases-card';
