@@ -1,15 +1,11 @@
 const swiperMilestones = new Swiper('.swiper-milestones', {
  
     loop: false, 
-    // If we need pagination
-    pagination: {
-      el: '.forming-pagination',
-    },
-  
+    // If we need pagination 
     // Navigation arrows
     navigation: {
-      nextEl: '.forming-next',
-      prevEl: '.forming-prev',
+      nextEl: '.milestones-next',
+      prevEl: '.milestones-prev',
     },
     breakpoints: { 
         320: {
@@ -17,6 +13,7 @@ const swiperMilestones = new Swiper('.swiper-milestones', {
           
         }, 
         480: {
+
           slidesPerView: 2,
  
         }, 
