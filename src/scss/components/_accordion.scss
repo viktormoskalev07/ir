@@ -39,6 +39,11 @@
                 transform: translateY(-50%);
             } 
             &.is-active__js{
+                pointer-events: none;
+                 &::after{
+                     content: "- ";
+                     margin-right: 5px;
+                 }
                 color: #161C3E;
                 &+.accordion__text{
                     max-height: 100vh;

@@ -30,10 +30,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            top: 100%;
+            top: 0;
             transition: 0.9s;
-        }
-
+        } 
     }
     &__title{  
         margin: 5px 0;
@@ -74,9 +73,9 @@
         height: 100%;
         // border: solid red 1px;
     }
-    &__description{
+    &__description{ 
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 14px; 
         font-weight: 300;
         line-height: 1.54;
         text-align: center;
@@ -84,9 +83,11 @@
         
         @include sm{
             line-height: 1.6;
-        transition: 0.5s;
-        transform-origin: 100% 100%;
-        transform: scaleY(0);
+            transition-duration: 0.5s;
+            transition-delay: 0.1s;
+        transform-origin: 100% 100%; 
+        opacity: 0;
+        color:rgb(58, 65, 172);
         }
       
     }
@@ -119,7 +120,7 @@
         .card-powered{
             &__background{
                 @include sm{
-                    top: 0;
+                    
                     background-color: #487CFF;
                 }
             
@@ -127,14 +128,14 @@
             }
             &__description{
                 @include sm{
-                    transform: none;
+                    opacity: 1;
                     color:#FFFFFF ;
                 }
              
             }
             &__img{
                 @include sm{ 
-                    transform: scaleY(0); 
+                  
                     opacity: 0;
      
                 }  
