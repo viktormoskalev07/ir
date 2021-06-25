@@ -1,1 +1,1 @@
-const swiperMilestones=new Swiper(".swiper-milestones",{loop:!1,pagination:{el:".forming-pagination"},navigation:{nextEl:".forming-next",prevEl:".forming-prev"},breakpoints:{320:{slidesPerView:1.5},480:{slidesPerView:2},1024:{slidesPerView:3},1600:{slidesPerView:4}}});
+const swiperMilestones=new Swiper(".swiper-milestones",{loop:!1,navigation:{nextEl:".milestones-next",prevEl:".milestones-prev"},breakpoints:{320:{slidesPerView:1.5},480:{slidesPerView:2},1024:{slidesPerView:3},1600:{slidesPerView:4}}});
