@@ -25,12 +25,13 @@
         border-radius: 6px;
         overflow: hidden;
         max-height: 212px;
-        min-height: 212px;
+        // min-height: 212px;
         margin-bottom: 25px;
         position: relative;
 
         img {
           object-fit: contain;
+          width: 100%;
         }
       }
 

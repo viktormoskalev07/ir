@@ -1,0 +1,106 @@
+.leadership{
+  padding: 55px 0 95px;
+  background-color: #161C3E;  
+  @include md{
+    padding: 115px 0 155px;
+  }
+  &__container{
+    max-width: 1320px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  h3, h4, h5{
+    color: #fff;
+    margin: 0;
+  }
+  h3{
+    margin-bottom: 45px;
+    font-weight: 600;
+    @include md{
+      margin-bottom: 102px;
+      font-weight: 800;
+    }
+  }  
+  h4, h5{
+    font-family: 'Montserrat';
+  }
+  h4{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+    @include lg{
+      font-size: 21px;
+      margin-bottom: 7px;
+    }
+  }
+  h5{
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  &__wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+    @media screen and (min-width: 1200px) {
+      //flex-wrap: nowrap;
+    }
+
+  }
+  &__card{
+    position: relative;
+    max-height: 390px;
+    min-height: 350px;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 13px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin: 17px 25px;
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 60%;
+      background: linear-gradient(0deg, #A688FF 32.26%, rgba(234, 226, 255, 0) 92.94%);
+    }
+    @include sm{
+      margin: 31px 25px;
+    }
+  }
+  &__img{
+    width: 100%;
+    height: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  &__person{
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .icon{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    max-width: 33px;
+    max-height: 33px;
+    @include md{
+      left: auto;
+      top: auto;
+      bottom: 87px;
+      right: 16px;
+      max-width: 51px;
+      max-height: 51px;
+    }
+  }
+}
