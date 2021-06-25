@@ -1,0 +1,45 @@
+.industry{
+  background-color: rgba(242, 246, 255, 0.8);
+  padding: 65px 0 80px;
+  @include lg{
+    padding: 75px 0 140px;
+  }
+  &__wrap{
+    margin: 0 -15px;
+    padding: 45px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 962px;
+    margin: 0 auto;
+    &_mini{
+      max-width: 100%;
+      margin: 0 auto;
+      .industry__logo{
+        margin: 0 15px;
+      }
+      @include lg{
+        max-width: 60%;
+        padding-top: 100px;
+      }
+    }
+  }
+  &__logo{
+    margin: 0 10px;
+    &_d-n{
+      display: none;
+      @include lg{
+        display: block;
+      }
+    }
+    &_d-b{
+      display: block;
+      @include lg{
+        display: none;
+      }
+    }
+  }
+  h3{
+    margin-bottom: 30px;
+  }
+}
