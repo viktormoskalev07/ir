@@ -1,6 +1,6 @@
  
   @import 'components/base';
-  // @import 'components/accordion';
+  @import 'components/accordion';
 
   @import 'components/width';
   @import 'components/nav';
@@ -28,7 +28,7 @@
 
 
    @import 'components/_card-powered';
-   @import 'components/_card-milestones';
+   @import 'components/swipers/swiper-milestones';
 
 
 

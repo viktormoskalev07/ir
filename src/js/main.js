@@ -140,44 +140,35 @@ for (i = 0; i < form.length; i++) {
 //отправка формы
 
 // accordion
-
-// function accordionInit () {
-// 	window.addEventListener("load", function () {
-// 		const accordion = document.querySelector(".accordion");
-// 		const items = accordion.querySelectorAll(".accordion__item");
-	
-// 		items.forEach(function(item)  {
-// 			const title = item.querySelector(".accordion__title");
-	
-// 			title.addEventListener("click", (e) => {
-// 				const opened_item = accordion.querySelector(".is-open");
-	
-// 				toggle_item(item);
-	
-// 				if (opened_item && opened_item !== item) {
-// 					toggle_item(opened_item);
-// 				}
-// 			});
-// 		});
-	
-// 		const toggle_item = function(item)  {
-// 			const body = item.querySelector(".accordion__body");
- 
-	
-// 			if (item.classList.contains("is-open")) {
-// 				body.removeAttribute("style");
-// 				item.classList.remove("is-open");
-// 			} else {
-// 				body.style.height = body.scrollHeight + "px";
-// 				item.classList.add("is-open");
-// 			}
-// 		};
-// 	});
-// }
-
-// if (document.querySelector('.accordion')) {
-// 	accordionInit()
-// }
+  
+      function accordionInit (parent) {
+        window.addEventListener("load", function () {
+          const accordion = document.querySelector(parent);
+          if(accordion){
+            const items = accordion.querySelectorAll(".accordion__item"); 
+            const titles = accordion.querySelectorAll(".accordion__item .accordion__title");
+            console.log('2');
+            for (let i = 0; i < items.length; i++) {    
+              
+              titles[i].addEventListener('click', function(){ 
+                let close = true;
+                if(this.classList.contains('is-active__js')){
+                  close=false;
+                }
+                    for (let i = 0; i < titles.length; i++) {
+                      titles[i].classList.remove('is-active__js'); 
+                    }
+                    if(close){
+                       this.classList.add('is-active__js');
+                    }
+               
+              });
+            } 
+          } 
+        });
+      } 
+        accordionInit('.accordion-health')
+    
 // accordion
 
  //dropdown
@@ -219,98 +210,106 @@ try {
 toggleMinImg();
 // toggle min-img 
 
+//swiper
+if (document.querySelector('.swiper-forming')) {
+    const swiperForming = new Swiper('.swiper-forming', {
+  
+    loop: true, 
+    // If we need pagination
+    pagination: {
+      el: '.forming-pagination',
+      clickable: true
+    },
 
-const swiperForming = new Swiper('.swiper-forming', {
- 
-  loop: true, 
-  // If we need pagination
-  pagination: {
-    el: '.forming-pagination',
-    clickable: true
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.forming-next',
-    prevEl: '.forming-prev',
-  }
-});
-
-const swiperCases = new Swiper('.swiper-cases', {
-  speed: 400,
-  spaceBetween: 15,
-  slidesPerView: 1.2,
-  centeredSlides: true,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      centeredSlides: false,
-      spaceBetween: 45,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.forming-next',
+      prevEl: '.forming-prev',
     }
-  },
-  // If we need pagination
-  pagination: {
-    el: '.cases-pagination',
-  },
+  });
+}
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.cases-next',
-    prevEl: '.cases-prev',
-  },
-});
+if (document.querySelector('.swiper-cases')) {
+  const swiperCases = new Swiper('.swiper-cases', {
+    speed: 400,
+    spaceBetween: 15,
+    slidesPerView: 1.2,
+    centeredSlides: true,
 
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 45,
+      }
+    },
+    // If we need pagination
+    pagination: {
+      el: '.cases-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.cases-next',
+      prevEl: '.cases-prev',
+    },
+  });
+}
+
+if (document.querySelector('.swiper-partners')) {
 const swiperPartners = new Swiper('.swiper-partners', {
 
-  slidesPerView: 'auto',
-  spaceBetween: 30,
-  speed: 3000,
-  loop: true, 
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  // If we need pagination
-  breakpoints: {
-    1024: {
-      spaceBetween: 0,
-      loop: false, 
-      allowTouchMove: false,
-    }
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.partners-next',
-    prevEl: '.partners-prev',
-  }
-});
-
-const swiperLatestUpdates = new Swiper('.swiper-latest-updates', {
-  speed: 400,
-  spaceBetween: 15,
-  slidesPerView: 1.2,
-  centeredSlides: true,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      centeredSlides: false,
-      spaceBetween: 35,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    speed: 3000,
+    loop: true, 
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
     },
-    1024: {
-      slidesPerView: 3,
-      centeredSlides: false,
-      spaceBetween: 32,
-    }
-  },
-  pagination: {
-    el: '.latest-updates-pagination',
-  },
+    // If we need pagination
+    breakpoints: {
+      1024: {
+        spaceBetween: 0,
+        loop: false, 
+        allowTouchMove: false,
+      }
+    },
 
-  navigation: {
-    nextEl: '.latest-updates-next',
-    prevEl: '.latest-updates-prev',
-  },
-});
+    // Navigation arrows
+    navigation: {
+      nextEl: '.partners-next',
+      prevEl: '.partners-prev',
+    }
+  });
+}
+
+if (document.querySelector('.swiper-latest-updates')) {
+  const swiperLatestUpdates = new Swiper('.swiper-latest-updates', {
+    speed: 400,
+    spaceBetween: 15,
+    slidesPerView: 1.2,
+    centeredSlides: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 35,
+      },
+      1024: {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 32,
+      }
+    },
+    pagination: {
+      el: '.latest-updates-pagination',
+    },
+
+    navigation: {
+      nextEl: '.latest-updates-next',
+      prevEl: '.latest-updates-prev',
+    },
+  });
+}
