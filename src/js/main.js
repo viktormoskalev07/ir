@@ -213,7 +213,7 @@ toggleMinImg();
 //swiper
 if (document.querySelector('.swiper-forming')) {
     const swiperForming = new Swiper('.swiper-forming', {
-  
+    autoHeight: true,
     loop: true, 
     // If we need pagination
     pagination: {
@@ -312,4 +312,57 @@ if (document.querySelector('.swiper-latest-updates')) {
       prevEl: '.latest-updates-prev',
     },
   });
+}
+
+if (document.querySelector('.swiper-news-slider')) {
+  const swiperLatestUpdates = new Swiper('.swiper-news-slider', {
+    speed: 400,
+    spaceBetween: 15,
+    slidesPerView: 1.2,
+    centeredSlides: true,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        spaceBetween: 35,
+      },
+      1024: {
+        slidesPerView: 3,
+        centeredSlides: false,
+        spaceBetween: 32,
+      }
+    },
+    pagination: {
+      el: '.news-slider-pagination',
+    },
+
+    navigation: {
+      nextEl: '.news-slider-next',
+      prevEl: '.news-slider-prev',
+    },
+  });
+}
+
+if (document.querySelector('.investors-swiper')) {
+
+  const swiperInvestors = new Swiper('.investors-swiper', {
+
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    speed: 3000,
+    loop: true, 
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      1024: {
+        spaceBetween: 50,
+      },
+      1440: {
+        spaceBetween: 100,
+      }
+    }
+  })
 }

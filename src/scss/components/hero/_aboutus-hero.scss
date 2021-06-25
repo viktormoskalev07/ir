@@ -1,0 +1,33 @@
+.aboutus-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+
+  @include lg {
+    margin-bottom: 90px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -65%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/backgrounds/accent-grad-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 120%;
+
+    @include sm {
+      right: -30%;
+      bottom: -10%;
+      background-size: 100%;
+    }
+    @include xl {
+      right: 0;
+      bottom: 0;
+      background-size: 65%;
+    }
+  }
+}
