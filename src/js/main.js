@@ -226,19 +226,30 @@ const swiperForming = new Swiper('.swiper-forming', {
   // If we need pagination
   pagination: {
     el: '.forming-pagination',
+    clickable: true
   },
 
   // Navigation arrows
   navigation: {
     nextEl: '.forming-next',
     prevEl: '.forming-prev',
-  },
+  }
  
 });
+
 const swiperCases = new Swiper('.swiper-cases', {
   speed: 400,
-  spaceBetween: 100,
-  loop: true, 
+  spaceBetween: 15,
+  slidesPerView: 1.2,
+  centeredSlides: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 45,
+    }
+  },
   // If we need pagination
   pagination: {
     el: '.cases-pagination',

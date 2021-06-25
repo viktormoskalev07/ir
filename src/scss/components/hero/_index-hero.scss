@@ -1,0 +1,73 @@
+.index-hero {
+  background-color: #4D6392;
+  background-image: url(../images/backgrounds/index-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 80%;
+
+  @include md {
+    background-position-x: center;
+  }
+
+  &__content {
+    padding: 100px 30px;
+    position: relative;
+    color: #ffffff;
+    z-index: 1;
+
+    @include md {
+      width: 55%;
+      padding: 120px 0 360px 50px;
+    }
+    @include xl {
+      padding: 220px 80px 220px 120px;
+    }
+    @include xxl {
+      padding: 280px 240px 330px 190px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(90deg, rgba(22, 28, 62, 0.63) 0%, rgba(22, 28, 62, 0) 99.98%, rgba(22, 28, 62, 0) 99.99%, rgba(196, 196, 196, 0) 100%);
+    }
+
+    h1 {
+      text-align: left;
+      margin-bottom: 32px;
+      text-transform: capitalize;
+      font-size: 2.25rem;
+      font-weight: 600;
+      line-height: 1.1;
+
+      @include md {
+        font-size: 3.4rem;
+        line-height: 1.02em;
+      }
+
+      @include xl {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-family: $font-accent;
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.35em;
+
+      @include md {
+        font-size: 1.275rem;
+      }
+      @include xl {
+        width: 80%;
+      }
+    }
+  }
+}

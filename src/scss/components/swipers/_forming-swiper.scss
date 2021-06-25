@@ -1,0 +1,88 @@
+.forming {
+  margin-bottom: 75px;
+
+  @include md {
+    margin-bottom: 150px;
+  }
+
+  h3 {
+    margin-bottom: 25px;
+
+    @include md {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    @include md {
+      margin-bottom: 35px;
+    }
+  }
+
+  .swiper-forming {
+    margin: auto;
+    overflow: hidden;
+
+    @include md {
+      width: 80%;
+    }
+
+    .swiper {
+      &-wrapper {
+        margin-bottom: 45px;
+
+        @include md {
+          margin-bottom: 0;
+        }
+      }
+      &-slide {
+        text-align: center;
+        font-size: 1rem;
+
+        p {
+          font-style: italic;
+          font-size: .75rem;
+          line-height: 1.8;
+
+          @include md {
+            font-size: 1rem;
+          }
+
+          &:not(:last-of-type) {
+            margin-bottom: 35px;
+          }
+
+          &:last-of-type {
+            font-style: normal;
+
+            span {
+              padding: 0 13px;
+              font-size: 1.17em;
+
+              @include md {
+                font-size: .95em;
+              }
+
+              &:first-of-type {
+                border-right: 1px solid #000000;
+                font-size: 1.3em;
+
+                @include md {
+                  font-size: 1.07em;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-button-next, &-button-prev {
+        top: 35%;
+      }
+    }
+  }
+}
