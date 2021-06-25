@@ -6,12 +6,10 @@
             flex-wrap: nowrap; 
             align-items: flex-end;
         }
-        &__left-line{
-            margin-right: 6px;
-            margin-bottom: 13px;
+        &__left-line{ 
+            margin-bottom: 15px;
             flex-grow: 1;
-            height: 6px;
-            
+            height: 2px; 
         }
         &__point{
             flex-grow: 0; 
@@ -19,12 +17,50 @@
             border-radius: 50%;
             width: 32px;
             height: 32px;  
+            border: solid rgb(255, 255, 255) 6px;
         }
         &__right-line{
-            margin-bottom: 13px;
-            margin-left: 6px;
+            margin-bottom: 15px; 
             flex-grow: 1;
-            height: 6px;
+            height: 2px;
             background: linear-gradient(90deg, #FF8464 0%, #A688FF 33.41%, #55ACFF 59.95%, #2F3B96 85.07%, #1C1B51 100%);
+        }
+        &__title{
+            font-family: Montserrat;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: center; 
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 170px;
+            padding: 0 20px;
+        }
+        &__description{
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: center; 
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+            @include sm{
+                padding: 0 20px;
+            }
+        } 
+        &__first-line{
+            flex-grow: 1;
+            position: relative;
+            &__container{
+                position: absolute;
+                bottom: 12px;
+                right: -20px;
+                z-index: -1;
+            }
         }
 }
