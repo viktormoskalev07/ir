@@ -1,10 +1,15 @@
 
-@@include('./html-templates/header.html',{}) 
+@@include('./html-templates/header.html',{})  
 
-<main class="main">
- 
+<main class="main"> 
+    @@include('./html-templates/hero/healthcare-hero.html',{}) 
+    @@include('./html-templates/description-healthcare.html',{})
     @@include('./html-templates/healthcare/amplifying.html')
+    @@include('./html-templates/sets-apart.html' )
+    @@include('./html-templates/section-testimonials.html')
+    @@include('./html-templates/forma.html')
 </main>
 
+<script src="js/swiper.min.js"> </script>   
 
-@@include('./html-templates/footer.html',{ })
+@@include('./html-templates/footer.html',{ }) 

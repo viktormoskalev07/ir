@@ -1,0 +1,40 @@
+.healthcare-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0px; 
+  background-image: url("../images/backgrounds/healthcare-hero-bg.jpeg");
+  transform: scale(-1, 1);
+  .index-hero__content{
+    transform: scale(-1, 1);
+  }
+  @include sm {
+    transform: scale(1, 1);
+    .index-hero__content{
+      transform: scale(1, 1);
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    top: 0;
+    left: 0;
+    background-image: url("../images/backgrounds/healthcare-grad-bg.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 200%;
+
+    @include sm {
+      right: -5%;
+      bottom: 0%;
+      background-size: 100%;
+    }
+    @include xl {
+      right: 0;
+      bottom: 0;
+      background-size: 80%;
+    }
+  }
+}

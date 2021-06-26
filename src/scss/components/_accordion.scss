@@ -1,9 +1,9 @@
- .accordion{
+ .accordion{ 
         &__item{ 
             border-bottom: 1px solid #000000; 
         }
         &__title{
-            font-family: Sharp Sans No1;
+            font-family: $font-main;
             font-size: 18px;
             font-style: normal;
             font-weight: 800;
@@ -21,8 +21,10 @@
                 color: #808080;
             }
             @include md {
-                font-size: 34px;
+                font-size: 24px;
                 line-height: 40px;
+                padding-top: 35px;
+                padding-bottom: 35px;
             }
             &::after{
                 content:'+';
@@ -39,6 +41,11 @@
                 transform: translateY(-50%);
             } 
             &.is-active__js{
+                pointer-events: none;
+                 &::after{
+                     content: "- ";
+                     margin-right: 5px;
+                 }
                 color: #161C3E;
                 &+.accordion__text{
                     max-height: 100vh;

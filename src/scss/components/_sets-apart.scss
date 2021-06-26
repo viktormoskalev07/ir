@@ -1,0 +1,81 @@
+.sets-apart{
+  margin-bottom: 70px;
+  @include md{
+    margin-bottom: 140px;
+  }
+  h3{
+    @include md{
+      margin-bottom: 50px;
+    }
+  }
+  &__row{
+    @include md{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__col{
+    width: 100%;
+    @include md{
+      width: 50%;
+    }
+    &_last{
+      .sets-apart__card{
+        &:last-child{
+          border-bottom: 0px;
+          @include sm{
+            border-bottom: 1px solid #FFAD8A;
+          }
+          @include xl{
+            border-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+  &__card{
+    border-bottom: 1px solid #FFAD8A;
+    margin: 0 auto 20px;
+    width: 90%;    
+    @include md{
+      min-height: 400px;
+    }
+    @include lg{
+      min-height: 370px;
+    }
+    @include xl{
+      display: flex;
+      align-items: center;
+      border-bottom: 0px;
+      min-height: 250px;
+    }
+  }
+  &__img{
+    text-align: center;
+    @include xl{
+      width: 40%;
+    }
+  }
+  &__content{
+    font-size: 14px;
+    line-height: 2;
+    @include xl{
+      width: 60%;
+    }
+    p{
+      margin: 0;
+      padding-bottom: 30px;
+    }
+  }
+  h4{
+    font-family: $font-main;
+    font-weight: 600;
+    @include md{
+      font-size: 18px;      
+      font-weight: 700;
+    }
+    @include xl{
+      text-align: left;
+    }
+  }
+}
