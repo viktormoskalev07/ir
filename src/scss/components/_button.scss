@@ -3,29 +3,27 @@ $main-button-hover:rgb(9, 65, 9);
 .button{ 
   text-align: center;
   margin: 0 auto;
-  a{
+
+  a {
     display: inline-block;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 12px;
-    color:white;
+    color: white;
     border-radius: 20px;
     padding: 7px 16px;
     cursor: pointer;
     background: $main-button;
+    transition: background-color .3s;
     box-shadow: 0px 76.6907px 61.3525px rgba(82, 205, 255, 0.24), 0px 32.0395px 25.6316px rgba(82, 205, 255, 0.172525), 0px 17.1299px 13.7039px rgba(82, 205, 255, 0.143066), 0px 9.60286px 7.68229px rgba(82, 205, 255, 0.12), 0px 5.10001px 4.08001px rgba(82, 205, 255, 0.0969343), 0px 2.12223px 1.69778px rgba(82, 205, 255, 0.0674749);
 
-    @include md {
+    @include sm{
       padding: 10px 22px;
       font-size: 16px;
     }
+
+    &:hover {
+      background-color: #161C3E;
+    }
   }
-    
-  }
-  
-  .button:hover{
-    color:$green;
-  }
-  
-  
- 
+}

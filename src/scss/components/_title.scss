@@ -3,12 +3,12 @@ $color-title-second: #161C3E;
 
 h2, h3{
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 0.2px;
   text-transform: none;
   color: $color-title;
   margin: 0;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   @include sm{
     font-size: 24px;
   }

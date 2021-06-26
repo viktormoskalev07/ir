@@ -16,6 +16,10 @@
    @import '../../node_modules/swiper/css/swiper.min.css';
    @import 'components/title'; 
    @import 'components/description'; 
+   @import 'components/industry'; 
+   @import 'components/privacy-policy'; 
+   @import 'components/our-team'; 
+   @import 'components/leadership'; 
 
 
 
@@ -33,8 +37,16 @@
 
 
 @import 'components/hero/index-hero';
+@import 'components/hero/aboutus-hero';
 
 @import 'components/swipers/swiper-base';
 @import 'components/swipers/forming-swiper';
 @import 'components/swipers/use-cases/use-cases-swiper';
 @import 'components/swipers/use-cases/use-cases-card';
+@import 'components/swipers/index-partners';
+@import 'components/swipers/latest-updates/latest-updates-swiper';
+@import 'components/swipers/latest-updates/latest-updates-card';
+
+@import 'components/swipers/news/news-swiper';
+@import 'components/swipers/news/news-card';
+@import 'components/swipers/investors'
