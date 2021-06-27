@@ -39,6 +39,7 @@
     }
   }
   &__row{
+    //  min-height: 850px; //test
     padding-bottom: 330px;
     @include md{
       padding-bottom: 300px;

@@ -6,6 +6,8 @@ $xs: 375px;
 $sm: 576px;
 $md: 768px;
 $lg: 1024px;
+$x: 1124px;
+
 $xl: 1440px;
 $xxl: 1920px;
 
@@ -33,6 +35,12 @@ $font-size: 16px;
 
 @mixin lg {
   @media (min-width:$lg) {
+    @content
+  }
+};
+
+@mixin x {
+  @media (min-width:$x) {
     @content
   }
 };

@@ -1,0 +1,36 @@
+
+.nav{
+    &__item{
+        position: relative;
+    }
+    &__submenu{
+        &__container{
+            padding: 0;
+        }
+        @include x{
+            background-color: #fff;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.15);
+            border-radius: 7px;
+            position: absolute;
+            left: 0;
+            margin-top: 20px;
+            display: block;
+        }
+      
+        &::before{
+            @include x{
+                content: '';
+                position: absolute;
+                display: block;
+                top: -7px;
+                left: 20px; 
+                width: 14px;
+                height: 14px; 
+                background: #ffffff;
+                border-radius: 1px;
+                transform: rotate(45deg);
+            }  
+        } 
+    } 
+}
+ 

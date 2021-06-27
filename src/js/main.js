@@ -1,7 +1,7 @@
 body=document.querySelector("body");
 html=document.querySelector("html");
 header=document.querySelector("header");
-btnMenu=document.querySelector(".btn-menu");
+btnMenu=document.querySelector(".nav__burger");
 
 window.onload= function(){
   pagescroll(); 
@@ -9,19 +9,17 @@ window.onload= function(){
 
 // мобильное меню
 nav = document.querySelector(".nav");
-document.querySelector(".btn-menu").addEventListener("click" , togglenav);
-document.querySelector(".nav-menu").onclick = closenav;
-
-document.querySelector(".nav-background").onclick = closenav;
+btnMenu.addEventListener("click" , togglenav);
+document.querySelector(".nav__menu").onclick = closenav;  
 function closenav(){
-  nav.classList.remove("nav-open");
+  header.classList.remove("nav-open");
   btnMenu.style.marginRight="0";
   showscroll();
   
 }
 function togglenav() {
-  nav.classList.toggle("nav-open");
-if(nav.classList.contains("nav-open")){
+  header.classList.toggle("nav-open");
+if(header.classList.contains("nav-open")){
   btnMenu.style.marginRight=window.innerWidth-html.offsetWidth +"px";
   hidescroll();
   
@@ -173,18 +171,18 @@ function pagescroll(){
 
  //dropdown
 
-function dropdown() {
-  const drop = document.querySelector(".dropdown__activator");
-  drop.addEventListener("click", function () {
-    drop.classList.toggle("dropdown_open");
-  });
-}
+// function dropdown() {
+//   const drop = document.querySelector(".dropdown__activator");
+//   drop.addEventListener("click", function () {
+//     drop.classList.toggle("dropdown_open");
+//   });
+// }
 
-try {
-  dropdown();
-} catch (e) {
-  console.log(e);
-}
+// try {
+//   dropdown();
+// } catch (e) {
+//   console.log(e);
+// }
 //dropdown
 
 

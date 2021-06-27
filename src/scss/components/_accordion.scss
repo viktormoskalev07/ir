@@ -1,6 +1,27 @@
+ $delay: 0.3s;
+ 
  .accordion{ 
+     &-health{
+         min-height: 400px;
+    
+     }
         &__item{ 
             border-bottom: 1px solid #000000; 
+        }
+        &__text{
+            transition:  $delay  0s ease;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left; 
+            max-height: 0;
+            overflow: hidden;
+            // opacity: 0;
+            padding: 0;
+            margin: 0;
         }
         &__title{
             font-family: $font-main;
@@ -39,35 +60,40 @@
                 right: 20px;
                 top: 50%;
                 transform: translateY(-50%);
-            } 
+            }  
             &.is-active__js{
+                
                 pointer-events: none;
                  &::after{
+                     @include md{
+                         display: none;
+                     }
                      content: "- ";
                      margin-right: 5px;
                  }
                 color: #161C3E;
                 &+.accordion__text{
-                    max-height: 100vh;
-                    opacity: 1;
-                    overflow: auto;
+                    transition: 0.3s  $delay ease;
+                    animation-fill-mode: forwards;
+                    animation-name: full;
+                    animation-duration: 0.1s;
+                    animation-delay: 0.3s;
+                    max-height: 150px;
+                    overflow: hidden;
+                    opacity: 1; 
                     margin-bottom: 35px;
                 }
             }
         }
-        &__text{
-            transition: 0.3s;
-            font-family: Montserrat;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-            letter-spacing: 0em;
-            text-align: left; 
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            padding: 0;
-            margin: 0;
-        }
+
+ }
+
+
+ @keyframes full {
+     0%{
+
+     }
+     100%{
+        max-height:400px; 
+     }
  }
