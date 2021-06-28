@@ -1,29 +1,48 @@
+ 
+
 .card-powered{
+ 
+
+    &__col{ 
+        margin: 0 10px;
+        @include sm{ 
+            margin: 0;
+            margin-bottom: 40px;
+        }
+    } 
     &__col:last-child{
         .card-powered{
             border:none;
         }  
-    }
-    padding: 20px;
-    min-height: 236px;
+    } 
+    padding: 15px 0px;
+    min-height: 236px; 
     border-bottom: 1.5px solid #CFDDFF; 
+
     @include sm{
+        padding: 28px; 
         min-height: 320px;
         border-radius: 20px;
         border:none;
          background: #FFFFFF;
-         box-shadow: 0px 4px 50px rgba(72, 124, 255, 0.15);
-         margin-bottom: 40px;
+         box-shadow: 0px 4px 50px rgba(72, 124, 255, 0.15); 
     } 
+    @include xl{
+        max-width: 268px; 
+    }
     display: flex;
-    flex-direction: column;
+    
+     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
+    flex-wrap: wrap;
     position: relative; 
     &__background{
         display: none;
         @include sm{
+            flex-direction: row;
+            justify-content: space-between;
             display: block;
             position: absolute;
             border-radius: 20px;
@@ -35,18 +54,22 @@
         } 
     }
     &__title{  
-        margin: 5px 0;
+        margin: 0 0 0 0;
         font-family: Montserrat;
         flex-grow: 1;
         font-size: 16px;
         line-height: 34px;
         transition: 0.9s;
+        font-weight: 400; 
+        margin-left: auto;
+        margin-right: auto;
         text-transform: none;
         &_tablet{
+            line-height: 21px;
+            max-width: 153px; 
             position: relative;
             z-index: 1;
-            flex-grow: 0;
-
+            flex-grow: 0;  
             display: none;
             @include sm {
                 display: block;
@@ -64,23 +87,24 @@
     }
 
     &__toggle-container{ 
-        display: flex;
+        display: flex; 
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-grow:2;
-        position: relative;
-        height: 100%;
-        // border: solid red 1px;
+        @include md {
+           flex-direction: row; 
+        } 
+        position: relative;  
     }
     &__description{ 
+        margin-top: 0;
         font-family: Montserrat;
         font-size: 14px; 
         font-weight: 300;
         line-height: 1.54;
         text-align: center;
         order: 2;
-        
+        flex-grow: 1;
         @include sm{
             line-height: 1.6;
             transition-duration: 0.5s;
@@ -91,15 +115,19 @@
         }
       
     }
-    &__img{    
-
+    &__img{ 
+        margin-top: auto;    
+        align-self: flex-end;
         order: 0;
        text-align: center;
-        height: 125px;
+       height: 135px;
         overflow: hidden;
-        @include sm{
-            height: 100%;
-            max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @include sm{ 
+         height:auto;
+          width: 100%;
+         max-height: 220px;
         transition: 0.5s;
         transform-origin:  0 0;
         position: absolute;
@@ -113,7 +141,7 @@
             height: 100%;
             max-width: 100%;
             max-height: 100%; 
-            width: auto;
+            width: 100%;
         }
     }
     &:hover{
