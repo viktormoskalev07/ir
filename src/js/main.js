@@ -77,11 +77,7 @@ function pagescroll(){
 }
 
  //Появление меню при прокрутке
-
-
-
-
-
+ 
 
 //отправка формы  
 // let form = document.querySelectorAll('.order-form');
@@ -201,7 +197,7 @@ toggleMinImg();
 if (document.querySelector('.swiper-forming')) {
     const swiperForming = new Swiper('.swiper-forming', {
     autoHeight: true,
-    loop: true, 
+    loop: true,  
     // If we need pagination
     pagination: {
       el: '.forming-pagination',
@@ -227,7 +223,7 @@ if (document.querySelector('.swiper-cases')) {
       768: {
         slidesPerView: 2,
         centeredSlides: false,
-        spaceBetween: 45,
+        spaceBetween: 55,
       }
     },
     // If we need pagination
@@ -247,7 +243,7 @@ if (document.querySelector('.swiper-partners')) {
 const swiperPartners = new Swiper('.swiper-partners', {
 
     slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 20,
     speed: 3000,
     loop: true, 
     autoplay: {
@@ -284,7 +280,7 @@ if (document.querySelector('.swiper-latest-updates')) {
         centeredSlides: false,
         spaceBetween: 35,
       },
-      1024: {
+      1260: {
         slidesPerView: 3,
         centeredSlides: false,
         spaceBetween: 32,

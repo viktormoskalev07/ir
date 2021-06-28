@@ -13,7 +13,26 @@
    &__title{
      @include md{
         margin-bottom: 100px;
-     }
-    
+     } 
    }
+   padding: 20px 0;
+   @include md {
+     padding: 20px 0 100px 0; 
+   }
+ }
+
+ .section-use{
+        &__title{
+          max-width: 590px;
+          margin-left: auto;
+          margin-right: auto;
+          @include xl {
+            margin-bottom: 20px;
+          }
+        }
+        &__description{
+          max-width: 590px;
+          margin-left: auto;
+          margin-right: auto;
+        }
  }

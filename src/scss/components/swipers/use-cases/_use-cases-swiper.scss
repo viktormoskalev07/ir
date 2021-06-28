@@ -75,4 +75,11 @@
       }
     }
   }
+  &-next , &-prev{
+    top: 47%; 
+    @include xl{
+      right: 0;
+    }
+   
+  }
 }
