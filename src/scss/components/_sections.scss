@@ -32,3 +32,12 @@
     }
   }
 }
+
+ .section-powered{
+   &__title{
+     @include md{
+        margin-bottom: 100px;
+     }
+    
+   }
+ }

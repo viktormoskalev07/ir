@@ -1,4 +1,4 @@
-.header {
+.header { 
  	background-color: #fff;
 	transition: 0.3s; 
 	&__content {
@@ -9,9 +9,8 @@
 		align-items: stretch;
 		max-width: 1800px;
 		margin-left: auto;
-		 margin-right: auto;
-	}
-
+		margin-right: auto; 
+	} 
 	&__logo {
 		&__container{
 			 width: 100%;
@@ -34,9 +33,11 @@
 		} 
 	}
 	&.nav-open{
-		min-height: 100vh;
+		
 		background-color: $blue;
-	 
+		.header__content{
+			 height: 100vh; 
+		}
 		.header__logo svg{
 			fill:white;
 			.first-logo{
@@ -47,7 +48,7 @@
 }
 
 .fixed-header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
