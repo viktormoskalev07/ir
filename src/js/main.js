@@ -218,6 +218,7 @@ if (document.querySelector('.swiper-cases')) {
     spaceBetween: 15,
     slidesPerView: 1.2,
     centeredSlides: true,
+    loop: true, 
 
     breakpoints: {
       768: {
@@ -273,6 +274,7 @@ if (document.querySelector('.swiper-latest-updates')) {
     spaceBetween: 15,
     slidesPerView: 1.2,
     centeredSlides: true,
+    loop: true, 
 
     breakpoints: {
       768: {
@@ -303,6 +305,7 @@ if (document.querySelector('.swiper-news-slider')) {
     spaceBetween: 15,
     slidesPerView: 1.2,
     centeredSlides: true,
+    loop: true, 
 
     breakpoints: {
       768: {
