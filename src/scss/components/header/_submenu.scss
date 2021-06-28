@@ -13,8 +13,19 @@
             border-radius: 7px;
             position: absolute;
             left: 0;
+            right: 5px;
             margin-top: 20px;
             display: block;
+            text-align: center;
+            .nav__item__link{
+                margin: 0;
+                border-bottom: solid 1px #F4F7FF;
+                &:hover{
+                    background-color: #F4F7FF;
+                    transform: none;
+                }
+            }
+            
         }
       
         &::before{
