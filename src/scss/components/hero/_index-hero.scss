@@ -6,23 +6,24 @@
 
   @include md {
     background-position-x: center;
+    background-position-y: 100%;
   }
 
-  &__content {
-    padding: 100px 30px;
+  &__content {    
+    padding: 67px 21px 84px 36px;
     position: relative;
     color: #ffffff;
     z-index: 1;
 
     @include md {
-      width: 55%;
-      padding: 120px 0 360px 50px;
+      width: 70%;
+      padding: 78px 0 354px 65px;
     }
     @include xl {
-      padding: 220px 80px 220px 120px;
+      padding: 180px 80px 217px 120px;
     }
-    @include xxl {
-      padding: 280px 240px 330px 190px;
+    @include xxl {    
+      padding: 236px 240px 324px 184px;
     }
 
     &::before {
@@ -47,25 +48,37 @@
       @include md {
         font-size: 3.4rem;
         line-height: 1.02em;
+        margin-bottom: 18px;
       }
 
       @include xl {
         font-size: 4rem;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
       }
     }
 
     p {
       font-family: $font-accent;
       font-weight: 600;
-      font-size: 1.2rem;
-      line-height: 1.35em;
+      font-size: 19px;
+      line-height: 26px;
+      max-width: 90%;
+      letter-spacing: 0.02em;
+      margin-top: 0;
 
       @include md {
-        font-size: 1.275rem;
+        font-size: 20.5px;
+        padding-left: 2px;
+        max-width: 70%;
       }
       @include xl {
-        width: 80%;
+        width: 55%;
+        letter-spacing: 0.015em;
+        padding-left: 0;
+        line-height: 28.4px;
+      }
+      @include xxl {
+        width: 50%;
       }
     }
   }
