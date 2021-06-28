@@ -20,9 +20,17 @@
   &__wrap{
     display: flex;
     justify-content: center;
+
+    @include lg {
+      flex-grow: 1;
+    }
     .our-team__img{
       min-height: 120px;
       height: 100%;
+
+      @include lg {
+        width: 33.333%;
+      }
     }
   }
   &__img{

@@ -22,6 +22,12 @@
         border-radius: 0;
         background: rgb(245,246,248);
         background: linear-gradient(to left, rgba(245,246,248,1) 0%, rgba(245,246,248,1) 50%, rgba(245,246,248,0) 100%);
+        cursor: unset;
+        pointer-events: none;
+
+        &:focus {
+          outline: none;
+        }
 
         @include lg {
           display: none;

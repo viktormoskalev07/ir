@@ -1,0 +1,97 @@
+.advisors {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  max-width: 1060px;
+  margin: 0 auto;
+
+  @include lg {
+    padding-top: 122px;
+    padding-bottom: 90px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 52px 0;
+
+    @include sm {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 60px;
+    }
+
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  h3 {
+    margin-bottom: 60px;
+  }
+
+  &__card {
+    margin: 0 auto;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    max-width: 233px;
+
+    @include sm {
+      max-width: unset;
+    }
+
+    @include xl {
+      width: 312px;
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  &__caption {
+    padding: 0 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(360deg, #82A0EB 32.26%, rgba(72, 124, 255, 0) 92.94%);
+    color: #ffffff;
+    text-align: center;
+
+    h5 {
+      margin-top: 20px;
+      margin-bottom: 3px;
+      font-size: 16.5px;
+      line-height: 1.8;
+      font-weight: 700;
+
+      @include sm {
+        margin-top: 30px;
+      }
+      @include lg {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 1.4;
+
+      @include lg {
+        font-size: 15px;
+      }
+      @include xl {
+        line-height: 2;
+      }
+    }
+  }
+}
