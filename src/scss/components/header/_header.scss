@@ -33,7 +33,9 @@
 		} 
 	}
 	&.nav-open{
-		
+		position: fixed;
+		left: 0;
+		right: 0;
 		background-color: $blue;
 		.header__content{
 			 height: 100vh; 

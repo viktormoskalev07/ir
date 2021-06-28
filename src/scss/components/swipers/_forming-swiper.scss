@@ -25,13 +25,12 @@
   }
   .swiper-container {
     padding: 0 20px;
+    max-width: 940px;
   }
 
   .swiper-forming {
     margin: auto;
-    overflow: hidden;
-    
-
+    overflow: hidden; 
     @include md {
       width: 80%;
     }
@@ -84,9 +83,13 @@
           }
         }
       }
-      &-button-next, &-button-prev {
-        top: 35%;
-      }
+  
     }
   }
+  &-next, &-prev {
+    top: 28%;
+   
+  }
+ 
+
 }
