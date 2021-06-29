@@ -247,27 +247,30 @@
           border-radius: 100px;
           background-color: $blue;
           color: #ffffff;
+          font-family: $font-main;
 
           @include lg {
             right: 4.75px;
             padding: 0px 18px 1px;
+            font-size: 10px;
           }
           @include xl {
             padding: 2px 21px 3px;
             right: 7.75px;
+            font-size: 13.3px;
           }
 
-          &::after {
-            content: 'Submit';
-            font-family: $font-main;
+          // &::after {
+          //   // content: 'Submit';
+          //   font-family: $font-main;
 
-            @include lg {
-              font-size: 10px;
-            }
-            @include xl {
-              font-size: 13.3px;
-            }
-          }
+          //   @include lg {
+          //     font-size: 10px;
+          //   }
+          //   @include xl {
+          //     font-size: 13.3px;
+          //   }
+          // }
         }
 
         input[type=email] {
