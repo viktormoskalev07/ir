@@ -1,13 +1,20 @@
-.forma{  
+.form{  
+  margin-top: 20px;
+  margin-bottom: 60px;
   &__block{
-    background-image: url("../images/backgrounds/forma-bg-desctop.jpeg");
+    background-image: url("../images/backgrounds/form-bg-desctop.jpeg");
     background-repeat: no-repeat;
     border-radius: 14px;
     background-size: cover;
+
     @include lg{
       display: flex;
       justify-content: space-between;
     }
+    @include x{
+      border-radius: 40px;
+      overflow: hidden;
+  }
   }
   &__visual{
     padding-bottom: 100px;
@@ -20,17 +27,25 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("../images/backgrounds/forma-bg-grad-mobile.png");
+      background-image: url("../images/backgrounds/form-bg-grad-mobile.png");
       background-repeat: no-repeat;
-      background-position: 0 40%;
+ 
+      @include xs{
+          background-position: 0 40%;
+      }
+    
       background-size: 100%;
       z-index: 0;
       border-radius: 14px;
+      @include x{
+          border-radius: 40px;
+          overflow: hidden;
+      }
       @include sm{
         background-position: 0 65%;
       }
       @include lg{
-        background-image: url("../images/backgrounds/forma-bg-grad.png");
+        background-image: url("../images/backgrounds/form-bg-grad.png");
         background-size: cover;
         background-position: 100% 0;
       }
@@ -75,6 +90,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+ 
     @include sm{
       padding-top: 50px;
     }
