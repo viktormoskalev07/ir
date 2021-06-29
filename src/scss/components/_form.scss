@@ -1,29 +1,30 @@
-.form{  
-  margin-bottom: 45px;
-  @include lg{
-    margin-bottom: 70px;
-  }
-  &__block{
+.form {
+  margin-top: 20px;
+  margin-bottom: 60px;
+
+  &__block {
     background-image: url("../images/backgrounds/form-bg-desctop.jpeg");
     background-repeat: no-repeat;
     border-radius: 32px;
     background-size: cover;
     width: 100%;
     margin: 0 auto;
-    @include lg{
+    @include lg {
       display: flex;
       justify-content: space-between;
     }
-    @include x{
+    @include x {
       border-radius: 40px;
       overflow: hidden;
+    }
   }
-  }
-  &__visual{
+
+  &__visual {
     padding-bottom: 73px;
     position: relative;
     text-align: center;
-    &::after{
+
+    &::after {
       position: absolute;
       content: "";
       top: 0;
@@ -32,61 +33,65 @@
       height: 100%;
       background-image: url("../images/backgrounds/form-bg-grad-mobile.png");
       background-repeat: no-repeat;
- 
-      @include xs{
-          background-position: 0 40%;
+
+      @include xs {
+        background-position: 0 40%;
       }
-    
+
       background-size: 100%;
       z-index: 0;
       border-radius: 14px;
-      @include x{
-          border-radius: 40px;
-          overflow: hidden;
+      @include x {
+        border-radius: 40px;
+        overflow: hidden;
       }
-      @include sm{
+      @include sm {
         background-position: 0 65%;
       }
-      @include lg{
+      @include lg {
         background-image: url("../images/backgrounds/form-bg-grad.png");
         background-size: cover;
         background-position: 100% 0;
       }
     }
-    .icon{
+
+    .icon {
       max-width: 105px;
       height: 31px;
       margin: 5px 0;
-      @include md{
+      @include md {
         max-width: 144px;
         height: 43px;
       }
     }
-    h2{
+
+    h2 {
       color: #fff;
       font-size: 36px;
       font-weight: 800;
       line-height: 1;
       margin: 0;
       letter-spacing: .2px;
-      @include md{
+      @include md {
         font-size: 55px;
-        font-weight: 600;        
+        font-weight: 600;
       }
-      @include lg{
+      @include lg {
         font-size: 75px;
         max-width: 280px;
         margin: 0 auto;
       }
     }
-    @include sm{
+
+    @include sm {
       background-position: 0 65%;
     }
-    @include lg{
+    @include lg {
       width: 43%;
     }
   }
-  &__wrap{    
+
+  &__wrap {
     height: 100%;
     position: relative;
     z-index: 1;
@@ -94,18 +99,107 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
-    @include sm{
+
+    @include sm {
       padding-top: 50px;
     }
-    @include lg{
+    @include lg {
       padding-top: 0;
     }
   }
-  &__iframe{
-    min-height: 663px;
-    @include lg{
-      width: 55%;
+
+  .contact-form {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px;
+
+    article {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .Input-wrapper {
+        width: 46%;
+        margin-bottom: 10px;
+
+
+        input {
+          border: none;
+          border-bottom: 1px solid;
+          background-color: transparent;
+          padding-bottom: 8px;
+          padding-top: 25px;
+          width: 100%;
+
+          &::placeholder {
+            color: black;
+          }
+        }
+      }
+
+      [data-attr=message] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        width: 102%;
+        padding-bottom: 8px;
+        padding-top: 25px;
+        border: none;
+        border-bottom: 1px solid;
+        min-height: 55px;
+        height: 0;
+        resize: none;
+        background-color: transparent;
+
+        &::placeholder {
+          color: black;
+          font-family: $font-main;
+        }
+      }
+
+      select {
+        width: 104%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid;
+        padding-bottom: 8px;
+        padding-top: 25px;
+      }
+    }
+
+    .Button {
+      display: inline-block;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 12px;
+      border: none;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 30px;
+      cursor: pointer;
+      background: $main-button;
+      transition: background-color .3s;
+      box-shadow: 0px 76.6907px 61.3525px rgba(82, 205, 255, 0.24), 0px 32.0395px 25.6316px rgba(82, 205, 255, 0.172525), 0px 17.1299px 13.7039px rgba(82, 205, 255, 0.143066), 0px 9.60286px 7.68229px rgba(82, 205, 255, 0.12), 0px 5.10001px 4.08001px rgba(82, 205, 255, 0.0969343), 0px 2.12223px 1.69778px rgba(82, 205, 255, 0.0674749);
+
+      &:hover {
+        background-color: #161C3E;
+      }
+    }
+  }
+
+  .wpcf7-checkbox {
+    label {
+      display: flex;
+
+      input {
+        width: auto;
+      }
     }
   }
 }
