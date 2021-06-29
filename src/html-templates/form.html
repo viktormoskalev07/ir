@@ -19,9 +19,14 @@
             value="0"> <input type="hidden" name="_wpcf7_posted_data_hash" value=""> <input type="hidden"
             name="_wpcf7_recaptcha_response" value=""></div>
         <article>
-          <div class="Input-wrapper  text" data-attr="name"> <input type="text" name="Name" value="" size="40"
+          <div class="Input-wrapper  text" data-attr="name">
+              <input type="text" name="Name" value="" size="40"
               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-elm" aria-required="true"
-              aria-invalid="false" placeholder="Name" required=""></div>
+              aria-invalid="false" placeholder="Name" required="">
+          </div>
+            <div class="Input-wrapper  text" data-attr="name2"> <input type="text" name="Name2" value="" size="40"
+                                                                      class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-elm" aria-required="true"
+                                                                      aria-invalid="false" placeholder="Name2" required=""></div>
           <div class="Input-wrapper  email" data-attr="email"> <input type="email" name="Email" value="" size="40"
               class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input-elm"
               aria-required="true" aria-invalid="false" placeholder="Email" required=""></div>
@@ -34,18 +39,24 @@
           <div class="Input-wrapper  text" data-attr="company"> <input type="text" name="Title" value="" size="40"
               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-elm" aria-required="true"
               aria-invalid="false" placeholder="Title" required=""></div>
-          <div class="Input-wrapper select active" data-attr="reason"> <label class="labeltop">Reason for contacting
-              us</label> <select name="Reason" class="wpcf7-form-control wpcf7-select input-elm" aria-invalid="false">
-              <option value="-Choose-">-Choose-</option>
+          <div class="Input-wrapper select active" data-attr="reason"> <label class="labeltop"></label> <select name="Reason" class="wpcf7-form-control wpcf7-select input-elm" aria-invalid="false">
+              <option value="-Choose-">*Type of organization</option>
               <option value="I'm a journalist">I'm a journalist</option>
               <option value="Partnership opportunity">Partnership opportunity</option>
               <option value="Other">Other</option>
+            </select></div>
+            <div class="Input-wrapper select active" data-attr="reason"> <label class="labeltop"></label> <select name="Reason2" class="wpcf7-form-control wpcf7-select input-elm" aria-invalid="false">
+                <option value="-Choose-">*Reason for contacting us</option>
+                <option value="I'm a journalist">I'm a journalist</option>
+                <option value="Partnership opportunity">Partnership opportunity</option>
+                <option value="Other">Other</option>
             </select></div>
           <div class="Input-wrapper  textarea" data-attr="message"><textarea name="Message" cols="40" rows="10"
               class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required input-elm" aria-required="true"
               aria-invalid="false" placeholder="Message" required=""></textarea></div>
           <div class="Input-wrapper  textarea" data-attr="subscribe"> <span
-              class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last"><label><input
+              class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last">
+              <label><input
                     type="checkbox" name="subagree[]" value="Subscribe for updates"><span
                     class="wpcf7-list-item-label">Subscribe for updates</span></label></span></span></div>
         </article> <i class="message"></i>
@@ -63,12 +74,7 @@
                 <div style="position:relative;display:inline-block;">e</div>
                 <div style="position:relative;display:inline-block;">n</div>
                 <div style="position:relative;display:inline-block;">d</div>
-              </span> <span class="labels b">
-                <div style="position:relative;display:inline-block;">S</div>
-                <div style="position:relative;display:inline-block;">e</div>
-                <div style="position:relative;display:inline-block;">n</div>
-                <div style="position:relative;display:inline-block;">d</div>
-              </span> </span> </button></footer>
+              </span>  </span> </button></footer>
         <div class="wpcf7-response-output" aria-hidden="true"></div>
       </form>
     </div>
