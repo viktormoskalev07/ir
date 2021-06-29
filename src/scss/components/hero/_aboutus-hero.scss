@@ -4,7 +4,7 @@
   margin-bottom: 50px; 
 
   @include lg {
-    margin-bottom: 90px;
+    margin-bottom: 84px;
   }
 
   &::after {
@@ -28,6 +28,28 @@
       right: 0;
       bottom: 0;
       background-size: 65%;
+    }
+  }
+
+  .index-hero__content {
+    padding: 67px 21px 63px 36px;
+
+    @include md {
+      padding: 78px 0 354px 65px;
+    }
+    @include xl {
+      padding: 154px 153px 200px 72px;
+    }
+    @include xxl {
+      padding: 254px 153px 250px 72px;
+    }
+    h1 {
+      margin-bottom: 13px;
+
+      @include xl {
+        margin-bottom: 20px;
+        max-width: 75%;
+      }
     }
   }
 }

@@ -10,9 +10,13 @@
 		max-width: 1800px;
 		margin-left: auto;
 		margin-right: auto; 
+		@include lg{
+			padding:18px 80px;
+		}
 		@include x {
 			flex-direction: row;
 			justify-content: space-between;
+			padding: 10px 70px;
 		}
 	} 
 	&__logo {
@@ -35,7 +39,11 @@
 			width: 86px;
 			height: auto;
 			.first-logo{
+				
 				fill:$blue;
+			}
+			@include x {
+				width: 120px;
 			}
 		} 
 	}
@@ -61,10 +69,12 @@
 		   }
 		}
 		.header__logo svg{
+			@include x {
 			fill:$blue;
 			.first-logo{
 				fill:$blue;
 			}
+		}
 		}
 	}
 }
