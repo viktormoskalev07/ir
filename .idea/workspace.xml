@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html-templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
