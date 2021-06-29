@@ -2,57 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/html-templates/short-info.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/backgrounds/homepage-hero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cases-card/cases-card-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cases-card/cases-card-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/description/video.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/___var.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/components/_short-info.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/healthcare.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/healthcare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/description.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/hero/index-hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/hero/index-hero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/repited-items/swiper-cases-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/repited-items/swiper-cases-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/repited-items/swiper-latest-updates-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/repited-items/swiper-latest-updates-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/section-latest-updates.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/section-latest-updates.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/section-testimonials.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/section-testimonials.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html-templates/section-use-cases.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/section-use-cases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cases-card/cases-card-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/cases-card/cases-card-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/latest-updates-card/img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/latest-updates-card/img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/latest-updates-card/img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/partners/partner8.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/partners/partner8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/__card-powered.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/__card-powered.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_accordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_amplyfying.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_amplyfying.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_description.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_description.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html-templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/_sets-apart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_sets-apart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/header/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/header/_nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/hero/_healthcare-hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/hero/_healthcare-hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/hero/_index-hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/hero/_index-hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/_forming-swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/_forming-swiper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/_index-partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/_index-partners.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/latest-updates/_latest-updates-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/latest-updates/_latest-updates-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/use-cases/_use-cases-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/use-cases/_use-cases-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/use-cases/_use-cases-swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/use-cases/_use-cases-swiper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +41,10 @@
       <option name="presentableId" value="Default" />
       <updated>1624970545054</updated>
       <workItem from="1624970547787" duration="1913000" />
+      <workItem from="1624986005910" duration="782000" />
+      <workItem from="1624987150307" duration="12000" />
+      <workItem from="1624987563035" duration="234000" />
+      <workItem from="1624990514172" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="fixed sliders">
       <created>1624972312123</created>
@@ -117,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624979208174</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix conflicts">
+      <created>1624982972140</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624982972140</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +90,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixed sliders" />
     <MESSAGE value="added styles form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added styles form" />
+    <MESSAGE value="fix conflicts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix conflicts" />
   </component>
 </project>

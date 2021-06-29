@@ -109,12 +109,14 @@
   }
 
   .contact-form {
-    width: 65%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: flex-end;
     padding: 50px;
+    @include lg {
+      width: 65%;
+    }
 
     article {
       display: flex;
@@ -122,10 +124,18 @@
       justify-content: space-between;
       flex-wrap: wrap;
 
-      .Input-wrapper {
-        width: 46%;
-        margin-bottom: 10px;
+      .textarea-label {
+        @include lg {
+          display: none;
+        }
+      }
 
+      .Input-wrapper {
+        width: 100%;
+        margin-bottom: 10px;
+        @include lg {
+          width: 46%;
+        }
 
         input {
           border: none;
@@ -147,24 +157,31 @@
       }
 
       textarea {
-        width: 102%;
-        padding-bottom: 8px;
+        margin-top: 15px;
+        border-radius: 20px;
+        width: 100%;
         padding-top: 25px;
-        border: none;
-        border-bottom: 1px solid;
-        min-height: 55px;
-        height: 0;
         resize: none;
         background-color: transparent;
+        @include lg {
+          border: none;
+          border-bottom: 1px solid;
+          min-height: 55px;
+          height: 0;
+          border-radius: inherit;
+        }
 
         &::placeholder {
-          color: black;
+          color: transparent;
           font-family: $font-main;
+          @include lg {
+            color: black;
+          }
         }
       }
 
       select {
-        width: 104%;
+        width: 100%;
         background-color: transparent;
         border: none;
         border-bottom: 1px solid;
@@ -175,6 +192,7 @@
 
     .Button {
       display: inline-block;
+      margin-top: 35px;
       font-family: 'Montserrat';
       font-weight: 500;
       font-size: 12px;
@@ -191,14 +209,22 @@
         background-color: #161C3E;
       }
     }
-  }
 
-  .wpcf7-checkbox {
-    label {
-      display: flex;
+    .wpcf7-checkbox {
+      label {
+        padding-top: 20px;
+        display: flex;
 
-      input {
-        width: auto;
+
+        input {
+          border-radius: 50%;
+          transform: scale(1.7);
+          margin-right: 10px;
+          width: auto;
+          @include lg {
+
+          }
+        }
       }
     }
   }
