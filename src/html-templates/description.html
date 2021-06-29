@@ -16,8 +16,8 @@
         </video>               -->
 
         <div class="iframe__wrap">
-          <iframe class="iframe__embed" src="https://www.youtube.com/embed/emrqHpC8Bs8?controls=0;" title="YouTube video player"
-            frameborder="0"
+          <iframe class="iframe__embed" src="" data-src='https://www.youtube-nocookie.com/embed/emrqHpC8Bs8;' title="YouTube video player"
+            frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="true"></iframe>
 
@@ -36,15 +36,22 @@
               </svg>
             </div>
           </div>
-
+ 
           <script>
             const videoBtn = document.querySelector('.overlay__btn')
             const embedVideo = document.querySelector('.iframe__embed')
             const overlayVideo = document.querySelector('.iframe__overlay')
-            const srcValue = 'https://www.youtube.com/embed/emrqHpC8Bs8?autoplay=1;controls=2;playisinline=1;'
+            const srcValue = '?autoplay=1;rel=0&amp;fs=0&amp;showinfo=0;'
+              window.addEventListener('load' , function(){ 
+                setTimeout(() => {
+                   embedVideo.setAttribute('src',  embedVideo.dataset.src);
+                }, 1);
+               
+              })
+               videoBtn.addEventListener('click', function() {
+                 console.log(embedVideo.src);
+                embedVideo.setAttribute('src', embedVideo.src+srcValue);
 
-            videoBtn.addEventListener('click', function() {
-              embedVideo.setAttribute('src', srcValue)
               overlayVideo.style.display = 'none'
             })
           </script>
