@@ -1,11 +1,17 @@
 .sets-apart{
   margin-bottom: 70px;
   @include md{
-    margin-bottom: 140px;
+    margin-bottom: 40px;
+  }
+  .container{
+    @include lg{
+      max-width: 1400px;
+      padding: 0;
+    }
   }
   h3{
     @include md{
-      margin-bottom: 50px;
+      margin-bottom: 125px;
     }
   }
   &__row{
@@ -35,7 +41,7 @@
   }
   &__card{
     border-bottom: 1px solid #FFAD8A;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     width: 90%;    
     @include md{
       min-height: 400px;
@@ -45,7 +51,7 @@
     }
     @include xl{
       display: flex;
-      align-items: center;
+      //align-items: center;
       border-bottom: 0px;
       min-height: 250px;
     }
@@ -59,8 +65,11 @@
   &__content{
     font-size: 14px;
     line-height: 2;
+    @include md{
+      font-size: 16px;
+    }
     @include xl{
-      width: 60%;
+      width: 64%;
     }
     p{
       margin: 0;
@@ -70,12 +79,14 @@
   h4{
     font-family: $font-main;
     font-weight: 600;
+    margin: 0;
     @include md{
       font-size: 18px;      
       font-weight: 700;
     }
     @include xl{
       text-align: left;
+      padding-bottom: 20px;
     }
   }
 }

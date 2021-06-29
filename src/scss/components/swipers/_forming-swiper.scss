@@ -90,6 +90,30 @@
     top: 28%;
    
   }
+  &__testimonial{
+    @include md{
+      margin-bottom: 124px;
+    }
+    h3{
+      @include lg{
+        margin-bottom: 38px;
+      }      
+    }
+    .forming__quote{
+      @include md{
+        margin-bottom: 32px;
+      }
+    }
+    .swiper-container{
+      max-width: 1085px;
+    }
+    .forming-next, .forming-prev{
+      top: 37px;
+    }
+    .forming .swiper-forming .swiper-slide p:not(:last-of-type){
+      margin-bottom: 33px;
+    }
+  }
  
 
 }
