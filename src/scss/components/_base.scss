@@ -62,19 +62,10 @@ $font-size: 16px;
     @content
   }
 };
-
-body {
-  background-color: rgb(199, 199, 199);
-  
-  // for popup noscroll 
-}
+ 
 
 // footer to bottom
-.body,
-html {
-  height: 100%;
-  min-height: 100vh;
-}
+
 
 .header,
 footer {
@@ -85,6 +76,14 @@ footer {
   flex-grow: 1;
   overflow-x: hidden;
 }
+&{ 
+  font-family: $font-main;
+  font-size: $font-size;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+}
 
 .footer-to-bottom {
   min-height: 100vh;
@@ -93,15 +92,7 @@ footer {
   z-index: 0;
   position: relative;
   background-color: #fff;  
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $font-main;
-  font-size: $font-size;
-}
+} 
 
 * {
   box-sizing: border-box;
