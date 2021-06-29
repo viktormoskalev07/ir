@@ -1,13 +1,14 @@
 .news-slider {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 55px;
+  padding-bottom: 60px;
 
   @include md {
     padding-top: 75px;
     padding-bottom: 80px;
   }
   @include xl {
-    padding-top: 85px;
+    padding-top: 124px;
+    padding-bottom: 121px;
   }
 
   &__caption {
@@ -38,7 +39,8 @@
   }
 
   .swiper-container {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
+    overflow: visible;
 
     @include md {
       margin-bottom: 0;
@@ -48,8 +50,8 @@
   .swiper-news-slider {
     max-width: 320px;
     margin: 0 auto;
-    padding-top: 24px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 64px;
 
     @include xs {
       max-width: 340px;
@@ -57,16 +59,15 @@
     @include md {
       overflow: hidden;
       max-width: 620px;
-      padding-top: 40px;
-      padding-bottom: 50px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 40px 20px 50px;
     }
     @include lg {
+      padding-top: 28px;
       max-width: 860px;
     }
     @include xl {
-      max-width: 1100px;
+      max-width: 1160px;
+      
     }
 
     .swiper {
@@ -77,24 +78,68 @@
     }
   }
 
+  &-prev, &-next {
+    @include xl {
+      top: calc(50% - 8px);
+    }
+  }
+  &-prev {
+    @include xl {
+      left: -30px;
+    }
+  }
+  &-next {
+    @include xl {
+      right: -30px;
+    }
+  }
+
   &__btn {
     margin-bottom: 22px;
+
+    a {
+      padding: 7px 30px;
+
+      @include xl {
+        padding: 11px 25px;
+      }
+    }
   }
   &__link {
     max-width: 580px;
     margin: 0 auto;
     text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 21px;
 
     @include xl {
       max-width: 710px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    p {
+      margin-top: 28px;    
+      letter-spacing: -0.01em;
+
+      @include xl {
+        margin-top: 32px;
+        letter-spacing: 0.01em;
+      }
     }
 
     a {
-      text-decoration: underline;
+      font-weight: 600;
       transition: color .2s;
+      border-bottom: 2px solid #000000;
 
       &:hover {
         color: $blue;
+      }
+
+      @include xl {
+        font-weight: 700;
       }
     }
   }

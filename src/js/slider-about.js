@@ -9,7 +9,7 @@ const swiperMilestones = new Swiper('.swiper-milestones', {
     },
     breakpoints: { 
         320: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.6,
           
         }, 
         480: {

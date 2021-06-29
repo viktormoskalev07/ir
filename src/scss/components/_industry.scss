@@ -4,17 +4,37 @@
   @include lg{
     padding: 75px 0 140px;
   }
+  @include xl {
+    padding: 69px 0 140px;
+  }
+
+  .container {
+    padding: 0 10px;
+
+    @include sm {
+      padding: unset;
+    }
+  }
   &__wrap{
     margin: 0 -15px;
-    padding: 45px 0 0;
+    padding: 39px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 962px;
     margin: 0 auto;
+
+    @include xl {
+      padding-top: 48px;
+      max-width: 984px;
+    }
     &_mini{
       max-width: 100%;
       margin: 0 auto;
+
+      @include xl {
+        justify-content: space-around;
+      }
       .industry__logo{
         margin: 0 15px;
       }
@@ -36,6 +56,14 @@
       display: block;
       @include lg{
         display: none;
+      }
+    }
+
+    img {
+      max-width: 90%;
+
+      @include xl {
+        max-width: 100%;
       }
     }
   }
