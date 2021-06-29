@@ -142,9 +142,7 @@ function pagescroll(){
                       titles[i].classList.remove('is-active__js'); 
                     }
                    
-                       this.classList.add('is-active__js');
-                   
-               
+                       this.classList.add('is-active__js'); 
               });
             } 
           } 
