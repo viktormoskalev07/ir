@@ -1,80 +1,4 @@
-$green:#00BC87;
-$blue:#487CFF;
-
-$logowidth:50px; 
-$xs: 375px;
-$sm: 576px;
-$md: 768px;
-$lg: 1024px;
-$x: 1124px;
-$sl: 1260px; 
-
-$xl: 1440px;
-$xxl: 1920px;
-
-$font-main: 'Montserrat', sans-serif;
-$font-accent: 'Sharp Sans Display No1', sans-serif;
-$font-size: 16px;
-
-@mixin xs {
-  @media (min-width:$xs) {
-    @content
-  }
-};
-
-@mixin sm {
-  @media (min-width:$sm) {
-    @content
-  }
-};
-
-@mixin md {
-  @media (min-width:$md) {
-    @content
-  }
-};
-
-@mixin lg {
-  @media (min-width:$lg) {
-    @content
-  }
-};
-@mixin sl {
-  @media (min-width:$sl) {
-    @content
-  }
-};
-
-@mixin x {
-  @media (min-width:$x) {
-    @content
-  }
-};
-
-@mixin xl {
-  @media (min-width:$xl) {
-    @content
-  }
-};
-
-@mixin xxl {
-  @media (min-width:$xxl) {
-    @content
-  }
-};
-
-body {
-  background-color: rgb(199, 199, 199);
-  
-  // for popup noscroll 
-}
-
-// footer to bottom
-.body,
-html {
-  height: 100%;
-  min-height: 100vh;
-}
+ 
 
 .header,
 footer {
@@ -85,6 +9,14 @@ footer {
   flex-grow: 1;
   overflow-x: hidden;
 }
+&{ 
+  font-family: $font-main;
+  font-size: $font-size;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+}
 
 .footer-to-bottom {
   min-height: 100vh;
@@ -93,15 +25,7 @@ footer {
   z-index: 0;
   position: relative;
   background-color: #fff;  
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $font-main;
-  font-size: $font-size;
-}
+} 
 
 * {
   box-sizing: border-box;
