@@ -1,6 +1,6 @@
 .latest-updates {
   &__slide {
-    min-height: 350px;
+    min-height: 378px;
     padding: 10px 10px 25px;
     position: relative;
     z-index: 1;
@@ -13,7 +13,8 @@
     @include md {
       padding: 15px 15px 25px;
     }
-    @include lg {
+    @include sl {
+      min-height: 430px;
     }
 
     .latest-updates-slide {
@@ -52,7 +53,7 @@
 
         h5 {
           margin-top: 20px;
-          margin-bottom: 25px;
+          margin-bottom: 0;
           font-weight: 600;
           font-size: .875rem;
           line-height: 1.5;
@@ -63,7 +64,7 @@
           @include xl {
             font-size:20px;
             line-height: 29px;
-            margin-bottom: 45px;
+            // margin-bottom: 45px;
 
           }
         }

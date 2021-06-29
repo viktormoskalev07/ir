@@ -65,10 +65,16 @@
       padding-right: 20px;
     }
     @include xl {
-      max-width: 750px;
+      max-width: 1094px;
     }
 
     .swiper {
+
+      &-wrapper {
+        @include xl {
+          transform: none !important;
+        }
+      }
 
       &-pagination {
         bottom: 0;
@@ -78,7 +84,7 @@
   &-next , &-prev{
     top: 47%; 
     @include xl{
-      right: 0;
+      display: none;
     }
    
   }

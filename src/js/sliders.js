@@ -32,7 +32,7 @@ if (document.querySelector('.swiper-milestones')) {
 
 if (document.querySelector('.swiper-forming')) {
     const swiperForming = new Swiper('.swiper-forming', {
-        autoHeight: true,
+        // autoHeight: true,
         loop: true,
         // If we need pagination
         pagination: {
@@ -61,6 +61,12 @@ if (document.querySelector('.swiper-cases')) {
                 slidesPerView: 2,
                 centeredSlides: false,
                 spaceBetween: 55,
+            },
+            1440: {
+                slidesPerView: 3,
+                loop: false,
+                spaceBetween: 55,
+                allowTouchMove: false,
             }
         },
         // If we need pagination
@@ -89,7 +95,7 @@ if (document.querySelector('.swiper-partners')) {
         },
         // If we need pagination
         breakpoints: {
-            1024: {
+            1440: {
                 spaceBetween: 0,
                 loop: false,
                 allowTouchMove: false,
@@ -136,7 +142,7 @@ if (document.querySelector('.swiper-latest-updates')) {
 }
 
 if (document.querySelector('.swiper-news-slider')) {
-    const swiperLatestUpdates = new Swiper('.swiper-news-slider', {
+    const swiperNewsSlider = new Swiper('.swiper-news-slider', {
         speed: 400,
         spaceBetween: 15,
         slidesPerView: 1.2,

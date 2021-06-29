@@ -3,7 +3,9 @@
  .accordion{ 
      &-health{
          min-height: 400px;
-    
+        @include md{
+            padding: 0 0 0 27px;
+        }
      }
         &__item{ 
             border-bottom: 1px solid #000000; 
@@ -24,13 +26,13 @@
             margin: 0;
         }
         &__title{
+            letter-spacing: .2px;
             font-family: $font-main;
             font-size: 18px;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 500;
             cursor: pointer;
             line-height: 22px;
-            letter-spacing: 0.02em; 
             position: relative;
             color: #ABABAB;
             text-align: left;
@@ -44,7 +46,7 @@
             @include md {
                 font-size: 24px;
                 line-height: 40px;
-                padding-top: 35px;
+                padding-top: 39px;
                 padding-bottom: 35px;
             }
             &::after{
@@ -58,7 +60,7 @@
                 line-height: 32px;
                 color:#487CFF;
                 right: 20px;
-                top: 50%;
+                top: 54%;
                 transform: translateY(-50%);
             }  
             &.is-active__js{
@@ -72,6 +74,9 @@
                      margin-right: 5px;
                  }
                 color: #161C3E;
+                padding-bottom: 12px;
+                font-weight: 600;
+                letter-spacing: 0;
                 &+.accordion__text{
                     transition: 0.3s  $delay ease;
                     animation-fill-mode: forwards;
@@ -81,7 +86,7 @@
                     max-height: 150px;
                     overflow: hidden;
                     opacity: 1; 
-                    margin-bottom: 35px;
+                    margin-bottom: 46px;
                 }
             }
         }
