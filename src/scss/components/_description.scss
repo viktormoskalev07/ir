@@ -335,6 +335,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      z-index: 1;
 
       .overlay {
         &__poster {
@@ -353,6 +354,7 @@
           position: absolute;
           top: 10px;
           left: 10px;
+          z-index: 1;
 
           @include md {
             top: 30px;
