@@ -10,20 +10,27 @@
   }
 
   &__content {    
-    padding: 67px 21px 84px 36px;
+    // padding: 67px 21px 84px 36px;
+    padding: 80px 21px 100px 36px;
     position: relative;
     color: #ffffff;
     z-index: 1;
 
+    @include sm {
+      padding: 100px 21px 130px 36px;
+    }
     @include md {
       width: 70%;
-      padding: 78px 0 354px 65px;
+      // padding: 78px 0 354px 65px;
+      padding: 100px 0 354px 65px;
     }
     @include xl {
-      padding: 180px 80px 217px 120px;
+      // padding: 180px 80px 217px 120px;
+      padding: 220px 80px 260px 120px;
     }
     @include xxl {    
-      padding: 236px 240px 324px 184px;
+      padding: 260px 240px 360px 184px;
+      // padding: 236px 240px 324px 184px;
     }
 
     &::before {

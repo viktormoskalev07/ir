@@ -6,6 +6,18 @@
   transform: scale(-1, 1);
   .index-hero__content{
     transform: scale(-1, 1);
+    @include lg{
+      padding: 152px 382px 197px 101px;
+    }
+    p{
+      font-weight: 300;
+      width: 70%;
+      font-family: 'Montserrat';
+    }
+    h1{
+      font-weight: 400;
+      margin-bottom: 22px;
+    }
   }
   @include sm {
     transform: scale(1, 1);
@@ -13,6 +25,7 @@
       transform: scale(1, 1);
     }
   }
+  
 
   &::after {
     content: '';
@@ -34,7 +47,7 @@
     @include xl {
       right: 0;
       bottom: 0;
-      background-size: 80%;
+      background-size: 95%;
     }
   }
 }

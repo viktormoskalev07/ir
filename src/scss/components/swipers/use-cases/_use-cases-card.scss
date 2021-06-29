@@ -89,6 +89,12 @@
             background-color: #161C3E;
             color: #ffffff;
           }
+
+          &.disabled {
+            background: rgba($blue, 0.5);
+            cursor: unset;
+            pointer-events: none;
+          }
         }
       }
     }
