@@ -1,0 +1,41 @@
+.short-info{
+  margin-bottom: 74px;
+  @include lg{
+    margin-bottom: 140px;
+  }  
+  text-align: center;
+  &__container{
+    max-width: 915px;
+    margin: 0 auto;
+  }
+  h3{
+    color: #487CFF;
+    font-size: 18px;
+    font-family: $font-main;
+    line-height: 1.7;
+    font-weight: 500;
+    margin-bottom: 14px;
+    @include md{
+      font-size: 20px;
+    }
+    @include lg{
+      font-size: 34px;
+    }
+  }
+  h4{
+    font-family: $font-main;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto; 
+    letter-spacing: -.2px;
+    @include md{
+      font-size: 18px;
+    }
+    @include lg{
+      font-size: 24px;
+    }
+  }
+  
+}

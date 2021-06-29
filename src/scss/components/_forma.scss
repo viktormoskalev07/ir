@@ -1,16 +1,22 @@
 .forma{  
+  margin-bottom: 45px;
+  @include lg{
+    margin-bottom: 70px;
+  }
   &__block{
     background-image: url("../images/backgrounds/forma-bg-desctop.jpeg");
     background-repeat: no-repeat;
-    border-radius: 14px;
+    border-radius: 32px;
     background-size: cover;
+    width: 100%;
+    margin: 0 auto;
     @include lg{
       display: flex;
       justify-content: space-between;
     }
   }
   &__visual{
-    padding-bottom: 100px;
+    padding-bottom: 73px;
     position: relative;
     text-align: center;
     &::after{
@@ -38,7 +44,7 @@
     .icon{
       max-width: 105px;
       height: 31px;
-      margin: 20px 0;
+      margin: 5px 0;
       @include md{
         max-width: 144px;
         height: 43px;
@@ -50,6 +56,7 @@
       font-weight: 800;
       line-height: 1;
       margin: 0;
+      letter-spacing: .2px;
       @include md{
         font-size: 55px;
         font-weight: 600;        
@@ -64,7 +71,7 @@
       background-position: 0 65%;
     }
     @include lg{
-      width: 45%;
+      width: 43%;
     }
   }
   &__wrap{    
@@ -83,7 +90,7 @@
     }
   }
   &__iframe{
-    min-height: 700px;
+    min-height: 663px;
     @include lg{
       width: 55%;
     }
