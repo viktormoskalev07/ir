@@ -42,8 +42,13 @@
     padding-bottom: 36px;
     position: relative;
     text-align: center;
+
+    @include sm {
+      background-position: 0 65%;
+    }
     @include lg {
       padding-bottom: 0;
+      width: 43%;
     }
 
 
@@ -113,12 +118,11 @@
         margin: 0 auto;
       }
     }
+  }
 
-    @include sm {
-      background-position: 0 65%;
-    }
+  .wpcf7 {
     @include lg {
-      width: 43%;
+      width: 65%;
     }
   }
 
@@ -147,7 +151,6 @@
     flex-direction: column;
     padding: 0px 15px 15px;
     @include lg {
-      width: 65%;
       padding: 50px 45px;
     }
     @include xl {
