@@ -137,6 +137,7 @@
     left: 11px;
     max-width: 33px;
     max-height: 33px;
+    transition: transform .3s;
     @include md{
       left: auto;
       top: auto;
@@ -144,6 +145,10 @@
       right: 16px;
       max-width: 51px;
       max-height: 51px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

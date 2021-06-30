@@ -108,6 +108,7 @@
 
           @include lg {
             flex-direction: row;
+            flex-wrap: wrap;
             font-size: 9.95px;
             line-height: 1.2;
             font-weight: 400;
@@ -132,6 +133,7 @@
             @include lg {
               border: none;
               padding: 0;
+              margin-bottom: 15px;
               margin-right: 35px;
               position: relative;
 
