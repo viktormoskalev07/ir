@@ -171,14 +171,17 @@
 .nav-open { 
 	.nav__menu {
 		margin-top: 10px;
-		@include x {
-			margin: 0;
-		}
+	
 		transform: none;
 		transition: 0.2s; 
 		max-height: 100vh; 
 		overflow-y:auto;
 		overflow-x: hidden;
+		@include x {
+			margin: 0;
+			overflow: hidden;
+		 
+		}
 	} 
 	.nav__burger { 
 		&__row {

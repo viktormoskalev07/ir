@@ -139,17 +139,19 @@
       padding-top: 0;
     }
   }
-
-  .contact-form {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+  #wpcf7-f7-o1{
     padding: 0px 15px 15px;
     @include lg {
       width: 65%;
       padding: 50px 45px;
     }
+  }
+  .contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
     @include xl {
       padding: 66px 55px;
     }
@@ -220,7 +222,7 @@
         display: block;
       }
 
-      .container .checkmark:after {
+      .container :after {
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%) rotate(45deg);
