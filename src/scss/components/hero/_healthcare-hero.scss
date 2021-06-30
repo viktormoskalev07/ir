@@ -3,11 +3,19 @@
   overflow: hidden;
   margin: 0px; 
   background-image: url("../images/backgrounds/healthcare-hero-bg.jpeg");
-  transform: scale(-1, 1);
+  // transform: scale(-1, 1);
+
+  @include xl {
+    background-position-y: top;
+  }
   .index-hero__content{
-    transform: scale(-1, 1);
+    // transform: scale(-1, 1);
     @include lg{
       padding: 152px 382px 197px 101px;
+    }
+    @include xxl {
+      padding-top: 250px;
+      padding-bottom: 300px;
     }
     p{
       font-weight: 300;
@@ -20,9 +28,9 @@
     }
   }
   @include sm {
-    transform: scale(1, 1);
+    // transform: scale(1, 1);
     .index-hero__content{
-      transform: scale(1, 1);
+      // transform: scale(1, 1);
     }
   }
   

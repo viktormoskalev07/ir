@@ -132,6 +132,7 @@ if (document.querySelector('.swiper-latest-updates')) {
         },
         pagination: {
             el: '.latest-updates-pagination',
+            clickable: true
         },
 
         navigation: {

@@ -1,4 +1,11 @@
 .latest-updates {
+  &__caption {
+    h3 {
+      @include sm {
+        margin-bottom: 20px;
+      }
+    }
+  }
   &__slide {
     min-height: 378px;
     padding: 10px 10px 25px;
@@ -12,6 +19,7 @@
 
     @include md {
       padding: 15px 15px 25px;
+      min-height: 314px;
     }
     @include sl {
       min-height: 430px;
@@ -24,8 +32,14 @@
         align-items: center;
         border-radius: 7px;
         overflow: hidden;
-         height: 212px;
+         height: 192px;
       
+         @include lg {
+           height: 154px;
+         }
+         @include sl {
+           height: 212px;
+         }
 
         img {
           height: 100%;
