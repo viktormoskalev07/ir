@@ -49,7 +49,6 @@
       border-radius: 14px;
       background-size: 135%;
       background-position-x: center;
-      pointer-events: none;
 
       @include xs {
         background-size: 100%;
@@ -124,20 +123,17 @@
       padding-top: 0;
     }
   }
-    #wpcf7-f7-o1{
-      width: 100%;
-      padding: 0px 15px 15px;
-      @include lg {
-        width: 65%;
-        padding: 50px;
-      }
-    }
-  .contact-form {
 
+  .contact-form {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
- 
+    padding: 0px 15px 15px;
+    @include lg {
+      width: 65%;
+      padding: 50px;
+    }
 
     article {
       display: flex;
