@@ -163,7 +163,7 @@
       }
     }
     &_healthcare{
-      max-width: 815px;
+      max-width: 875px;
       @include md{
         padding-bottom: 80px;
       }
@@ -357,69 +357,70 @@
       left: 0;
       width: 100%;
       height: 100%;
+      background-color: #cccccc;
     }
 
-    .iframe__overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
+    // .iframe__overlay {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: 1;
 
-      .overlay {
-        &__poster {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          img {
-            max-width: none;
-            width: 100%;
-            height: 100%;
-          }
-        }
-        &__logo {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          z-index: 1;
+    //   .overlay {
+    //     &__poster {
+    //       position: absolute;
+    //       top: 0;
+    //       left: 0;
+    //       width: 100%;
+    //       height: 100%;
+    //       img {
+    //         max-width: none;
+    //         width: 100%;
+    //         height: 100%;
+    //       }
+    //     }
+    //     &__logo {
+    //       position: absolute;
+    //       top: 10px;
+    //       left: 10px;
+    //       z-index: 1;
 
-          @include md {
-            top: 30px;
-            left: 30px;
-          }
-          svg {
-            fill: white;
-          }
-        }
-        &__btn {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateX(-50%) translateY(-50%);
-          width: 63px;
-          height: 63px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: rgba(72, 124, 255, 0.35);
-          border-radius: 50%;
-          transition: background .3s;
-          cursor: pointer;
+    //       @include md {
+    //         top: 30px;
+    //         left: 30px;
+    //       }
+    //       svg {
+    //         fill: white;
+    //       }
+    //     }
+    //     &__btn {
+    //       position: absolute;
+    //       top: 50%;
+    //       left: 50%;
+    //       transform: translateX(-50%) translateY(-50%);
+    //       width: 63px;
+    //       height: 63px;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       background: rgba(72, 124, 255, 0.35);
+    //       border-radius: 50%;
+    //       transition: background .3s;
+    //       cursor: pointer;
 
-          svg {
-            width: 23px;
-            height: 23px;
-          }
+    //       svg {
+    //         width: 23px;
+    //         height: 23px;
+    //       }
 
-          &:hover {
-            background: rgba(72, 124, 255, 1);
-          }
-        }
-      }
-    }
+    //       &:hover {
+    //         background: rgba(72, 124, 255, 1);
+    //       }
+    //     }
+    //   }
+    // }
     p{
       font-size: 11.3px;
       line-height: 13px;
