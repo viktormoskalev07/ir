@@ -48,6 +48,7 @@
       border-radius: 14px;
       background-size: 135%;
       background-position-x: center;
+      pointer-events: none;
 
       @include xs {
         background-size: 100%;
