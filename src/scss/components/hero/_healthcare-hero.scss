@@ -13,6 +13,10 @@
     @include lg{
       padding: 152px 382px 197px 101px;
     }
+    @include xxl {
+      padding-top: 250px;
+      padding-bottom: 300px;
+    }
     p{
       font-weight: 300;
       width: 70%;
