@@ -17,6 +17,13 @@
       border-radius: 40px;
       overflow: hidden;
     }
+    footer{
+      display: flex;
+      justify-content: center;
+      @include lg {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__visual {
@@ -134,7 +141,6 @@
       flex-wrap: wrap;
 
 
-
       .container {
         display: block;
         position: relative;
@@ -206,9 +212,15 @@
         margin-bottom: 10px;
         @include lg {
           width: 46%;
-          [data-attr=subscribe] {
-            width: 100%;
-          }
+        }
+
+        &[data-attr=subscribe] {
+          width: 100%;
+          padding-top: 15px;
+        }
+
+        .wpcf7-list-item-label {
+          padding-top: 7px;
         }
 
         input {
@@ -243,6 +255,7 @@
           min-height: 55px;
           height: 0;
           border-radius: inherit;
+          margin-top: 0;
         }
 
 
