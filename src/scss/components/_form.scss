@@ -188,11 +188,13 @@
         // left: 20%;
         margin-right: 20px;
         margin-left: -41px;
-        height: 21px;
-        width: 21px;
+        height: 25px;
+        width: 25px;
         background-color: #eee;
         border-radius: 15px;
         @include lg {
+          height: 21px;
+          width: 21px;
           border-radius: 1px;
           margin-left: 0px;
           border: 1px solid rgba(54, 54, 54, 0.58);
@@ -219,13 +221,13 @@
       }
 
       .container .checkmark:after {
-        left: 9px;
-        top: 5px;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
         width: 5px;
         height: 10px;
         border: solid white;
         border-width: 0 3px 3px 0;
-        transform: rotate(45deg);
       }
 
       .textarea-label {
