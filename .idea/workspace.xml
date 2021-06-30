@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html-templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form.scss" afterDir="false" />
@@ -45,6 +44,8 @@
       <workItem from="1624987150307" duration="12000" />
       <workItem from="1624987563035" duration="234000" />
       <workItem from="1624990514172" duration="430000" />
+      <workItem from="1625036924217" duration="725000" />
+      <workItem from="1625037913570" duration="3445000" />
     </task>
     <task id="LOCAL-00001" summary="fixed sliders">
       <created>1624972312123</created>
@@ -81,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624982972140</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix conflicts">
+      <created>1624991758670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624991758670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
