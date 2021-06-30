@@ -55,6 +55,7 @@
   }
   &_healthcare{
     background-position: 0 -5%;
+
     &::after{
       bottom: -37%;
       @include xxl{
@@ -62,11 +63,40 @@
       }
     }
     @include xl{
-      padding: 115px 0 170px;
+      padding: 115px 0 20px;
       background-position: -200px -35%;
     }
     @include xxl{
       background-position: -50px -85%;
+    }
+
+    .description__block {
+      @include xl {
+        margin-bottom: 171px;
+      }
+
+      &-content {
+        @include xl {
+          h3 {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 20px;
+            max-width: 73% !important;
+          }
+
+          p {
+            max-width: 76%;
+          }
+        }
+      }
+      &_right {
+        margin-bottom: 0;
+        .description__img img {
+          @include xl {
+            margin: 55px 0 64px -103px;
+          }
+        }
+      }
     }
   }
   p{
@@ -318,7 +348,7 @@
     .iframe__wrap {
       position: relative;
       height: 0;
-      padding-bottom: 62%;
+      padding-bottom: 52%;
     }
 
     .iframe__embed {

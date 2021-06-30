@@ -1,5 +1,5 @@
 .forming {
-  margin-bottom: 75px;
+  margin-bottom: 52px;
 
   @include md {
     margin-bottom: 150px;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    // margin-bottom: 12px;
 
     @include md {
       margin-bottom: 35px;
@@ -26,6 +26,9 @@
   .swiper-container {
     padding: 0 20px;
     max-width: 940px;
+    @include xl {
+      overflow: visible;
+    }
   }
 
   .swiper-forming {
@@ -86,9 +89,21 @@
   
     }
   }
+  &-pagination {
+    bottom: 10px;
+  }
   &-next, &-prev {
     top: 28%;
    
+    @include xl {
+      top: 25%;
+    }
+  }
+  &-next {
+    right: -77px;
+  }
+  &-prev {
+    left: -77px;
   }
   &__testimonial{
     @include md{
@@ -113,6 +128,7 @@
     .forming .swiper-forming .swiper-slide p:not(:last-of-type){
       margin-bottom: 33px;
     }
+    
   }
  
 
