@@ -7,25 +7,30 @@
   &__container{
     max-width: 915px;
     margin: 0 auto;
+    padding: 0 40px;
   }
   h3{
     color: #487CFF;
-    font-size: 18px;
+    font-size: 18.3234px;
+    line-height: 22px;
     font-family: $font-main;
     line-height: 1.7;
     font-weight: 500;
     margin-bottom: 14px;
+    max-width: none;
     @include md{
       font-size: 20px;
     }
     @include lg{
-      font-size: 34px;
+      font-size: 35px;
+      line-height: 56px;
+      margin-bottom: 26px;
     }
   }
   h4{
     font-family: $font-main;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 21px;
     font-weight: 300;
     max-width: 800px;
     margin: 0 auto; 
@@ -35,6 +40,7 @@
     }
     @include lg{
       font-size: 24px;
+      line-height: 41px;
     }
   }
   
