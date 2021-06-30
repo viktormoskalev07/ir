@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/contact-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html-templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html-templates/section-powered.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html-templates/section-powered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_amplyfying.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_amplyfying.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_description.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_description.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_our-team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_our-team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/swipers/_swiper-milestones.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/swipers/_swiper-milestones.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -46,6 +56,7 @@
       <workItem from="1624990514172" duration="430000" />
       <workItem from="1625036924217" duration="725000" />
       <workItem from="1625037913570" duration="3445000" />
+      <workItem from="1625054970668" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="fixed sliders">
       <created>1624972312123</created>
@@ -103,7 +114,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625041874361</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fic form">
+      <created>1625056837564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625056837564</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix form">
+      <created>1625057208191</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1625057208191</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +138,10 @@
     <MESSAGE value="fixed sliders" />
     <MESSAGE value="added styles form" />
     <MESSAGE value="fix conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix conflicts" />
+    <MESSAGE value="fixed form" />
+    <MESSAGE value="fic conflicts" />
+    <MESSAGE value="fic form" />
+    <MESSAGE value="fix form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix form" />
   </component>
 </project>
