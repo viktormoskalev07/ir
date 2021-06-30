@@ -1,6 +1,6 @@
 .amplyfying{
   position: relative;
-  padding: 125px 0 60px;
+  padding: 25px 0 60px;
   background-image: url("../images/backgrounds/amplyfying-grad-bg.jpeg");
   background-repeat: no-repeat;
   background-size: 150%;
@@ -23,7 +23,7 @@
     }
   }
   @include md{
-    padding: 125px 0 100px;
+    padding: 50px 0 100px;
     background-size: 100%;
     background-position: 0 31%;
   }
@@ -81,8 +81,10 @@
   }
   &__img{    
     padding-top: 30px;
+    padding-bottom: 40px;
     @include lg{
       padding-top: 0;
+      padding-bottom: 0;
       margin: 9px 0 0 69px;
     }
     img{
