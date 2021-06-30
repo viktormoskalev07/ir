@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="fic conflicts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="68f4dea4-4d9c-476e-b399-1a46e2289ec2" name="Default Changelist" comment="fic conflicts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625041874361</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fic form">
+      <created>1625056837564</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625056837564</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +120,7 @@
     <MESSAGE value="fix conflicts" />
     <MESSAGE value="fixed form" />
     <MESSAGE value="fic conflicts" />
-    <option name="LAST_COMMIT_MESSAGE" value="fic conflicts" />
+    <MESSAGE value="fic form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fic form" />
   </component>
 </project>
