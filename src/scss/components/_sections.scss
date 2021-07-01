@@ -3,6 +3,7 @@
     &--accent1 {
       background-color: #202A5C;
     }
+
     &--accent2 {
       background-color: #F5F6F8;
     }
@@ -25,6 +26,7 @@
         @include md {
           height: 40%;
         }
+
         @include xl {
           height: 55%;
         }
@@ -33,30 +35,34 @@
   }
 }
 
- .section-powered{
-   &__title{
-     @include md{
-        margin-bottom: 100px;
-     } 
-   }
-   padding: 20px 0;
-   @include md {
-     padding: 20px 0 100px 0; 
-   }
- }
+.section-powered {
+  padding: 23px 0 20px;
 
- .section-use{
-        &__title{
-          max-width: 590px;
-          margin-left: auto;
-          margin-right: auto;
-          @include xl {
-            margin-bottom: 20px;
-          }
-        }
-        &__description{
-          max-width: 590px;
-          margin-left: auto;
-          margin-right: auto;
-        }
- }
+  @include md {
+    padding: 20px 0 100px 0;
+  }
+
+  &__title {
+    @include md {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.section-use {
+  &__title {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include xl {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

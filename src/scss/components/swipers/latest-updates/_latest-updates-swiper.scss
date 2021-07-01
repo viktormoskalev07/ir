@@ -37,8 +37,8 @@
 
   .swiper-latest-updates {
     max-width: 350px;
-    margin: 0 auto;
-    padding-top: 24px;
+    margin: 0 auto;    
+    padding-top: 16px;
     padding-bottom: 80px;
 
     @include md {
@@ -59,7 +59,11 @@
 
     .swiper { 
       &-pagination {
-        bottom: 0;
+        bottom: 18px;
+
+        @include md {
+          bottom: 0;
+        }
       } 
     }
   }

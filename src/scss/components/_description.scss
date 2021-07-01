@@ -1,7 +1,7 @@
 .description {
   z-index: 0;
   position: relative;
-  padding: 58px 0 15px;
+  padding: 58px 0 36px;
   background-color: #fff;
   background-image: url("../images/description/description-bg-1.png");
   background-size: 155%;
@@ -182,8 +182,14 @@
     }
 
     h2 {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       letter-spacing: .015em;
+
+      sup {
+        text-transform: uppercase;
+        font-size: .3em;
+        font-weight: 800;
+      }
 
       @include md {
         margin-bottom: 35px;
@@ -212,8 +218,8 @@
     p {
       text-align: center;
       font-size: 14px;
-      line-height: 21px;
-      padding-bottom: 31px;
+      line-height: 21.5px;
+      padding-bottom: 28px;
       font-weight: 300;
 
       @include md {
@@ -362,7 +368,7 @@
       max-width: unset;
       font-size: 18.3px;
       line-height: 22px;
-      margin-bottom: 17px;
+      margin-bottom: 16px;
 
       @include lg {
         font-size: 40px;
@@ -379,6 +385,7 @@
 
     p {
       line-height: 21.5px;
+      letter-spacing: -0.015em;
       font-weight: 300;
 
       @include lg {
