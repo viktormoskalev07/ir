@@ -1,10 +1,10 @@
 .amplyfying{
   position: relative;
-  padding: 25px 0 60px;
+  padding: 25px 15px 60px;
   background-image: url("../images/backgrounds/amplyfying-grad-bg.jpg");
   background-repeat: no-repeat;
   background-size: 150%;
-  background-position: 0 46%;
+  background-position: 0 40%;
   &::after{
     position: absolute;
     content: "";
@@ -43,7 +43,7 @@
   }
   &__row{
     //  min-height: 850px; //test
-    padding-bottom: 330px;
+    padding-bottom: 297px;
 
     .col-md-6 {
       &:nth-of-type(1) {
@@ -68,14 +68,19 @@
     }
     p{
       font-family: $font-main;
-      font-size: 16px;
-      line-height: 1.9;
+      font-size: 14px;
+      line-height: 21px;
       text-align: center;
+
+      @include xl {
+        font-size: 16px;
+        line-height: 30px;
+      }
     }
     h2{
       letter-spacing: 0;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 20px;
       @include md{
         margin-bottom: 26px;
       }
@@ -108,6 +113,11 @@
       text-align: left;
       margin: 0 27px;
     }
+    &:nth-of-type(2) {
+      @include xl {    
+        margin: 0 16px 0 37px;
+      }
+    }
     &:first-child{
       h4{
         max-width: 250px;
@@ -120,17 +130,22 @@
       font-size: 18px;
       background: #FB795E;
       border-radius: 27px 27px 0px 0px;
-      margin: 0;
-      padding: 14px 0 8px;
+      margin: 0;    
+      padding: 16px 0 12px;
       max-width: none;
+      letter-spacing: -.04em;
       @include sm{
         font-size: 24px;
         padding: 32px 0 25px;
       }
+
+      @include xl {
+        letter-spacing: 0em;
+      }
     }
     h4{
       font-size: 20px;
-      margin: 0 0 40px;
+      margin: 0 0 32px;
       font-weight: 500;
       line-height: 1.2;
       @include sm{
@@ -138,6 +153,10 @@
       }
       @include lg{
         text-align: left;
+      }
+      @include xl {
+        margin-bottom: 38px;
+        max-width: 80%;
       }
     }
     h5{
@@ -149,28 +168,40 @@
         font-size: 16px;
         font-weight: 700;
       }
+
     }
     p{
-      margin: 0;
+      margin: 0 auto;
       font-size: 12px;
+      line-height: 21.5px;
       font-weight: 300;
-      line-height: 2;
-      max-width: 400px;
+      max-width: 91%;
       @include sm{
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
       }
+      @include md {
+        max-width: 100%;
+      }
+      @include xl {
+        max-width: 85%;
+        margin-left: 0;
+      }
     }
   }
   &__card-content{
-    padding: 30px 30px 25px;
+    padding: 30px 30px 7px;
     @include xl{
       padding: 44px 40px 25px;
     }
   }
   &__card-block{
-    padding-bottom: 33px;
+    padding-bottom: 28px;
+
+    @include xl {
+      padding-bottom: 34px;
+    }
   }
   &__flex{
     @include lg{

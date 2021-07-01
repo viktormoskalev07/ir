@@ -86,9 +86,12 @@
 
     .description {
       &__wrap {
+        p {
+          padding-bottom: 60px;
+        }
         @include xl {
           h2 {
-            margin-bottom: 38px;
+            margin-bottom: 43px;
           }
           p {
             padding-bottom: 22px;
@@ -122,15 +125,33 @@
           @include xl {
             padding-left: 99px;
             margin-top: -62px;
+          }
 
-            h3 {
+          h3 {
+            text-align: center;
+            padding-right: 9px;
+            letter-spacing: .025em;
+
+            @include md {
+              text-align: left;
+              padding-right: 0px;
+            }
+
+            @include xl {
               margin-left: 0;
               margin-right: 0;
               margin-bottom: 31px;
+              letter-spacing: 0em;
               max-width: 73% !important;
             }
+          }
+          p {
+            text-align: center;
 
-            p {
+            @include md {
+              text-align: left;
+            }
+            @include xl{
               max-width: 86%;
             }
           }
@@ -139,22 +160,26 @@
         &_right {
           margin-bottom: 0;
 
-          .description__img img {
-            @include xl {
-              margin: 72px 0 43px -103px;
+          .description__img {
+            padding-bottom: 42px;
+            img {
+              @include xl {
+                margin: 72px 0 43px -103px;
+              }
             }
           }
 
           .icon {
             min-height: 395px!important;
-            margin-top: -14px!important;
+            margin-top: -56px!important;
             margin-left: 0;
           }
 
           .description__block-content {
+            padding: 0;
             @include xl {
               margin-left: 0;    
-              margin-top: -8px;
+              margin-top: -50px;
             }
 
             p {
