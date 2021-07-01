@@ -10,13 +10,19 @@
 		max-width: 1800px;
 		margin-left: auto;
 		margin-right: auto; 
-		@include lg{
-			padding:18px 80px;
+		@include lg{    
+			padding: 18px 24px 15px 36px;
 		}
 		@include x {
 			flex-direction: row;
 			justify-content: space-between;
 			padding: 10px 70px;
+		}
+		@include xl {
+			padding: 8px 70px;
+		}
+		@include xxl {
+			padding: 8px 6px;
 		}
 	} 
 	&__logo {
@@ -38,6 +44,10 @@
 			object-fit: contain;
 			width: 86px;
 			height: auto;
+
+			@include lg {
+				width: 112px;
+			}
 			.first-logo{
 				
 				fill:$blue;

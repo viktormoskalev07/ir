@@ -41,6 +41,9 @@
   @include md {
     padding: 20px 0 100px 0;
   }
+  @include xl {
+    padding: 20px 0 70px 0;
+  }
 
   &__title {
     @include md {

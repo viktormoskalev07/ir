@@ -22,6 +22,7 @@
       min-height: 314px;
     }
     @include sl {
+      padding: 15px 17px 23px;
       min-height: 430px;
     }
 
@@ -97,6 +98,7 @@
           @include xl {
             font-size:20px;
             line-height: 29px;
+            margin-top: 19px;
             // margin-bottom: 45px;
 
           }

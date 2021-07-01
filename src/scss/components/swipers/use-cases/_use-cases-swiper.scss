@@ -3,10 +3,10 @@
   padding: 50px 0 49px;
 
   @include md {
-    padding: 60px 20px 50px;
+    padding: 53px 20px 50px;
   }
   @include xl {
-    padding-top: 75px;
+    padding-top: 73px;
     padding-bottom: 80px;
   }
 
@@ -16,13 +16,24 @@
     margin: 0 auto;
     text-align: center;
 
+    @include lg {
+      padding: 0 15px 0 37px;
+    }
     @include xl {
+      padding: 0 40px;
       max-width: 710px;
     }
 
     h3 {
       color: #ffffff;
       margin-bottom: 19px;
+
+      @include lg {
+        margin-bottom: 23px;
+      }
+      @include xl {    
+        margin-bottom: 17px;
+      }
     }
 
     p {
@@ -37,8 +48,14 @@
         font-weight: 400;
         line-height: 1.35;
       }
+      @include lg {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0;
+      }
       @include xl {
-        line-height: 1.7;
+        font-size: 16px;
+        line-height: 27px;
       }
     }
   }
@@ -50,7 +67,7 @@
       margin-top: 50px;
     }
     @include xl {
-      margin-top: 60px;
+      margin-top: 57px;
     }
   }
 
@@ -65,6 +82,9 @@
       padding-bottom: 50px;
       padding-left: 20px;
       padding-right: 20px;
+    }
+    @include lg {
+      max-width: 615px;
     }
     @include xl {
       max-width: 1094px;
@@ -84,7 +104,7 @@
     }
   }
   &-next , &-prev{
-    top: 47%; 
+    top: 45%; 
     @include xl{
       display: none;
     }

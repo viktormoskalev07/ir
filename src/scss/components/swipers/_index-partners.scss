@@ -1,11 +1,15 @@
 .partners {
   padding-top: 20px;
   padding-bottom: 22px;
+
+    @include lg {
+      padding-bottom: 19px;
+    }
     @include xl{
       padding-left: 5px;
       padding-right: 5px;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 40px;
+      padding-bottom: 44px;
     }
   .swiper {
     &-container {

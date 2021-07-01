@@ -21,8 +21,7 @@
     }
     @include md {
       width: 70%;
-      // padding: 78px 0 354px 65px;
-      padding: 100px 0 354px 65px;
+      padding: 78px 0 354px 65px;
     }
     @include xl {
       // padding: 180px 80px 217px 120px;
@@ -65,12 +64,12 @@
     }
 
     p {
-      font-family: $font-accent;
-      font-weight: 600;
+      font-family: $font-main;
+      font-weight: 400;
       font-size: 19px;
       line-height: 26px;
       max-width: 90%;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.03em;
       margin-top: 0;
 
       @include md {
@@ -79,8 +78,8 @@
         max-width: 70%;
       }
       @include xl {
-        width: 55%;
-        letter-spacing: 0.015em;
+        width: 53%;
+        letter-spacing: -.034em;
         padding-left: 0;
         line-height: 28.4px;
       }

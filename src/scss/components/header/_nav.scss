@@ -101,12 +101,22 @@
 		align-items: center;
 		display: flex;
 		flex-direction: column; 
+
+		@include lg {
+			width: 33px;
+			padding: 0px;
+			margin-top: -5px;
+		}
 		&__row {
 			transition: 0.2s;
 			background-color:$blue;
 			height: 2px;
 			width: 100%; 
 			margin-top: 5px;
+
+			@include lg {
+				margin-top: 9px;
+			}
 		} 
 		&__row:first-child  { 
 		 margin: 0;
