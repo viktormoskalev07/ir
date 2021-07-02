@@ -1,0 +1,224 @@
+.position-desc {
+  padding: 92px 0 0;
+  position: relative;
+
+  @include xl {
+    padding: 146px 0 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 300px;
+    height: 400px;
+    background-image: url("../images/backgrounds/position-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include xl {
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 17px;
+
+    @include x {
+      flex-direction: row;
+      padding: 0 50px;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    margin-bottom: 28px;
+
+    @include x {
+      margin-right: 60px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: #161C3E;
+    }
+
+    h2,
+    h3,
+    h5 {
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 39px;
+    }
+
+    h3,
+    h5 {
+      font-size: 20px;
+      line-height: 54px;
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 16px;
+      margin-top: 14px;
+
+      @include x {
+        margin-top: 24px;
+      }
+    }
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 0;
+    }
+
+    li {
+      max-width: 98%;
+      position: relative;
+      margin-bottom: 10px;
+      padding-left: 16px;
+
+      @include x {
+        padding-left: 15px;
+      }
+
+      &::marker {
+        color: #FB795E;
+      }
+    }
+
+    .vacancy {
+      &__header {
+        margin-bottom: 24px;
+
+        @include x {
+          margin-bottom: 55px;
+        }
+
+        h2 {
+          letter-spacing: 0em;
+          margin-bottom: 11px;
+
+          @include x {
+            margin-bottom: 9px;
+            font-size: 64px;
+            line-height: 66px;
+          }
+        }
+
+        span {
+          letter-spacing: .045em;
+
+          @include x {
+            font-size: 20.5085px;
+            letter-spacing: -.02em;
+            line-height: 28px;
+          }
+        }
+      }
+
+      &__description {
+        @include x {
+          margin-bottom: 29px;
+        }
+
+        h3 {
+          @include x {
+            font-size: 30px;
+            line-height: 54px;
+            letter-spacing: .045em;
+            margin-bottom: 16px;
+          }
+        }
+        p {
+          margin-bottom: 19px;
+        }
+      }
+
+      &__respons {
+        @include x {
+          margin-bottom: 31px;
+        }
+
+        h3 {
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0;
+
+          @include x {
+            font-size: 22px;
+            line-height: 28px;
+          }
+        }
+      }
+
+      &__requirem {
+        @include x {
+          margin-bottom: 27px;
+        }
+
+        h3 {
+          @include x {
+            font-size: 30px;
+            line-height: 54px;
+          }
+        }
+
+        ul {
+          margin-top: 0px;
+          
+          @include x {
+            margin-top: 15px;
+          }
+        }
+      }
+
+      &__advantage {
+        h5 {
+          margin-top: 20px;
+          font-family: $font-accent;
+          font-weight: 600;
+
+          @include x {
+            font-size: 22px;
+            line-height: 54px;
+            margin-bottom: 10px;
+          }
+        }
+        p {
+          @include x {
+            margin-bottom: 41px;
+          }
+        }
+        a {
+          display: none;
+
+          @include x {
+            display: block;
+            background: $blue;
+            box-shadow: 0px 100px 80px rgba(82, 205, 255, 0.24), 0px 41.7776px 33.4221px rgba(82, 205, 255, 0.172525), 0px 22.3363px 17.869px rgba(82, 205, 255, 0.143066), 0px 12.5216px 10.0172px rgba(82, 205, 255, 0.12), 0px 6.6501px 5.32008px rgba(82, 205, 255, 0.0969343), 0px 2.76726px 2.21381px rgba(82, 205, 255, 0.0674749);
+            border-radius: 26.3396px;
+            width: max-content;
+            padding: 10px 50px;
+            color: #ffffff;
+            transition: background-color .3s;
+
+            &:hover {
+              background-color: #161C3E;
+            }
+          }
+        }
+      }
+    }
+  }
+}

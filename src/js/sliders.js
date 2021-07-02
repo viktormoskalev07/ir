@@ -34,6 +34,7 @@ if (document.querySelector('.swiper-forming')) {
     const swiperForming = new Swiper('.swiper-forming', {
         // autoHeight: true,
         loop: true,
+        grabCursor: true,
         // If we need pagination
         pagination: {
             el: '.forming-pagination',
@@ -54,6 +55,7 @@ if (document.querySelector('.swiper-cases')) {
         spaceBetween: 15,
         slidesPerView: 1.2,
         centeredSlides: true,
+        grabCursor: true,
         loop: true,
 
         breakpoints: {
@@ -87,6 +89,7 @@ if (document.querySelector('.swiper-partners')) {
 
         slidesPerView: 'auto',
         spaceBetween: 20,
+        grabCursor: true,
         speed: 3000,
         loop: true,
         autoplay: {
@@ -116,6 +119,7 @@ if (document.querySelector('.swiper-latest-updates')) {
         spaceBetween: 15,
         slidesPerView: 1.2,
         centeredSlides: true,
+        grabCursor: true,
         loop: true,
 
         breakpoints: {
@@ -149,6 +153,7 @@ if (document.querySelector('.swiper-news-slider')) {
         slidesPerView: 1.2,
         centeredSlides: true,
         loop: true,
+        grabCursor: true,
 
         breakpoints: {
             768: {
@@ -181,6 +186,7 @@ if (document.querySelector('.investors-swiper')) {
         spaceBetween: 30,
         speed: 3000,
         loop: true,
+        grabCursor: true,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,

@@ -136,4 +136,46 @@
       padding: 10px 35px;
     }    
   }
+
+  &.lobby-team {
+    padding-top: 50px;
+    padding-bottom: 43px;
+
+    @include xl {
+      padding-bottom: 30px;
+    }
+
+    p {    
+      padding-bottom: 45px;
+      padding-right: 3px;
+      letter-spacing: -.01em;
+      max-width: 93%;
+
+      @include xl {
+        max-width: 70%;
+        letter-spacing: 0;
+        padding-bottom: 82px;
+      }
+    }
+  }
+
+  &.position-team {
+    padding-bottom: 43px;
+    padding-top: 69px;
+
+    @include x {
+      padding-top: 114px;
+    }
+    @include xl {
+      padding-bottom: 31px;
+    }
+    
+    p {
+      padding-bottom: 43px;
+
+      @include xl {
+        padding-bottom: 94px;
+      }
+    }
+  }
 }

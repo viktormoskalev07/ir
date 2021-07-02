@@ -1,0 +1,266 @@
+$hover: #161c3e;
+.position-desc {
+  &__form {
+    z-index: 1;
+    width: 100%;
+    padding: 35px 25px 0px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 50px rgba(72, 124, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+
+    @include x {
+      min-width: 363px;
+      max-width: 363px;
+      margin-top: 10px;
+      padding: 35px 34px 0px;
+    }
+
+    .position-form-top {
+      text-align: center;
+      margin-bottom: 18px;
+
+      @include x {
+        margin-bottom: 18px;
+      }
+
+      a {
+        margin-bottom: 35px;
+        padding: 9px 17px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14.7883px;
+        line-height: 18px;
+        background-color: $blue;
+        color: #ffffff;
+        box-shadow: 0px 92.4266px 73.9413px rgba(82, 205, 255, 0.24), 0px 38.6136px 30.8909px rgba(82, 205, 255, 0.172525), 0px 20.6447px 16.5157px rgba(82, 205, 255, 0.143066), 0px 11.5732px 9.25859px rgba(82, 205, 255, 0.12), 0px 6.14646px 4.91717px rgba(82, 205, 255, 0.0969343), 0px 2.55768px 2.04614px rgba(82, 205, 255, 0.0674749);
+        border-radius: 24.3448px;
+        transition: background-color .3s;
+
+        @include x {    
+          margin-bottom: 40px;
+          padding: 10px 22px;
+        }
+
+        &:hover {
+          background-color: $hover;
+        }
+      }
+      p {
+        margin-top: 0;
+        font-size: 12.4947px;
+        line-height: 15px;
+
+        @include x {
+          font-size: 13.5185px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .position-form {
+      label {
+        font-size: 12.4947px;
+        line-height: 15px;
+        text-transform: capitalize;
+        margin-bottom: 7px;
+
+        @include x {
+          font-size: 13.5185px;
+          line-height: 16px;
+        }
+      }
+
+      input {
+        border-radius: 0;
+        border: 0.924266px solid rgba(0, 0, 0, 0.8);
+
+        &[type='button'] {
+          color: $blue;
+          font-family: $font-main;
+          font-weight: 600;
+          font-size: 12.4947px;
+          line-height: 15px;
+          border: none;
+          background-color: transparent;
+          transition: color .2s;
+          cursor: pointer;
+
+          &:hover {
+            color: $hover;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &__input, &__resume, &__note {
+        margin-bottom: 22px;
+
+        @include x {
+          margin-bottom: 26px;
+        }
+      }
+
+      &__input {
+        display: flex;
+        flex-direction: column;
+
+        input[type='text'] {
+          padding: 14px 10px;
+
+          @include x {
+            padding: 15px 10px;
+          }
+        }
+      }
+
+      &__resume {
+        margin-top: -3px;
+      }
+
+      &__attach {
+        input[type='button'] {
+          display: block;
+          margin-bottom: 23px;
+        }
+      }
+
+      &__note {
+        @include x {
+          margin-top: 25px;
+          margin-bottom: 23px;
+        }
+
+        textarea {
+          width: 100%;
+          padding: 10px;
+          resize: none;
+          height: 62.85px;
+          
+          @include x {
+            margin-top: 5px;
+            height: 67.85px;
+          }
+        }
+      }
+
+      &__policy {
+        margin-bottom: 35px;
+
+        @include x {
+          margin-bottom: 38px;
+        }
+
+        p {
+          font-size: 12.4947px;
+          line-height: 15px;
+          
+          a {
+            display: block;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &__submit {
+        text-align: center;
+
+        button[type='submit'] {
+          padding: 9px 17px;
+          font-family: $font-main;
+          font-weight: 500;
+          font-size: 14.7883px;
+          line-height: 18px;
+          background-color: $blue;
+          color: #ffffff;
+          border: none;
+          // box-shadow: 0px 92.4266px 73.9413px rgba(82, 205, 255, 0.24), 0px 38.6136px 30.8909px rgba(82, 205, 255, 0.172525), 0px 20.6447px 16.5157px rgba(82, 205, 255, 0.143066), 0px 11.5732px 9.25859px rgba(82, 205, 255, 0.12), 0px 6.14646px 4.91717px rgba(82, 205, 255, 0.0969343), 0px 2.55768px 2.04614px rgba(163, 163, 163, 0.067);
+          border-radius: 24.3448px;
+          transition: background-color .3s;
+          cursor: pointer;
+
+          @include x {
+            font-size: 16px;
+            line-height: 20px;
+            padding: 10px 27px;
+          }
+  
+          &:hover {
+            background-color: $hover;
+          }
+        }
+      }
+    }
+
+    .position-form-bottom {
+      margin-top: auto;
+      margin-left: -25px;
+      margin-right: -25px;
+
+      @include x {
+        margin-left: -34px;
+        margin-right: -34px;
+      }
+
+      figure {
+        margin: 34px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include x {
+          margin: 40px auto;
+        }
+      }
+
+      .pos-back-btn {
+        padding: 0 20px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        @include x {
+          padding: 0 24px;
+        }
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          font-size: 16.6368px;
+          line-height: 37px;
+          transition: color .3s;
+          padding-top: 20px;
+          padding-bottom: 20px;
+
+          @include x {
+            padding-top: 24px;
+            padding-bottom: 24px;
+          }
+
+          svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 10px;
+            transition: transform .3s;
+
+            @include x {
+              width: 17px;
+              height: 17px;
+            }
+          }
+
+          &:hover {
+            color: rgba(#000000, .6);
+
+            svg {
+              transform: translateX(-3px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
