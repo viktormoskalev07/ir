@@ -43,22 +43,22 @@
       margin-bottom: 0;
     }
 
-    h2 {
+    h1 {
       color: #161C3E;
     }
 
+    h1,
     h2,
-    h3,
     h5 {
       text-align: left;
     }
 
-    h2 {
+    h1 {
       font-size: 36px;
       line-height: 39px;
     }
 
-    h3,
+    h2,
     h5 {
       font-size: 20px;
       line-height: 54px;
@@ -105,7 +105,8 @@
           margin-bottom: 55px;
         }
 
-        h2 {
+        h1 {
+          font-weight: 600;
           letter-spacing: 0em;
           margin-bottom: 11px;
 
@@ -132,7 +133,7 @@
           margin-bottom: 29px;
         }
 
-        h3 {
+        h2 {
           @include x {
             font-size: 30px;
             line-height: 54px;
@@ -150,7 +151,7 @@
           margin-bottom: 31px;
         }
 
-        h3 {
+        h2 {
           font-size: 18px;
           line-height: 28px;
           letter-spacing: 0;
@@ -167,10 +168,11 @@
           margin-bottom: 27px;
         }
 
-        h3 {
+        h2 {
           @include x {
             font-size: 30px;
             line-height: 54px;
+            margin-bottom: 16px;
           }
         }
 

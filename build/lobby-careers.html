@@ -1,321 +1,391 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-        <head> 
-             <meta charset="UTF-8">
-             <title>intuition robotics</title>
-              <link rel="stylesheet" href="css/main.css"> 
-              <meta name="viewport" content="width=device-width, initial-scale=1">
-              <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
-        </head> 
+<html lang="ru">
 
-<body id='new_design' class="body"  >
-    <div class="footer-to-bottom">
+<head>
+  <meta charset="UTF-8">
+  <title>intuition robotics</title>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/fav.png" />
+</head>
+
+<body id='new_design' class="body">
+  <div class="footer-to-bottom">
     <div class="header-place"></div>
     <header class="header">
-        <div class="header__content">  
-            <div class="header__logo__container">
-                <div class="header__logo "> <a href="index.html" class="header__logo__link">   <svg width="119" height="37" viewBox="0 0 119 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M52.1992 2.91846C52.8215 2.91846 53.2714 3.36837 53.2714 3.97313C53.2714 4.57789 52.8215 5.04533 52.1992 5.04533C51.5769 5.04533 51.1445 4.57789 51.1445 3.97313C51.1445 3.36837 51.6091 2.91846 52.1992 2.91846ZM52.8741 6.82747V15.4781H51.5243V6.82747H52.8741Z" />
-    <path d="M55.623 6.82764H56.9377V8.10727C57.5425 7.22497 58.5826 6.65527 59.8797 6.65527C62.1994 6.65527 63.6339 8.17739 63.6339 10.6695V15.4783H62.2841V10.6695C62.2841 8.9925 61.4194 7.86771 59.6898 7.86771C58.1151 7.86771 56.9553 9.11228 56.9553 10.687V15.4783H55.623V6.82764Z" />
-    <path d="M65.3457 6.82767H66.8328V4.78552L68.1825 4.04053V6.82475H70.2247V8.03718H68.1825V12.1536C68.1825 13.9182 68.5126 14.2133 70.2247 14.2133V15.4754H70.0348C67.5076 15.4754 66.8328 14.7479 66.8328 12.1712V8.03718H65.3457V6.82767Z" />
-    <path d="M72.5977 11.6362V6.82739H73.9474V11.6362C73.9474 13.3132 74.8122 14.438 76.5417 14.438C78.1164 14.438 79.2763 13.1934 79.2763 11.6187V6.82739H80.6085V15.478H79.2938V14.1984C78.6891 15.0807 77.6665 15.6504 76.4219 15.6504C73.8948 15.6504 72.5977 14.1283 72.5977 11.6362Z" />
-    <path d="M84.0322 2.91846C84.6545 2.91846 85.1044 3.36837 85.1044 3.97313C85.1044 4.57789 84.6545 5.04533 84.0322 5.04533C83.4099 5.04533 82.9775 4.57789 82.9775 3.97313C82.9775 3.36837 83.445 2.91846 84.0322 2.91846ZM84.7071 6.82747V15.4781H83.3573V6.82747H84.7071Z" />
-    <path d="M86.8867 6.82767H88.3738V4.78552L89.7235 4.04053V6.82475H91.7657V8.03718H89.7235V12.1536C89.7235 13.9182 90.0537 14.2133 91.7657 14.2133V15.4754H91.5758C89.0487 15.4754 88.3738 14.7479 88.3738 12.1712V8.03718H86.8867V6.82767Z" />
-    <path d="M94.8447 2.91846C95.467 2.91846 95.9169 3.36837 95.9169 3.97313C95.9169 4.57789 95.467 5.04533 94.8447 5.04533C94.2224 5.04533 93.79 4.57789 93.79 3.97313C93.79 3.36837 94.2575 2.91846 94.8447 2.91846ZM95.5196 6.82747V15.4781H94.1698V6.82747H95.5196Z" />
-    <path d="M97.9414 11.1517C97.9414 8.60709 99.931 6.65259 102.423 6.65259C104.915 6.65259 106.922 8.60709 106.922 11.1517C106.922 13.6964 104.915 15.6509 102.423 15.6509C99.931 15.6509 97.9414 13.6964 97.9414 11.1517ZM105.572 11.1517C105.572 9.33455 104.188 7.86502 102.423 7.86502C100.658 7.86502 99.2912 9.33455 99.2912 11.1517C99.2912 12.9689 100.658 14.4385 102.423 14.4385C104.188 14.4414 105.572 12.9689 105.572 11.1517Z" />
-    <path d="M109.345 6.82764H110.659V8.10727C111.264 7.22497 112.304 6.65527 113.601 6.65527C115.921 6.65527 117.356 8.17739 117.356 10.6695V15.4783H116.006V10.6695C116.006 8.9925 115.141 7.86771 113.412 7.86771C111.837 7.86771 110.677 9.11228 110.677 10.687V15.4783H109.345V6.82764Z" />
-    <path d="M51.5244 22.3643H52.8566V23.714C53.3767 22.8492 54.294 22.3643 55.5386 22.3643H56.3333V23.6088H55.486C53.6162 23.6088 52.8742 24.5262 52.8742 26.5333V31.0149H51.5244V22.3643Z" />
-    <path d="M57.8379 26.6879C57.8379 24.1432 59.8275 22.1887 62.3195 22.1887C64.8116 22.1887 66.8187 24.1432 66.8187 26.6879C66.8187 29.2325 64.8116 31.187 62.3195 31.187C59.8275 31.187 57.8379 29.2325 57.8379 26.6879ZM65.4689 26.6879C65.4689 24.8707 64.0841 23.4012 62.3195 23.4012C60.5549 23.4012 59.1876 24.8707 59.1876 26.6879C59.1876 28.5051 60.5549 29.9746 62.3195 29.9746C64.0841 29.9746 65.4689 28.5051 65.4689 26.6879Z" />
-    <path d="M70.5374 29.5947V31.0146H69.2578V18.3848H70.555V23.7662C71.2824 22.7466 72.5971 22.1915 73.7219 22.1915C76.2987 22.1915 78.151 24.2161 78.151 26.6907C78.151 29.1652 76.2666 31.1898 73.7219 31.1898C72.5971 31.1869 71.2649 30.6348 70.5374 29.5947ZM76.8012 26.6878C76.8012 24.8706 75.4164 23.401 73.6518 23.401C71.7995 23.401 70.4177 24.8881 70.4177 26.6878C70.4177 28.505 71.8025 29.9745 73.6518 29.9745C75.4164 29.9774 76.8012 28.505 76.8012 26.6878Z" />
-    <path d="M80.3311 26.6879C80.3311 24.1432 82.3206 22.1887 84.8127 22.1887C87.3048 22.1887 89.3119 24.1432 89.3119 26.6879C89.3119 29.2325 87.3048 31.187 84.8127 31.187C82.3206 31.187 80.3311 29.2325 80.3311 26.6879ZM87.9592 26.6879C87.9592 24.8707 86.5744 23.4012 84.8098 23.4012C83.0452 23.4012 81.6779 24.8707 81.6779 26.6879C81.6779 28.5051 83.0452 29.9746 84.8098 29.9746C86.5773 29.9775 87.9592 28.5051 87.9592 26.6879Z" />
-    <path d="M90.6406 22.3643H92.1277V20.3221L93.4774 19.5771V22.3614H95.5196V23.5738H93.4774V27.6932C93.4774 29.4578 93.8076 29.7528 95.5196 29.7528V31.0149H95.3297C92.8026 31.0149 92.1277 30.2875 92.1277 27.7107V23.5738H90.6406V22.3643Z" />
-    <path d="M98.6015 18.4546C99.2238 18.4546 99.6737 18.9045 99.6737 19.5093C99.6737 20.114 99.2238 20.5815 98.6015 20.5815C97.9793 20.5815 97.5469 20.114 97.5469 19.5093C97.5469 18.9045 98.0114 18.4546 98.6015 18.4546ZM99.2764 22.3636V31.0143H97.9267V22.3636H99.2764Z" />
-    <path d="M101.698 26.6879C101.698 24.0936 103.688 22.1887 106.232 22.1887C108.12 22.1887 109.642 23.2434 110.282 24.7655L109.069 25.2855C108.532 24.0906 107.565 23.3982 106.215 23.3982C104.398 23.3982 103.048 24.8678 103.048 26.685C103.048 28.5022 104.415 29.9717 106.282 29.9717C107.72 29.9717 108.651 29.1069 109.136 27.9646L110.364 28.4846C109.671 30.0593 108.304 31.1841 106.247 31.1841C103.6 31.187 101.698 29.1799 101.698 26.6879Z" />
-    <path d="M111.802 29.6296L112.856 28.6947C113.566 29.5244 114.396 30.0094 115.609 30.0094C116.976 30.0094 117.686 29.352 117.686 28.5574C117.686 27.6049 116.441 27.415 115.246 27.1375C113.861 26.8103 112.304 26.375 112.304 24.6805C112.304 23.3833 113.517 22.1709 115.506 22.1709C116.909 22.1709 118.066 22.6033 118.881 23.5031L117.861 24.3328C117.274 23.6404 116.581 23.3132 115.509 23.3132C114.265 23.3132 113.622 23.918 113.622 24.663C113.622 25.5453 114.624 25.6826 115.956 26.0127C117.394 26.3399 119 26.7898 119 28.5574C119 29.8721 117.858 31.1867 115.541 31.1867C113.914 31.1867 112.684 30.6492 111.802 29.6296Z" />
-    <path  class='first-logo' d="M29.0949 0.902344C26.8687 0.902344 25.0837 1.40193 23.7252 2.94157V1.1682H19.7227V15.9395H23.7281V9.78672C23.7281 9.05634 23.8595 8.32011 24.1868 7.66861C24.4526 7.13689 24.8149 6.67237 25.2736 6.27796C26.375 5.32554 27.7569 4.84933 29.4192 4.84933H30.7076V1.10393C30.2226 0.969539 29.6851 0.902344 29.0949 0.902344Z"  />
-    <path class='first-logo' d="M6.97995 1.15649H2.59473V15.9365H6.97995V1.15649Z" />
-    <path class='first-logo' d="M18.0083 36.7088C10.6081 36.7088 3.70742 32.7268 0 26.314L2.42487 24.9117C5.63564 30.4597 11.6043 33.9071 18.0083 33.9071C27.9269 33.9071 35.9962 25.8378 35.9962 15.9192H38.798C38.798 27.3804 29.4724 36.7088 18.0083 36.7088Z"  />
-    </svg>  
-                     </a>  </div> 
-                     <button class="nav__burger">
-                        <span class="nav__burger__row"></span>
-                        <span class="nav__burger__row"></span>
-                        <span class="nav__burger__row"></span>
-                    </button> 
-            </div> 
-                   
-            <nav class="nav__menu">
-                <ul > 
-                    <!-- <li class="nav__item"> <a href="privacy-policy.html" class="nav__item__link ">   privacy-policy   </a>    </li>
+      <div class="header__content">
+        <div class="header__logo__container">
+          <div class="header__logo "> <a href="index.html" class="header__logo__link"> <svg width="119" height="37"
+                viewBox="0 0 119 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M52.1992 2.91846C52.8215 2.91846 53.2714 3.36837 53.2714 3.97313C53.2714 4.57789 52.8215 5.04533 52.1992 5.04533C51.5769 5.04533 51.1445 4.57789 51.1445 3.97313C51.1445 3.36837 51.6091 2.91846 52.1992 2.91846ZM52.8741 6.82747V15.4781H51.5243V6.82747H52.8741Z" />
+                <path
+                  d="M55.623 6.82764H56.9377V8.10727C57.5425 7.22497 58.5826 6.65527 59.8797 6.65527C62.1994 6.65527 63.6339 8.17739 63.6339 10.6695V15.4783H62.2841V10.6695C62.2841 8.9925 61.4194 7.86771 59.6898 7.86771C58.1151 7.86771 56.9553 9.11228 56.9553 10.687V15.4783H55.623V6.82764Z" />
+                <path
+                  d="M65.3457 6.82767H66.8328V4.78552L68.1825 4.04053V6.82475H70.2247V8.03718H68.1825V12.1536C68.1825 13.9182 68.5126 14.2133 70.2247 14.2133V15.4754H70.0348C67.5076 15.4754 66.8328 14.7479 66.8328 12.1712V8.03718H65.3457V6.82767Z" />
+                <path
+                  d="M72.5977 11.6362V6.82739H73.9474V11.6362C73.9474 13.3132 74.8122 14.438 76.5417 14.438C78.1164 14.438 79.2763 13.1934 79.2763 11.6187V6.82739H80.6085V15.478H79.2938V14.1984C78.6891 15.0807 77.6665 15.6504 76.4219 15.6504C73.8948 15.6504 72.5977 14.1283 72.5977 11.6362Z" />
+                <path
+                  d="M84.0322 2.91846C84.6545 2.91846 85.1044 3.36837 85.1044 3.97313C85.1044 4.57789 84.6545 5.04533 84.0322 5.04533C83.4099 5.04533 82.9775 4.57789 82.9775 3.97313C82.9775 3.36837 83.445 2.91846 84.0322 2.91846ZM84.7071 6.82747V15.4781H83.3573V6.82747H84.7071Z" />
+                <path
+                  d="M86.8867 6.82767H88.3738V4.78552L89.7235 4.04053V6.82475H91.7657V8.03718H89.7235V12.1536C89.7235 13.9182 90.0537 14.2133 91.7657 14.2133V15.4754H91.5758C89.0487 15.4754 88.3738 14.7479 88.3738 12.1712V8.03718H86.8867V6.82767Z" />
+                <path
+                  d="M94.8447 2.91846C95.467 2.91846 95.9169 3.36837 95.9169 3.97313C95.9169 4.57789 95.467 5.04533 94.8447 5.04533C94.2224 5.04533 93.79 4.57789 93.79 3.97313C93.79 3.36837 94.2575 2.91846 94.8447 2.91846ZM95.5196 6.82747V15.4781H94.1698V6.82747H95.5196Z" />
+                <path
+                  d="M97.9414 11.1517C97.9414 8.60709 99.931 6.65259 102.423 6.65259C104.915 6.65259 106.922 8.60709 106.922 11.1517C106.922 13.6964 104.915 15.6509 102.423 15.6509C99.931 15.6509 97.9414 13.6964 97.9414 11.1517ZM105.572 11.1517C105.572 9.33455 104.188 7.86502 102.423 7.86502C100.658 7.86502 99.2912 9.33455 99.2912 11.1517C99.2912 12.9689 100.658 14.4385 102.423 14.4385C104.188 14.4414 105.572 12.9689 105.572 11.1517Z" />
+                <path
+                  d="M109.345 6.82764H110.659V8.10727C111.264 7.22497 112.304 6.65527 113.601 6.65527C115.921 6.65527 117.356 8.17739 117.356 10.6695V15.4783H116.006V10.6695C116.006 8.9925 115.141 7.86771 113.412 7.86771C111.837 7.86771 110.677 9.11228 110.677 10.687V15.4783H109.345V6.82764Z" />
+                <path
+                  d="M51.5244 22.3643H52.8566V23.714C53.3767 22.8492 54.294 22.3643 55.5386 22.3643H56.3333V23.6088H55.486C53.6162 23.6088 52.8742 24.5262 52.8742 26.5333V31.0149H51.5244V22.3643Z" />
+                <path
+                  d="M57.8379 26.6879C57.8379 24.1432 59.8275 22.1887 62.3195 22.1887C64.8116 22.1887 66.8187 24.1432 66.8187 26.6879C66.8187 29.2325 64.8116 31.187 62.3195 31.187C59.8275 31.187 57.8379 29.2325 57.8379 26.6879ZM65.4689 26.6879C65.4689 24.8707 64.0841 23.4012 62.3195 23.4012C60.5549 23.4012 59.1876 24.8707 59.1876 26.6879C59.1876 28.5051 60.5549 29.9746 62.3195 29.9746C64.0841 29.9746 65.4689 28.5051 65.4689 26.6879Z" />
+                <path
+                  d="M70.5374 29.5947V31.0146H69.2578V18.3848H70.555V23.7662C71.2824 22.7466 72.5971 22.1915 73.7219 22.1915C76.2987 22.1915 78.151 24.2161 78.151 26.6907C78.151 29.1652 76.2666 31.1898 73.7219 31.1898C72.5971 31.1869 71.2649 30.6348 70.5374 29.5947ZM76.8012 26.6878C76.8012 24.8706 75.4164 23.401 73.6518 23.401C71.7995 23.401 70.4177 24.8881 70.4177 26.6878C70.4177 28.505 71.8025 29.9745 73.6518 29.9745C75.4164 29.9774 76.8012 28.505 76.8012 26.6878Z" />
+                <path
+                  d="M80.3311 26.6879C80.3311 24.1432 82.3206 22.1887 84.8127 22.1887C87.3048 22.1887 89.3119 24.1432 89.3119 26.6879C89.3119 29.2325 87.3048 31.187 84.8127 31.187C82.3206 31.187 80.3311 29.2325 80.3311 26.6879ZM87.9592 26.6879C87.9592 24.8707 86.5744 23.4012 84.8098 23.4012C83.0452 23.4012 81.6779 24.8707 81.6779 26.6879C81.6779 28.5051 83.0452 29.9746 84.8098 29.9746C86.5773 29.9775 87.9592 28.5051 87.9592 26.6879Z" />
+                <path
+                  d="M90.6406 22.3643H92.1277V20.3221L93.4774 19.5771V22.3614H95.5196V23.5738H93.4774V27.6932C93.4774 29.4578 93.8076 29.7528 95.5196 29.7528V31.0149H95.3297C92.8026 31.0149 92.1277 30.2875 92.1277 27.7107V23.5738H90.6406V22.3643Z" />
+                <path
+                  d="M98.6015 18.4546C99.2238 18.4546 99.6737 18.9045 99.6737 19.5093C99.6737 20.114 99.2238 20.5815 98.6015 20.5815C97.9793 20.5815 97.5469 20.114 97.5469 19.5093C97.5469 18.9045 98.0114 18.4546 98.6015 18.4546ZM99.2764 22.3636V31.0143H97.9267V22.3636H99.2764Z" />
+                <path
+                  d="M101.698 26.6879C101.698 24.0936 103.688 22.1887 106.232 22.1887C108.12 22.1887 109.642 23.2434 110.282 24.7655L109.069 25.2855C108.532 24.0906 107.565 23.3982 106.215 23.3982C104.398 23.3982 103.048 24.8678 103.048 26.685C103.048 28.5022 104.415 29.9717 106.282 29.9717C107.72 29.9717 108.651 29.1069 109.136 27.9646L110.364 28.4846C109.671 30.0593 108.304 31.1841 106.247 31.1841C103.6 31.187 101.698 29.1799 101.698 26.6879Z" />
+                <path
+                  d="M111.802 29.6296L112.856 28.6947C113.566 29.5244 114.396 30.0094 115.609 30.0094C116.976 30.0094 117.686 29.352 117.686 28.5574C117.686 27.6049 116.441 27.415 115.246 27.1375C113.861 26.8103 112.304 26.375 112.304 24.6805C112.304 23.3833 113.517 22.1709 115.506 22.1709C116.909 22.1709 118.066 22.6033 118.881 23.5031L117.861 24.3328C117.274 23.6404 116.581 23.3132 115.509 23.3132C114.265 23.3132 113.622 23.918 113.622 24.663C113.622 25.5453 114.624 25.6826 115.956 26.0127C117.394 26.3399 119 26.7898 119 28.5574C119 29.8721 117.858 31.1867 115.541 31.1867C113.914 31.1867 112.684 30.6492 111.802 29.6296Z" />
+                <path class='first-logo'
+                  d="M29.0949 0.902344C26.8687 0.902344 25.0837 1.40193 23.7252 2.94157V1.1682H19.7227V15.9395H23.7281V9.78672C23.7281 9.05634 23.8595 8.32011 24.1868 7.66861C24.4526 7.13689 24.8149 6.67237 25.2736 6.27796C26.375 5.32554 27.7569 4.84933 29.4192 4.84933H30.7076V1.10393C30.2226 0.969539 29.6851 0.902344 29.0949 0.902344Z" />
+                <path class='first-logo' d="M6.97995 1.15649H2.59473V15.9365H6.97995V1.15649Z" />
+                <path class='first-logo'
+                  d="M18.0083 36.7088C10.6081 36.7088 3.70742 32.7268 0 26.314L2.42487 24.9117C5.63564 30.4597 11.6043 33.9071 18.0083 33.9071C27.9269 33.9071 35.9962 25.8378 35.9962 15.9192H38.798C38.798 27.3804 29.4724 36.7088 18.0083 36.7088Z" />
+              </svg>
+            </a> </div>
+          <button class="nav__burger">
+            <span class="nav__burger__row"></span>
+            <span class="nav__burger__row"></span>
+            <span class="nav__burger__row"></span>
+          </button>
+        </div>
+
+        <nav class="nav__menu">
+          <ul>
+            <!-- <li class="nav__item"> <a href="privacy-policy.html" class="nav__item__link ">   privacy-policy   </a>    </li>
                     <li class="nav__item"> <a href="terms-of-use.html" class="nav__item__link ">  terms-of-use  </a>    </li> -->
-          
-                    <li class="nav__item  nav__submenu__container "> <a href="healthcare.html" class="nav__item__link  "> Healthcare </a>
-                        <!-- <ul class="nav__submenu ">
+
+            <li class="nav__item  nav__submenu__container "> <a href="healthcare.html" class="nav__item__link  ">
+                Healthcare </a>
+              <!-- <ul class="nav__submenu ">
                             <li class="nav__submenu__item nav__item "> <a target="_blank"  class="nav__item__link" href="healthcare.html">Healthcare</a> </li>
                             <li class="nav__submenu__item nav__item "> <a class="nav__item__link" href="/automotive">Automotive</a> </li>
                         </ul> -->
-                    </li>
-                    <li class="nav__item  nav__submenu__container "> <a href="#" class="nav__item__link  "> Company </a>
-                        <ul class="nav__submenu ">
-                            <li class="nav__submenu__item nav__item "> <a target="_blank"  class="nav__item__link" href="aboutus.html"> About Us </a> </li>
-                            <!-- <li class="nav__submenu__item nav__item "> <a class="nav__item__link" href="/automotive">Press</a> </li> -->
-                            <li class="nav__submenu__item nav__item "> <a class="nav__item__link" href="lobby-careers.html">Careers Lobby</a> </li>
-                        </ul>
-                    </li>
-                    <li class="nav__item"> <a href="https://blog.intuitionrobotics.com" class="nav__item__link "> Blog    </a>    </li>
-                   <li class='nav__contactus__desktop' > <a href='contact-us.html' class='contact-btn-desktop '> Contact Us </a></li>
-                </ul>   
-                <div class="nav__bottom">
-                   <button   class="nav__button contact-us-btn__js"> Contact Us  </button>  
-                   <ul class="nav__social"> 
-                    <li class=" nav__social__item">
-                      <a href="https://www.linkedin.com/company/intuition-robotics/">
-                        <img src="images/social-links/in.svg" alt="">
-                      </a>
-                    </li> 
-                    <li class=" nav__social__item">
-                      <a href="https://www.linkedin.com/company/intuition-robotics/">
-                        <img src="images/social-links/in.svg" alt="">
-                      </a>
-                    </li> 
-                    <li class=" nav__social__item">
-                      <a href="https://www.linkedin.com/company/intuition-robotics/">
-                        <img src="images/social-links/in.svg" alt="">
-                      </a>
-                    </li> 
-                    <li class=" nav__social__item">
-                      <a href="https://www.linkedin.com/company/intuition-robotics/">
-                        <img src="images/social-links/in.svg" alt="">
-                      </a>
-                    </li> 
-                    <li class=" nav__social__item">
-                      <a href="https://www.linkedin.com/company/intuition-robotics/">
-                        <img src="images/social-links/in.svg" alt="">
-                      </a>
-                    </li> 
-                     </ul>
-                </div>
-            </nav> 
-              
-        </div>
+            </li>
+            <li class="nav__item  nav__submenu__container "> <a href="#" class="nav__item__link  "> Company </a>
+              <ul class="nav__submenu ">
+                <li class="nav__submenu__item nav__item "> <a target="_blank" class="nav__item__link"
+                    href="aboutus.html"> About Us </a> </li>
+                <!-- <li class="nav__submenu__item nav__item "> <a class="nav__item__link" href="/automotive">Press</a> </li> -->
+                <li class="nav__submenu__item nav__item "> <a class="nav__item__link" href="lobby-careers.html">Careers
+                    Lobby</a> </li>
+              </ul>
+            </li>
+            <li class="nav__item"> <a href="https://blog.intuitionrobotics.com" class="nav__item__link "> Blog </a>
+            </li>
+            <li class='nav__contactus__desktop'> <a href='contact-us.html' class='contact-btn-desktop '> Contact Us </a>
+            </li>
+          </ul>
+          <div class="nav__bottom">
+            <button class="nav__button contact-us-btn__js"> Contact Us </button>
+            <ul class="nav__social">
+              <li class=" nav__social__item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+              <li class=" nav__social__item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+              <li class=" nav__social__item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+              <li class=" nav__social__item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+              <li class=" nav__social__item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
     </header>
 
- 
 
 
-<main class="main">
 
-  <div class="index-hero lobby-hero" style="background-image: url(images/backgrounds/lobby-hero-bg.jpg);">
-  <div class="index-hero__content">
-    <h1>Careers</h1>
-    <p>We’re looking for passionate, open-minded thinkers who share our love for AI, user experience and robots. Come join our team to be part of the digital companion revolution!</p>
-  </div>
-</div> 
-  <section class="open-roles">
-  <div class="container">
-    <h2>Open roles</h2>
+    <main class="main">
 
-    <div class="open-roles__container">
-      <a href="position-careers.html" class="open-roles__item">
-        <h5>Data Scientist</h5>
-        <p>We are looking for a Machine Learning Researcher who is interested in continuing to develop new machine learning algorithms while also having a direct and immense, real-world impact....</p>
-        <span>Learn more and Apply</span>
-      </a>
-      <a href="position-careers.html" class="open-roles__item">
-        <h5>Embedded Engineer</h5>
-        <p>We are looking for an Embedded Engineer that will define, design, maintain and develop software for our complexed system....</p>
-        <span>Learn more and Apply</span>
-      </a>
-      <a href="position-careers.html" class="open-roles__item">
-        <h5>Full-Stack Developer</h5>
-        <p>We are looking for a Full Stack Developer who is multi-disciplinary talent. Someone that can build a complex and distributed system built from a variety of innovative technologies....</p>
-        <span>Learn more and Apply</span>
-      </a>
-      <a href="position-careers.html" class="open-roles__item">
-        <h5>Lead Product Analyst</h5>
-        <p>We are looking for a Full Stack Developer who is multi-disciplinary talent. Someone that can build a complex and distributed system built from a variety of innovative technologies....</p>
-        <span>Learn more and Apply</span>
-      </a>
-      <a href="position-careers.html" class="open-roles__item">
-        <h5>Senior Software Engineer</h5>
-        <p>We are looking for a Senior Full Stack Developer who is multi-disciplinary talent. Someone that can build a complex and distributed system built from a variety of innovative technologies....</p>
-        <span>Learn more and Apply</span>
-      </a>
-    </div>
-  </div>
-</section>
-  <section class="our-team lobby-team">
-  <div class="container">
-    <p>
-      We’re always looking for talented out-of-the-box thinkers to join the Intuition Robotics family.
-    </p>
-    <div class="our-team__gallery">
-      <div class="our-team__img our-team__img_size">
-        <img src="./images/our-teams/jud-mackrill.jpg" alt="rima-kruciene">
-      </div>
-      <div class="our-team__wrap">
-        <div class="our-team__img">
-          <img src="./images/our-teams/lobby-cake.jpg" alt="mimi-thian">
-        </div>
-        <div class="our-team__img">
-          <img src="./images/our-teams/lobby-pet.jpg" alt="dogs">
-        </div>
-        <div class="our-team__img our-team__img_d-n">
-          <img src="./images/our-teams/lobby-rest.jpg" alt="cherrydeck">
+      <div class="index-hero lobby-hero" style="background-image: url(images/backgrounds/lobby-hero-bg.jpg);">
+        <div class="index-hero__content">
+          <h1>Careers</h1>
+          <p>We’re looking for passionate, open-minded thinkers who share our love for AI, user experience and robots.
+            Come join our team to be part of the digital companion revolution!</p>
         </div>
       </div>
-      <div class="our-team__img our-team__img_order">
-        <img src="./images/our-teams/lobby-team1.jpg" alt="daria-pimkina">
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="open-roles">
+        <div class="container">
+          <h2>Open roles</h2>
 
-</main>
+          <div class="open-roles__container">
+            <a href="position-careers.html" class="open-roles__item">
+              <h5>Data Scientist</h5>
+              <p>We are looking for a Machine Learning Researcher who is interested in continuing to develop new machine
+                learning algorithms while also having a direct and immense, real-world impact....</p>
+              <span>Learn more and Apply</span>
+            </a>
+            <a href="position-careers.html" class="open-roles__item">
+              <h5>Embedded Engineer</h5>
+              <p>We are looking for an Embedded Engineer that will define, design, maintain and develop software for our
+                complexed system....</p>
+              <span>Learn more and Apply</span>
+            </a>
+            <a href="position-careers.html" class="open-roles__item">
+              <h5>Full-Stack Developer</h5>
+              <p>We are looking for a Full Stack Developer who is multi-disciplinary talent. Someone that can build a
+                complex and distributed system built from a variety of innovative technologies....</p>
+              <span>Learn more and Apply</span>
+            </a>
+            <a href="position-careers.html" class="open-roles__item">
+              <h5>Lead Product Analyst</h5>
+              <p>We are looking for a Full Stack Developer who is multi-disciplinary talent. Someone that can build a
+                complex and distributed system built from a variety of innovative technologies....</p>
+              <span>Learn more and Apply</span>
+            </a>
+            <a href="position-careers.html" class="open-roles__item">
+              <h5>Senior Software Engineer</h5>
+              <p>We are looking for a Senior Full Stack Developer who is multi-disciplinary talent. Someone that can
+                build a complex and distributed system built from a variety of innovative technologies....</p>
+              <span>Learn more and Apply</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="our-team lobby-team">
+        <div class="container">
+          <p>
+            We’re always looking for talented out-of-the-box thinkers to join the Intuition Robotics family.
+          </p>
+          <div class="our-team__gallery">
+            <div class="our-team__img our-team__img_size">
+              <img src="./images/our-teams/jud-mackrill.jpg" alt="rima-kruciene">
+            </div>
+            <div class="our-team__wrap">
+              <div class="our-team__img">
+                <img src="./images/our-teams/lobby-cake.jpg" alt="mimi-thian">
+              </div>
+              <div class="our-team__img">
+                <img src="./images/our-teams/lobby-pet.jpg" alt="dogs">
+              </div>
+              <div class="our-team__img our-team__img_d-n">
+                <img src="./images/our-teams/lobby-rest.jpg" alt="cherrydeck">
+              </div>
+            </div>
+            <div class="our-team__img our-team__img_order">
+              <img src="./images/our-teams/lobby-team1.jpg" alt="daria-pimkina">
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer class="footer">
-	<div class=" footer-container">
-		<div class="footer__left">
-			<figure class="footer-logo">
+    </main>
 
-				     <svg width="84" height="26" viewBox="0 0 84 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                        <path d="M37.5312 0.634766C37.965 0.634766 38.2767 0.949617 38.2767 1.37078C38.2767 1.79399 37.963 2.11906 37.5312 2.11906C37.0993 2.11906 36.7979 1.79195 36.7979 1.37078C36.7958 0.947572 37.1217 0.634766 37.5312 0.634766ZM37.9997 3.36416V9.40357H37.0606V3.36416H37.9997Z" fill="white"></path>
-                        <path d="M39.915 3.36379H40.8296V4.25723C41.2513 3.64184 41.9724 3.24316 42.8747 3.24316C44.488 3.24316 45.4861 4.3063 45.4861 6.04616V9.40321H44.5471V6.04411C44.5471 4.87262 43.9462 4.08754 42.7423 4.08754C41.6465 4.08754 40.8419 4.95645 40.8419 6.05638V9.40321H39.915V3.36379Z" fill="white"></path>
-                        <path d="M46.6777 3.36423H47.7125V1.93922L48.6515 1.41992V3.36423H50.0713V4.21065H48.6515V7.0852C48.6515 8.31803 48.8797 8.52247 50.0713 8.52247V9.40365H49.9389C48.181 9.40365 47.7125 8.89662 47.7125 7.09747V4.2086H46.6777V3.36423Z" fill="white"></path>
-                        <path d="M51.7207 6.72131V3.36426H52.6597V6.72131C52.6597 7.8928 53.2606 8.67788 54.4645 8.67788C55.5604 8.67788 56.365 7.80898 56.365 6.70904V3.36426H57.2918V9.40368H56.3772V8.51023C55.9555 9.12563 55.2467 9.5243 54.3789 9.5243C52.6231 9.5243 51.7207 8.46117 51.7207 6.72131Z" fill="white"></path>
-                        <path d="M59.6777 0.634766C60.1115 0.634766 60.4232 0.949617 60.4232 1.37078C60.4232 1.79399 60.1095 2.11906 59.6777 2.11906C59.2458 2.11906 58.9443 1.79195 58.9443 1.37078C58.9423 0.947572 59.2682 0.634766 59.6777 0.634766ZM60.1461 3.36416V9.40357H59.2071V3.36416H60.1461Z" fill="white"></path>
-                        <path d="M61.6631 3.36423H62.6979V1.93922L63.6369 1.41992V3.36423H65.0567V4.21065H63.6369V7.0852C63.6369 8.31803 63.865 8.52247 65.0567 8.52247V9.40365H64.9243C63.1664 9.40365 62.6979 8.89662 62.6979 7.09747V4.2086H61.6631V3.36423Z" fill="white"></path>
-                        <path d="M67.2001 0.634766C67.634 0.634766 67.9456 0.949617 67.9456 1.37078C67.9456 1.79399 67.6319 2.11906 67.2001 2.11906C66.7683 2.11906 66.4668 1.79195 66.4668 1.37078C66.4648 0.947572 66.7907 0.634766 67.2001 0.634766ZM67.6686 3.36416V9.40357H66.7296V3.36416H67.6686Z" fill="white"></path>
-                        <path d="M69.3525 6.3835C69.3525 4.60888 70.7356 3.24316 72.4691 3.24316C74.2025 3.24316 75.5978 4.60888 75.5978 6.3835C75.5978 8.16016 74.2025 9.52383 72.4691 9.52383C70.7356 9.52383 69.3525 8.15811 69.3525 6.3835ZM74.6608 6.3835C74.6608 5.11592 73.6974 4.08754 72.4711 4.08754C71.2449 4.08754 70.2936 5.11387 70.2936 6.3835C70.2936 7.65108 71.2449 8.67946 72.4711 8.67946C73.6974 8.67946 74.6608 7.65108 74.6608 6.3835Z" fill="white"></path>
-                        <path d="M77.2852 3.36379H78.1997V4.25723C78.6214 3.64184 79.3425 3.24316 80.2449 3.24316C81.8581 3.24316 82.8562 4.3063 82.8562 6.04616V9.40321H81.9172V6.04411C81.9172 4.87262 81.3163 4.08754 80.1125 4.08754C79.0166 4.08754 78.212 4.95645 78.212 6.05638V9.40321H77.2852V3.36379Z" fill="white"></path>
-                        <path d="M37.0615 14.2119H37.9883V15.1544C38.3489 14.5513 38.9864 14.2119 39.8542 14.2119H40.4082V15.0808H39.8175C38.5179 15.0808 38.0006 15.7207 38.0006 17.1212V20.2493H37.0615V14.2119Z" fill="white"></path>
-                        <path d="M41.4551 17.2321C41.4551 15.4555 42.8382 14.0918 44.5716 14.0918C46.3051 14.0918 47.7004 15.4575 47.7004 17.2321C47.7004 19.0067 46.3051 20.3725 44.5716 20.3725C42.8382 20.3725 41.4551 19.0067 41.4551 17.2321ZM46.7634 17.2321C46.7634 15.9645 45.7999 14.9362 44.5737 14.9362C43.3474 14.9362 42.3962 15.9625 42.3962 17.2321C42.3962 18.4997 43.3474 19.5281 44.5737 19.5281C45.7999 19.5281 46.7634 18.4997 46.7634 17.2321Z" fill="white"></path>
-                        <path d="M50.2886 19.2599V20.2494H49.3984V11.4336H50.3008V15.1893C50.806 14.4758 51.7206 14.0894 52.5028 14.0894C54.2953 14.0894 55.5826 15.5021 55.5826 17.2297C55.5826 18.9573 54.2708 20.3701 52.5028 20.3701C51.7206 20.3721 50.7938 19.9857 50.2886 19.2599ZM54.6456 17.2318C54.6456 15.9642 53.6822 14.9358 52.4559 14.9358C51.1686 14.9358 50.2051 15.9744 50.2051 17.2318C50.2051 18.4993 51.1686 19.5277 52.4559 19.5277C53.6822 19.5257 54.6456 18.4993 54.6456 17.2318Z" fill="white"></path>
-                        <path d="M57.1006 17.2321C57.1006 15.4555 58.4837 14.0918 60.2171 14.0918C61.9506 14.0918 63.3459 15.4575 63.3459 17.2321C63.3459 19.0067 61.9506 20.3725 60.2171 20.3725C58.4837 20.3725 57.1006 19.0067 57.1006 17.2321ZM62.4089 17.2321C62.4089 15.9645 61.4454 14.9362 60.2192 14.9362C58.9929 14.9362 58.0417 15.9625 58.0417 17.2321C58.0417 18.4997 58.9929 19.5281 60.2192 19.5281C61.4454 19.5281 62.4089 18.4997 62.4089 17.2321Z" fill="white"></path>
-                        <path d="M64.2744 14.2119H65.3092V12.7869L66.2482 12.2676V14.2119H67.668V15.0583H66.2482V17.9329C66.2482 19.1657 66.4764 19.3701 67.668 19.3701V20.2513H67.5356C65.7777 20.2513 65.3092 19.7443 65.3092 17.9431V15.0563H64.2744V14.2119Z" fill="white"></path>
-                        <path d="M69.8114 11.4824C70.2453 11.4824 70.557 11.7973 70.557 12.2184C70.557 12.6416 70.2433 12.9667 69.8114 12.9667C69.3796 12.9667 69.0781 12.6416 69.0781 12.2184C69.0761 11.7952 69.402 11.4824 69.8114 11.4824ZM70.2799 14.2118V20.2512H69.3409V14.2118H70.2799Z" fill="white"></path>
-                        <path d="M71.9648 17.2321C71.9648 15.4207 73.3479 14.0918 75.118 14.0918C76.4298 14.0918 77.4891 14.8278 77.9352 15.8909L77.0919 16.2528C76.7191 15.4187 76.0449 14.9362 75.1058 14.9362C73.8429 14.9362 72.9039 15.9625 72.9039 17.2321C72.9039 18.4997 73.8551 19.5281 75.1547 19.5281C76.1528 19.5281 76.8026 18.925 77.1408 18.1276L77.9963 18.4895C77.5155 19.5894 76.5643 20.3745 75.1323 20.3745C73.2889 20.3725 71.9648 18.972 71.9648 17.2321Z" fill="white"></path>
-                        <path d="M78.9932 19.2844L79.7265 18.6322C80.2194 19.2128 80.7979 19.5502 81.6392 19.5502C82.5904 19.5502 83.0834 19.0901 83.0834 18.5361C83.0834 17.8716 82.2177 17.7387 81.3866 17.5466C80.4231 17.3176 79.3415 17.015 79.3415 15.8312C79.3415 14.9255 80.1848 14.0791 81.5679 14.0791C82.5436 14.0791 83.3482 14.3817 83.9145 15.0093L83.2036 15.59C82.7941 15.1075 82.3134 14.8765 81.5658 14.8765C80.7001 14.8765 80.254 15.2997 80.254 15.819C80.254 16.4344 80.9527 16.5325 81.8795 16.7615C82.8776 16.9905 83.998 17.3053 83.998 18.5381C83.998 19.4561 83.2036 20.3741 81.5903 20.3741C80.4618 20.372 79.6063 19.9979 78.9932 19.2844Z" fill="white"></path>
-                        <path d="M20.24 0.115234C18.6919 0.115234 17.4494 0.464842 16.5063 1.54024V0.301283H13.7197V10.6137H16.5042V6.31821C16.5042 5.80709 16.5959 5.29392 16.824 4.838C17.0094 4.46591 17.262 4.14288 17.5798 3.86687C18.3457 3.20241 19.3071 2.86916 20.4641 2.86916H21.3603V0.256304C21.0243 0.162258 20.6515 0.115234 20.24 0.115234Z" fill="white"></path>
-                        <path d="M4.85499 0.292969H1.80566V10.6135H4.85499V0.292969Z" fill="white"></path>
-                        <path d="M12.5283 25.1155C7.38087 25.1155 2.5818 22.335 0.000976562 17.8575L1.68961 16.8782C3.92212 20.7525 8.07547 23.1589 12.5303 23.1589C19.4295 23.1589 25.0433 17.5243 25.0433 10.5996H26.9927C26.9906 18.6038 20.5029 25.1155 12.5283 25.1155Z" fill="white"></path>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0">
-                        <rect width="84" height="25" fill="white" transform="translate(0 0.115234)"></rect>
-                        </clipPath>
-                        </defs>
-                    </svg> 
-			</figure>
-			<nav class="footer__nav">
-				<ul class="footer__nav__list">
-					<!-- <a href="https://www.intuitionrobotics.com/automotive" class="menu-link ">
+    <footer class="footer">
+      <div class=" footer-container">
+        <div class="footer__left">
+          <figure class="footer-logo">
+
+            <svg width="84" height="26" viewBox="0 0 84 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M37.5312 0.634766C37.965 0.634766 38.2767 0.949617 38.2767 1.37078C38.2767 1.79399 37.963 2.11906 37.5312 2.11906C37.0993 2.11906 36.7979 1.79195 36.7979 1.37078C36.7958 0.947572 37.1217 0.634766 37.5312 0.634766ZM37.9997 3.36416V9.40357H37.0606V3.36416H37.9997Z"
+                  fill="white"></path>
+                <path
+                  d="M39.915 3.36379H40.8296V4.25723C41.2513 3.64184 41.9724 3.24316 42.8747 3.24316C44.488 3.24316 45.4861 4.3063 45.4861 6.04616V9.40321H44.5471V6.04411C44.5471 4.87262 43.9462 4.08754 42.7423 4.08754C41.6465 4.08754 40.8419 4.95645 40.8419 6.05638V9.40321H39.915V3.36379Z"
+                  fill="white"></path>
+                <path
+                  d="M46.6777 3.36423H47.7125V1.93922L48.6515 1.41992V3.36423H50.0713V4.21065H48.6515V7.0852C48.6515 8.31803 48.8797 8.52247 50.0713 8.52247V9.40365H49.9389C48.181 9.40365 47.7125 8.89662 47.7125 7.09747V4.2086H46.6777V3.36423Z"
+                  fill="white"></path>
+                <path
+                  d="M51.7207 6.72131V3.36426H52.6597V6.72131C52.6597 7.8928 53.2606 8.67788 54.4645 8.67788C55.5604 8.67788 56.365 7.80898 56.365 6.70904V3.36426H57.2918V9.40368H56.3772V8.51023C55.9555 9.12563 55.2467 9.5243 54.3789 9.5243C52.6231 9.5243 51.7207 8.46117 51.7207 6.72131Z"
+                  fill="white"></path>
+                <path
+                  d="M59.6777 0.634766C60.1115 0.634766 60.4232 0.949617 60.4232 1.37078C60.4232 1.79399 60.1095 2.11906 59.6777 2.11906C59.2458 2.11906 58.9443 1.79195 58.9443 1.37078C58.9423 0.947572 59.2682 0.634766 59.6777 0.634766ZM60.1461 3.36416V9.40357H59.2071V3.36416H60.1461Z"
+                  fill="white"></path>
+                <path
+                  d="M61.6631 3.36423H62.6979V1.93922L63.6369 1.41992V3.36423H65.0567V4.21065H63.6369V7.0852C63.6369 8.31803 63.865 8.52247 65.0567 8.52247V9.40365H64.9243C63.1664 9.40365 62.6979 8.89662 62.6979 7.09747V4.2086H61.6631V3.36423Z"
+                  fill="white"></path>
+                <path
+                  d="M67.2001 0.634766C67.634 0.634766 67.9456 0.949617 67.9456 1.37078C67.9456 1.79399 67.6319 2.11906 67.2001 2.11906C66.7683 2.11906 66.4668 1.79195 66.4668 1.37078C66.4648 0.947572 66.7907 0.634766 67.2001 0.634766ZM67.6686 3.36416V9.40357H66.7296V3.36416H67.6686Z"
+                  fill="white"></path>
+                <path
+                  d="M69.3525 6.3835C69.3525 4.60888 70.7356 3.24316 72.4691 3.24316C74.2025 3.24316 75.5978 4.60888 75.5978 6.3835C75.5978 8.16016 74.2025 9.52383 72.4691 9.52383C70.7356 9.52383 69.3525 8.15811 69.3525 6.3835ZM74.6608 6.3835C74.6608 5.11592 73.6974 4.08754 72.4711 4.08754C71.2449 4.08754 70.2936 5.11387 70.2936 6.3835C70.2936 7.65108 71.2449 8.67946 72.4711 8.67946C73.6974 8.67946 74.6608 7.65108 74.6608 6.3835Z"
+                  fill="white"></path>
+                <path
+                  d="M77.2852 3.36379H78.1997V4.25723C78.6214 3.64184 79.3425 3.24316 80.2449 3.24316C81.8581 3.24316 82.8562 4.3063 82.8562 6.04616V9.40321H81.9172V6.04411C81.9172 4.87262 81.3163 4.08754 80.1125 4.08754C79.0166 4.08754 78.212 4.95645 78.212 6.05638V9.40321H77.2852V3.36379Z"
+                  fill="white"></path>
+                <path
+                  d="M37.0615 14.2119H37.9883V15.1544C38.3489 14.5513 38.9864 14.2119 39.8542 14.2119H40.4082V15.0808H39.8175C38.5179 15.0808 38.0006 15.7207 38.0006 17.1212V20.2493H37.0615V14.2119Z"
+                  fill="white"></path>
+                <path
+                  d="M41.4551 17.2321C41.4551 15.4555 42.8382 14.0918 44.5716 14.0918C46.3051 14.0918 47.7004 15.4575 47.7004 17.2321C47.7004 19.0067 46.3051 20.3725 44.5716 20.3725C42.8382 20.3725 41.4551 19.0067 41.4551 17.2321ZM46.7634 17.2321C46.7634 15.9645 45.7999 14.9362 44.5737 14.9362C43.3474 14.9362 42.3962 15.9625 42.3962 17.2321C42.3962 18.4997 43.3474 19.5281 44.5737 19.5281C45.7999 19.5281 46.7634 18.4997 46.7634 17.2321Z"
+                  fill="white"></path>
+                <path
+                  d="M50.2886 19.2599V20.2494H49.3984V11.4336H50.3008V15.1893C50.806 14.4758 51.7206 14.0894 52.5028 14.0894C54.2953 14.0894 55.5826 15.5021 55.5826 17.2297C55.5826 18.9573 54.2708 20.3701 52.5028 20.3701C51.7206 20.3721 50.7938 19.9857 50.2886 19.2599ZM54.6456 17.2318C54.6456 15.9642 53.6822 14.9358 52.4559 14.9358C51.1686 14.9358 50.2051 15.9744 50.2051 17.2318C50.2051 18.4993 51.1686 19.5277 52.4559 19.5277C53.6822 19.5257 54.6456 18.4993 54.6456 17.2318Z"
+                  fill="white"></path>
+                <path
+                  d="M57.1006 17.2321C57.1006 15.4555 58.4837 14.0918 60.2171 14.0918C61.9506 14.0918 63.3459 15.4575 63.3459 17.2321C63.3459 19.0067 61.9506 20.3725 60.2171 20.3725C58.4837 20.3725 57.1006 19.0067 57.1006 17.2321ZM62.4089 17.2321C62.4089 15.9645 61.4454 14.9362 60.2192 14.9362C58.9929 14.9362 58.0417 15.9625 58.0417 17.2321C58.0417 18.4997 58.9929 19.5281 60.2192 19.5281C61.4454 19.5281 62.4089 18.4997 62.4089 17.2321Z"
+                  fill="white"></path>
+                <path
+                  d="M64.2744 14.2119H65.3092V12.7869L66.2482 12.2676V14.2119H67.668V15.0583H66.2482V17.9329C66.2482 19.1657 66.4764 19.3701 67.668 19.3701V20.2513H67.5356C65.7777 20.2513 65.3092 19.7443 65.3092 17.9431V15.0563H64.2744V14.2119Z"
+                  fill="white"></path>
+                <path
+                  d="M69.8114 11.4824C70.2453 11.4824 70.557 11.7973 70.557 12.2184C70.557 12.6416 70.2433 12.9667 69.8114 12.9667C69.3796 12.9667 69.0781 12.6416 69.0781 12.2184C69.0761 11.7952 69.402 11.4824 69.8114 11.4824ZM70.2799 14.2118V20.2512H69.3409V14.2118H70.2799Z"
+                  fill="white"></path>
+                <path
+                  d="M71.9648 17.2321C71.9648 15.4207 73.3479 14.0918 75.118 14.0918C76.4298 14.0918 77.4891 14.8278 77.9352 15.8909L77.0919 16.2528C76.7191 15.4187 76.0449 14.9362 75.1058 14.9362C73.8429 14.9362 72.9039 15.9625 72.9039 17.2321C72.9039 18.4997 73.8551 19.5281 75.1547 19.5281C76.1528 19.5281 76.8026 18.925 77.1408 18.1276L77.9963 18.4895C77.5155 19.5894 76.5643 20.3745 75.1323 20.3745C73.2889 20.3725 71.9648 18.972 71.9648 17.2321Z"
+                  fill="white"></path>
+                <path
+                  d="M78.9932 19.2844L79.7265 18.6322C80.2194 19.2128 80.7979 19.5502 81.6392 19.5502C82.5904 19.5502 83.0834 19.0901 83.0834 18.5361C83.0834 17.8716 82.2177 17.7387 81.3866 17.5466C80.4231 17.3176 79.3415 17.015 79.3415 15.8312C79.3415 14.9255 80.1848 14.0791 81.5679 14.0791C82.5436 14.0791 83.3482 14.3817 83.9145 15.0093L83.2036 15.59C82.7941 15.1075 82.3134 14.8765 81.5658 14.8765C80.7001 14.8765 80.254 15.2997 80.254 15.819C80.254 16.4344 80.9527 16.5325 81.8795 16.7615C82.8776 16.9905 83.998 17.3053 83.998 18.5381C83.998 19.4561 83.2036 20.3741 81.5903 20.3741C80.4618 20.372 79.6063 19.9979 78.9932 19.2844Z"
+                  fill="white"></path>
+                <path
+                  d="M20.24 0.115234C18.6919 0.115234 17.4494 0.464842 16.5063 1.54024V0.301283H13.7197V10.6137H16.5042V6.31821C16.5042 5.80709 16.5959 5.29392 16.824 4.838C17.0094 4.46591 17.262 4.14288 17.5798 3.86687C18.3457 3.20241 19.3071 2.86916 20.4641 2.86916H21.3603V0.256304C21.0243 0.162258 20.6515 0.115234 20.24 0.115234Z"
+                  fill="white"></path>
+                <path d="M4.85499 0.292969H1.80566V10.6135H4.85499V0.292969Z" fill="white"></path>
+                <path
+                  d="M12.5283 25.1155C7.38087 25.1155 2.5818 22.335 0.000976562 17.8575L1.68961 16.8782C3.92212 20.7525 8.07547 23.1589 12.5303 23.1589C19.4295 23.1589 25.0433 17.5243 25.0433 10.5996H26.9927C26.9906 18.6038 20.5029 25.1155 12.5283 25.1155Z"
+                  fill="white"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="84" height="25" fill="white" transform="translate(0 0.115234)"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </figure>
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <!-- <a href="https://www.intuitionrobotics.com/automotive" class="menu-link ">
 						About
 					</a> -->
 
-					<!-- <a href="https://blog.staging-muxetuja.kinsta.cloud" target="_blank" class="menu-link ">
+              <!-- <a href="https://blog.staging-muxetuja.kinsta.cloud" target="_blank" class="menu-link ">
 						Blog
 					</a> -->
-					<!-- <a href="/press" class="menu-link ">
+              <!-- <a href="/press" class="menu-link ">
 						Press
 					</a> -->
-					<!-- <a href="https://www.intuitionrobotics.com/automotive" class="menu-link ">
+              <!-- <a href="https://www.intuitionrobotics.com/automotive" class="menu-link ">
 						Automotive
 					</a> -->
 
-					<a href="healthcare.html" class="menu-link ">
-						Healthcare
-					</a>
+              <a href="healthcare.html" class="menu-link ">
+                Healthcare
+              </a>
 
-					<a href="about-us.html" class="menu-link ">
-						About Us
-					</a>
+              <a href="about-us.html" class="menu-link ">
+                About Us
+              </a>
 
-					<!-- <a href="https://elliq.com/" target="_blank" class="menu-link ">
+              <!-- <a href="https://elliq.com/" target="_blank" class="menu-link ">
 						ElliQ
 					</a> -->
 
-					<a href="lobby-careers.html" class="menu-link ">
-						Lobby Careers
-					</a>
+              <a href="lobby-careers.html" class="menu-link ">
+                Lobby Careers
+              </a>
 
-					<a href="contact-us.html" class="menu-link show contact-us-btn">
-						Contact Us
-					</a>
+              <a href="contact-us.html" class="menu-link show contact-us-btn">
+                Contact Us
+              </a>
 
-					<a href="privacy-policy.html" class="menu-link">Privacy Policy</a>
-					<a href="terms-of-use.html" class="menu-link">Terms of Use</a>
-				</ul>
-			</nav>
-		</div>
+              <a href="privacy-policy.html" class="menu-link">Privacy Policy</a>
+              <a href="terms-of-use.html" class="menu-link">Terms of Use</a>
+            </ul>
+          </nav>
+        </div>
 
-		<div class="footer__right">
-			<h5 class="footer__title">Subscribe to our newsletter</h5>
-			<div class="footer__subscribe">
-				<div role="form" class="wpcf7" id="wpcf7-f87-o1" lang="en-US" dir="ltr">
-					<div class="screen-reader-response">
-						<p role="status" aria-live="polite" aria-atomic="true"></p>
-						<ul></ul>
-					</div>
-					<form action="/#wpcf7-f87-o1" method="post" class="wpcf7-form init Form blue subscribe" data-status="init"
-						id="FormSubscribe">
-						<div style="display: none;">
-							<input type="hidden" name="_wpcf7" value="87">
-							<input type="hidden" name="_wpcf7_version" value="5.4">
-							<input type="hidden" name="_wpcf7_locale" value="en_US">
-							<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f87-o1">
-							<input type="hidden" name="_wpcf7_container_post" value="0">
-							<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-							<input type="hidden" name="_wpcf7_recaptcha_response" value="">
-						</div>
-						<div class="Input-wrapper email" data-attr="email">
-							<input type="email" name="email-360" value="" size="40"
-								class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input-elm"
-								aria-required="true" aria-invalid="false" placeholder="Subscribe for updates" required="">
-						</div>
-						<button type="submit" class="submit-btn" value="">Submit</button>
-						<i class="message"></i>
-						<div class="wpcf7-response-output" aria-hidden="true"></div>
-					</form>
-				</div>
-			</div>
-			<div class="footer__social__container">
-				<span class="footer__social__text">Follow us </span>
-				<ul class="footer__social  ">
-					<li class="footer-social-item">
-						<a href="https://www.linkedin.com/company/intuition-robotics/">
-							<img src="images/social-links/in.svg" alt="">
-						</a>
-					</li>
-					<li class="footer-social-item">
-						<a href="https://www.linkedin.com/company/intuition-robotics/">
-							<img src="images/social-links/face.svg" alt="">
-						</a>
-					</li>
-					<li class="footer-social-item">
-						<a href="https://www.linkedin.com/company/intuition-robotics/">
-							<img src="images/social-links/inst.svg" alt="">
-						</a>
-					</li>
-					<li class="footer-social-item">
-						<a href="https://www.linkedin.com/company/intuition-robotics/">
-							<img src="images/social-links/youtube.svg" alt="">
-						</a>
-					</li>
-					<li class="footer-social-item">
-						<a href="https://www.linkedin.com/company/intuition-robotics/">
-							<img src="images/social-links/twitter.svg" alt="">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-</div>
+        <div class="footer__right">
+          <h5 class="footer__title">Subscribe to our newsletter</h5>
+          <div class="footer__subscribe">
+            <div role="form" class="wpcf7" id="wpcf7-f87-o1" lang="en-US" dir="ltr">
+              <div class="screen-reader-response">
+                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                <ul></ul>
+              </div>
+              <form action="/#wpcf7-f87-o1" method="post" class="wpcf7-form init Form blue subscribe" data-status="init"
+                id="FormSubscribe">
+                <div style="display: none;">
+                  <input type="hidden" name="_wpcf7" value="87">
+                  <input type="hidden" name="_wpcf7_version" value="5.4">
+                  <input type="hidden" name="_wpcf7_locale" value="en_US">
+                  <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f87-o1">
+                  <input type="hidden" name="_wpcf7_container_post" value="0">
+                  <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                  <input type="hidden" name="_wpcf7_recaptcha_response" value="">
+                </div>
+                <div class="Input-wrapper email" data-attr="email">
+                  <input type="email" name="email-360" value="" size="40"
+                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input-elm"
+                    aria-required="true" aria-invalid="false" placeholder="Subscribe for updates" required="">
+                </div>
+                <button type="submit" class="submit-btn" value="">Submit</button>
+                <i class="message"></i>
+                <div class="wpcf7-response-output" aria-hidden="true"></div>
+              </form>
+            </div>
+          </div>
+          <div class="footer__social__container">
+            <span class="footer__social__text">Follow us </span>
+            <ul class="footer__social  ">
+              <li class="footer-social-item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/in.svg" alt="">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/face.svg" alt="">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/inst.svg" alt="">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/youtube.svg" alt="">
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="https://www.linkedin.com/company/intuition-robotics/">
+                  <img src="images/social-links/twitter.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-<script src="js/main.js"> </script>
+  <script src="js/main.js"> </script>
 </body>
 
 </html>
