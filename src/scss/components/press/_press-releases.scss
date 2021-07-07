@@ -1,0 +1,129 @@
+.press-releases {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-bottom: 80px;
+
+  @include md {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @include lg {
+    padding-bottom: 30px;
+  }
+  @include xl {
+    padding: 0 50px 30px;
+  }
+
+  h2 {
+    margin-bottom: 47px;
+    font-size: 24px;
+    line-height: 22px;
+
+    @include lg {    
+      margin-bottom: 82px;
+      font-size: 45px;
+      line-height: 54px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    margin-bottom: 50px;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 36px;
+    border-bottom: 1px solid #CFDDFF;
+
+    @include md {
+      padding: 46px 0 15px;
+    }
+
+    &:first-of-type {
+      border-top: 1px solid #CFDDFF;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 135%;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      @include lg {
+        font-size: 28px;
+      }
+
+      span {
+        background-image: linear-gradient(to right, #294785, #294785);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s, color .5s;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 27px;
+
+      @include lg {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .press-releases__footer {
+      display: flex;
+      justify-content: space-between;
+
+      .date {
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.7);
+        font-weight: 400;
+      }
+
+      .press-releases__btn {
+        margin-left: auto;
+        font-size: 14px;
+        line-height: 34px;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: $blue;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: $blue;
+          transition: width .3s;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      h4 span {
+        color: #294785;
+        background-size: 100% 2px;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}
