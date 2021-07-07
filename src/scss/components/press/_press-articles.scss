@@ -1,4 +1,17 @@
 .press-partners {
+  margin-bottom: 40px;
+  padding: 20px;
+
+  @include lg {
+    padding: 0 60px 0 60px;
+  }
+
+  @include xl {
+    padding: 0 70px;
+    max-width: 1540px;
+    margin: 0 auto 40px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -11,6 +24,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+
     @include xl {
       margin: 70px 0;
       display: grid;
@@ -50,6 +64,7 @@
       &.simple-button {
         // float: right;
         font-size: 14px;
+        width: max-content;
         color: $blue;
         text-transform: capitalize;
         font-weight: 700;
@@ -67,14 +82,16 @@
         }
 
         &:hover {
-          width: 100%;
-          // text-decoration: underline;
+
+          &::after {
+            width: 100%;
+          }
         }
       }
     }
 
     h4 {
-      margin: 0;
+      margin-top: 0;
       font-weight: 600;
       font-size: 20px;
       line-height: 135%;
@@ -102,12 +119,14 @@
 
     &:hover {
       box-shadow: 0px 3.08974px 38.6218px rgba(72, 124, 255, 0.35);
+
       a {
         img {
           opacity: 1;
           filter: grayscale(0);
         }
       }
+
       h4 {
         color: #2a468a;
       }
@@ -116,7 +135,34 @@
     .press-partners__footer {
       margin-top: auto;
       padding-top: 15px;
-      border-top: 1px solid #CFDDFF;
+      display: flex;
+      justify-content: space-between;
+
+      @include md {
+        border-top: 1px solid #CFDDFF;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    .press-load-more {
+      padding: 9px 15px;
+      border: none;
+      background-color: $blue;
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14.7883px;
+      line-height: 18px;
+      box-shadow: 0px 92.4266px 73.9413px rgba(82, 205, 255, 0.24), 0px 38.6136px 30.8909px rgba(82, 205, 255, 0.172525), 0px 20.6447px 16.5157px rgba(82, 205, 255, 0.143066), 0px 11.5732px 9.25859px rgba(82, 205, 255, 0.12), 0px 6.14646px 4.91717px rgba(82, 205, 255, 0.0969343), 0px 2.55768px 2.04614px rgba(82, 205, 255, 0.0674749);
+      border-radius: 24.3448px;
+      transition: background-color .3s;
+
+      &:hover {
+        background-color: #161C3E;
+      }
     }
   }
 }
