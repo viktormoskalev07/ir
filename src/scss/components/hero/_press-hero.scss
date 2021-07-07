@@ -1,0 +1,65 @@
+.press-hero {
+  position: relative;
+  overflow: hidden;
+  background-position-x: 0%;
+  background-position-y: 50%;
+
+  @include xl {
+    background-position-y: 40%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    right: -20%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/backgrounds/accent-grad-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 90%;
+
+    @include sm {
+      right: -30%;
+      bottom: -10%;
+      background-size: 70%;
+    }
+    @include md {
+      right: 0;
+      bottom: 0;
+    }
+    @include xl {
+      right: 0;
+      bottom: -10%;
+      background-size: 65%;
+    }
+    @include xxl {
+      background-size: 50%;
+    }
+  }
+
+  .index-hero {
+    &__content {
+      padding: 95px 10px 126px 36px;
+
+      @include md {
+        padding: 78px 0 354px 65px;
+      }
+      @include xl {    
+        padding: 199px 153px 208px 72px;
+      }
+      @include xxl {
+        padding: 350px 153px 350px 72px;
+      }
+      h1 {
+        margin-bottom: 18px;
+
+        @include xl {
+          margin-bottom: 14px;
+          max-width: 75%;
+        }
+      }
+    }
+  }
+}

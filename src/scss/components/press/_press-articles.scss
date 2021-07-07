@@ -1,0 +1,122 @@
+.press-partners {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 0;
+    margin: 50px 0;
+    list-style: none;
+
+    @include md {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include xl {
+      margin: 70px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    background: #FFFFFF;
+    box-shadow: 0px 3.08974px 38.6218px rgba(72, 124, 255, 0.15);
+    border-radius: 11.5865px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 302px;
+    transition: box-shadow .3s;
+
+    a {
+      display: block;
+      text-align: center;
+
+      // &:nth-of-type(1) {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      // }
+
+      img {
+        max-width: 220px;
+        margin: 0 auto 40px;
+        filter: grayscale(100%);
+        opacity: .5;
+        transition: all .3s;
+      }
+
+      &.simple-button {
+        // float: right;
+        font-size: 14px;
+        color: $blue;
+        text-transform: capitalize;
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: $blue;
+          transition: width .3s;
+        }
+
+        &:hover {
+          width: 100%;
+          // text-decoration: underline;
+        }
+      }
+    }
+
+    h4 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 135%;
+      transition: color .3s;
+
+      @include lg {
+        font-size: 24px;
+      }
+
+      a {
+        text-align: left;
+
+        @include lg {
+          text-align: center;
+        }
+      }
+    }
+
+    span {
+      text-align: left;
+      font-size: 14px;
+      line-height: 19px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:hover {
+      box-shadow: 0px 3.08974px 38.6218px rgba(72, 124, 255, 0.35);
+      a {
+        img {
+          opacity: 1;
+          filter: grayscale(0);
+        }
+      }
+      h4 {
+        color: #2a468a;
+      }
+    }
+
+    .press-partners__footer {
+      margin-top: auto;
+      padding-top: 15px;
+      border-top: 1px solid #CFDDFF;
+    }
+  }
+}

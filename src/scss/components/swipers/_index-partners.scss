@@ -21,7 +21,7 @@
       &-prev,
       &-next {
         display: flex;
-        top: 3px;
+        top: 0;
         height: 100%;
         margin-top: 0;
         justify-content: flex-end;
@@ -75,5 +75,10 @@
         }
       }
     }
+  }
+
+  &--press {
+    padding-top: 42px;
+    padding-bottom: 42px;
   }
 }
