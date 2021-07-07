@@ -42,10 +42,7 @@
     flex-direction: column;
     min-height: 302px;
     transition: box-shadow .3s;
-
-    @include lg {
-      min-height: 294px;
-    }
+ 
 
     a {
       display: block;
@@ -170,3 +167,6 @@
     }
   }
 }
+ 
+
+@import'press-hider'

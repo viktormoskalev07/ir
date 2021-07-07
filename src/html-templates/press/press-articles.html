@@ -2,60 +2,35 @@
   <article id="press-parent__js" class="press-partners">
 
     <ul class="press-partners__list">
-      <li class="press-partners__item">
-        <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-          target="_blank">
-          <img class="img" src="images/partners/press-partner1.png">
-        </a>
-        <h4>
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank"> Should digital assistants have empathy? Big investors say yes</a>
-        </h4>
-        <div class="press-partners__footer">
-          <span class="date">June 4, 2021</span>
-  
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank" class="simple-button blue-stroke small">
-            To full article
-          </a>
-        </div>
-      </li>
-      <li class="press-partners__item">
-        <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-          target="_blank">
-          <img class="img" src="images/partners/press-partner1.png">
-        </a>
-        <h4>
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank"> Should digital assistants have empathy? Big investors say yes</a>
-        </h4>
-        <div class="press-partners__footer">
-          <span class="date">June 4, 2021</span>
-  
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank" class="simple-button blue-stroke small">
-            To full article
-          </a>
-        </div>
-      </li>
-      <li class="press-partners__item">
-        <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-          target="_blank">
-          <img class="img" src="images/partners/press-partner1.png">
-        </a>
-        <h4>
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank"> Should digital assistants have empathy? Big investors say yes</a>
-        </h4>
-        <div class="press-partners__footer">
-          <span class="date">June 4, 2021</span>
-  
-          <a href="https://theamericangenius.com/housing/real-estate-tech/should-digital-assistants-like-elliq-have-empathy-big-investors-say-yes"
-            target="_blank" class="simple-button blue-stroke small">
-            To full article
-          </a>
-        </div>
-      </li>
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+          @@include('i')
+
     </ul>
   
     <footer>
@@ -66,3 +41,27 @@
   
   </article>
 </div>
+
+<script>
+function pressHiderNew(btn , item ,start, step){
+  const loadMore = document.querySelector(btn);
+  const items = document.querySelectorAll(item);
+    
+  let startItem = start;
+  
+  loadMore.addEventListener('click', function(){ 
+      if(startItem+step>items.length){ 
+          loadMore.style.display='none';
+      }
+       for (let i = startItem; i < items.length&&i<startItem+step; i++) {
+           const elem = items[i];  
+           elem.classList.remove('press-partners__item-hide');
+           elem.classList.add('press-partners__item-show');    
+       } 
+       startItem=startItem+step; 
+  })
+}
+
+pressHiderNew('#press-load-more__js','.press-partners__item-hide',9,9);
+
+  </script>
