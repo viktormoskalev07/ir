@@ -43,6 +43,10 @@
     min-height: 302px;
     transition: box-shadow .3s;
 
+    @include lg {
+      min-height: 294px;
+    }
+
     a {
       display: block;
       text-align: center;
@@ -62,13 +66,13 @@
       }
 
       &.simple-button {
-        // float: right;
         font-size: 14px;
         width: max-content;
         color: $blue;
         text-transform: capitalize;
         font-weight: 700;
         position: relative;
+        margin-left: auto;
 
         &::after {
           content: '';
