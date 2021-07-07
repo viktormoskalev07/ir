@@ -30,9 +30,32 @@
   30%{
       opacity: 1;
   }
-   100%{ max-height: 700px;
+   100%{ max-height: 800px;
     min-height: 302px;
             opacity: 1;
 }
 }
+
+
+.press-releases__item-hide{
+    &:nth-child(n+5){ 
+        display: none ;
+        padding: 0;
+        margin: 0;
+        border:none;   
+    } 
+}
  
+.press-releases__item{
+    &:nth-child(n+5){ 
+       max-height: 0; 
+       min-height: 0;
+       overflow: hidden;
+       opacity: 0;
+    } 
+} 
+.press-releases__item-show{
+    animation-name:  showanim;
+    animation-fill-mode: forwards;
+    animation-duration: 2.5s;
+ }

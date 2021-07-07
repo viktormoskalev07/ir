@@ -45,7 +45,7 @@
 <script>
 function pressHiderNew(btn , item ,start, step){
   const loadMore = document.querySelector(btn);
-  const items = document.querySelectorAll(item);
+  const items = document.querySelectorAll('.'+item+'-hide');
     
   let startItem = start;
   
@@ -55,13 +55,17 @@ function pressHiderNew(btn , item ,start, step){
       }
        for (let i = startItem; i < items.length&&i<startItem+step; i++) {
            const elem = items[i];  
-           elem.classList.remove('press-partners__item-hide');
-           elem.classList.add('press-partners__item-show');    
+           elem.classList.remove(item+'-hide');
+           elem.classList.add(item+'-show');    
        } 
        startItem=startItem+step; 
   })
 }
 
-pressHiderNew('#press-load-more__js','.press-partners__item-hide',9,9);
+window.addEventListener('load', function(){
+  pressHiderNew('#press-load-more__js','press-partners__item',9,9);
+pressHiderNew('#press-releases-load-more__js','press-releases__item',4,4);
+})
+
 
   </script>
