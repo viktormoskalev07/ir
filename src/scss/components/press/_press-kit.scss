@@ -60,3 +60,15 @@
     }
   }
 }
+
+.partners--press{
+  .swiper-slide{
+    height: 33px;
+    img{
+      height: 100%;
+      object-fit: contain;
+      max-width: 320px;
+    }
+  }
+
+}

@@ -25,12 +25,24 @@ footer {
 .footer-to-bottom {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   z-index: 0;
   position: relative;
+  align-items: flex-start;
   background-color: #fff;  
 } 
 
+footer{
+  width: 100%;
+  align-self: flex-end;
+}
+main{
+  width: 100%;
+}
+header{
+  width: 100%;
+}
 * {
   box-sizing: border-box;
 }
