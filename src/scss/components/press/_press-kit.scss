@@ -1,0 +1,62 @@
+.press-kit {
+  &__container {
+    margin-top: 33px;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include xl {
+      gap: 50px;
+      padding: 0 50px;
+      margin-top: 85px;
+      margin-bottom: 85px;
+    }
+  }
+
+  &__item {
+    padding: 15px 25px;
+    box-shadow: 0px 4px 50px rgba(72, 124, 255, 0.15);
+    border-radius: 15px;
+    background: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    transition: .3s;
+
+    @include xl {
+      padding: 42px 25px;
+    }
+
+    figure {
+      margin-right: 25px;
+      width: 45px;
+      height: 45px;
+
+      @include xl {
+        width: 93px;
+        height: 93px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 700;
+      color: $blue;
+
+      @include xl {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 50px rgba(72, 124, 255, 0.35);
+      transform: translateY(-5px);
+    }
+  }
+}
