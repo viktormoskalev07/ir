@@ -6,19 +6,19 @@ $submetupt:25px;
 		position: relative;
 	} 
 
-	&__submenu {
-
+	&__submenu { 
 		position: relative;
 		&__wrapper{
-
-			padding-top: $submetupt; 
-			left: 0; 
-			display: none; 
-			position: absolute;
-			&:hover{
-				display: block;
-			
+			@include x { 
+				padding-top: $submetupt; 
+				left: 0; 
+				display: none; 
+				position: absolute;
+				&:hover{
+					display: block; 
+				}
 			}
+		
 		} 
 	
 		&__container {
