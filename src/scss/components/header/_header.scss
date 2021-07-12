@@ -1,6 +1,8 @@
 .header { 
  	background-color: #fff;
 	transition: 0.3s; 
+	
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	&__content {    
 		padding: 16px 14px 16px 22px;
 		display: flex;
@@ -10,7 +12,6 @@
 		max-width: 1800px;
 		margin-left: auto;
 		margin-right: auto; 
-		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 		@include lg{    
 			padding: 18px 24px 15px 36px;
 		}
