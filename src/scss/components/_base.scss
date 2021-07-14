@@ -22,14 +22,13 @@ footer {
   min-height: 100vh;
 }
 
-.footer-to-bottom {
+.footer-to-bottom {  
   min-height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: flex; 
+  flex-direction: column;
   z-index: 0;
   position: relative;
-  align-items: flex-start;
+  align-items: flex-start; 
   background-color: #fff;  
 } 
 
@@ -39,6 +38,7 @@ footer{
 }
 main{
   width: 100%;
+  align-self: flex-start;
 }
 header{
   width: 100%;

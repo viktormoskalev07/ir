@@ -30,7 +30,7 @@
     @include xxl {    
       padding: 260px 240px 360px 184px;
       // padding: 236px 240px 324px 184px;
-    }
+    } 
 
     &::before {
       content: '';
@@ -61,6 +61,7 @@
         font-size: 4rem;
         margin-bottom: 28px;
       }
+
     }
 
     p {
@@ -89,3 +90,15 @@
     }
   }
 }
+
+
+.index-hero.index-hero{
+.index-hero__content{
+  @media (min-width:1920px) { 
+
+    padding-left:calc(50% - 900px) ;
+  }
+}
+
+}
+

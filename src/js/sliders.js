@@ -87,21 +87,30 @@ if (document.querySelector('.swiper-cases')) {
 if (document.querySelector('.swiper-partners')) {
     const swiperPartners = new Swiper('.swiper-partners', {
 
-        slidesPerView: 'auto',
-        spaceBetween: 20,
+        slidesPerView: '2',
+        spaceBetween: 10,
         grabCursor: true,
         speed: 3000,
         loop: true,
         autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
+            delay: 0, 
         },
-        // If we need pagination
+       
         breakpoints: {
+            560: {
+                slidesPerView: '3',
+            },
+            768: {
+                slidesPerView: '4',
+            },
+            1024: {
+                slidesPerView: '5',
+            },
             1440: {
-                spaceBetween: 0,
-                loop: false,
-                allowTouchMove: false,
+                slidesPerView: '6',
+            },
+            1800: {
+                slidesPerView: '8',
             }
         },
 
