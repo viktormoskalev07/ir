@@ -3,9 +3,6 @@ html=document.querySelector("html");
 header=document.querySelector("header");
 btnMenu=document.querySelector(".nav__burger");
 
-window.onload= function(){
-  pagescroll(); 
-}
 
 // мобильное меню
 nav = document.querySelector(".nav");
@@ -63,18 +60,23 @@ function togglescroll(){
 
 
  // Появление меню при прокрутке 
-function pagescroll(){
-  header.classList.add("fixed-header"); //меняем хедер со статика на фиксед только после загрузки страници  
-  let pscroll = 0;
-  window.addEventListener('scroll', function() { 
-      if (pscroll<pageYOffset&pageYOffset>header.offsetHeight){
-               header.style.transform="translateY(-100%)"; //прячем хедер при прокрутке вниз            
-       }else { 
-            header.style.transform="none"; //показываем хедер при прокрутке вверх        
-       }  
-   pscroll=pageYOffset;
- });
-}
+// function pagescroll(){
+//   header.classList.add("fixed-header"); //меняем хедер со статика на фиксед только после загрузки страници  
+//   let pscroll = 0;
+//   window.addEventListener('scroll', function() { 
+//       if (pscroll<pageYOffset&pageYOffset>header.offsetHeight){
+//                header.style.transform="translateY(-100%)"; //прячем хедер при прокрутке вниз            
+//        }else { 
+//             header.style.transform="none"; //показываем хедер при прокрутке вверх        
+//        }  
+//    pscroll=pageYOffset;
+//  });
+// }
+
+// window.onload= function(){
+//   pagescroll(); 
+// }
+
 
  //Появление меню при прокрутке
  
@@ -170,24 +172,24 @@ function pagescroll(){
 
 
 // toggle min-img 
-    function fullQuality(item){ 
-      const priority  = item.dataset.priority||0;
-      setTimeout(function() {
-      const webp = item.querySelector('.webp-img');
-      const noWebp = item.querySelector('.nowebp-img');
-      const fullWebp = webp.dataset.img;
-      const fullNoWebp = noWebp.dataset.img;  
-        webp.srcset=fullWebp; 
-        noWebp.src=fullNoWebp;
-      }, 1+300*priority);
-    }
-    function toggleMinImg(){ 
-        const pictures = document.querySelectorAll('.toggle-img--js');  
-        for (let i = 0; i < pictures.length; i++) {
-          const pic = pictures[i]; 
-          fullQuality(pic );  
-        } 
-    } 
-toggleMinImg();
+//     function fullQuality(item){ 
+//       const priority  = item.dataset.priority||0;
+//       setTimeout(function() {
+//       const webp = item.querySelector('.webp-img');
+//       const noWebp = item.querySelector('.nowebp-img');
+//       const fullWebp = webp.dataset.img;
+//       const fullNoWebp = noWebp.dataset.img;  
+//         webp.srcset=fullWebp; 
+//         noWebp.src=fullNoWebp;
+//       }, 1+300*priority);
+//     }
+//     function toggleMinImg(){ 
+//         const pictures = document.querySelectorAll('.toggle-img--js');  
+//         for (let i = 0; i < pictures.length; i++) {
+//           const pic = pictures[i]; 
+//           fullQuality(pic );  
+//         } 
+//     } 
+// toggleMinImg();
 // toggle min-img 
 
