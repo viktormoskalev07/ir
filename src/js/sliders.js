@@ -86,6 +86,7 @@ if (document.querySelector('.swiper-cases')) {
 
 if (document.querySelector('.swiper-partners')) {
     const swiperPartners = new Swiper('.swiper-partners', {
+        
         slidesPerView: 'auto',
         slidesPerView: '2',
         spaceBetween: 10,
