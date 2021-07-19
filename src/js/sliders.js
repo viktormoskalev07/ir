@@ -86,7 +86,7 @@ if (document.querySelector('.swiper-cases')) {
 
 if (document.querySelector('.swiper-partners')) {
     const swiperPartners = new Swiper('.swiper-partners', {
-
+        slidesPerView: 'auto',
         slidesPerView: '2',
         spaceBetween: 10,
         grabCursor: true,
@@ -101,19 +101,9 @@ if (document.querySelector('.swiper-partners')) {
                 slidesPerView: '3',
             },
             768: {
-                slidesPerView: '4',
-            },
-            1024: {
-                slidesPerView: '5',
-            },
-            1440: {
-                slidesPerView: '6',
-            },
-            1800: {
-                slidesPerView: '8',
-            }
-        },
-
+                slidesPerView: 'auto',
+            }, 
+        }, 
         // Navigation arrows
         navigation: {
             nextEl: '.partners-next',
