@@ -2,9 +2,12 @@
   &.container{
     @include xxl{
           max-width: 1980px;
-    }
-
+    } 
   }
+  &.container.homepage{
+        max-width: 1300px;
+  }
+
   padding-top: 20px;
   padding-bottom: 22px;
 
@@ -85,5 +88,13 @@
   &--press {
     padding-top: 42px;
     padding-bottom: 42px;
+  }
+}
+
+.homepage.partners{
+  .swiper-slide{
+    img{
+      height: 92px;
+    }
   }
 }

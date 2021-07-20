@@ -79,8 +79,36 @@ if (document.querySelector('.swiper-cases')) {
     });
 }
  
-    if (document.querySelector('.swiper-partners')) {
-        const swiperPartners = new Swiper('.swiper-partners', { 
+    if (document.querySelector('.homepage .swiper-partners')) {  
+  
+        const swiperPartners = new Swiper('.homepage .swiper-partners', {  
+            slidesPerView: '2',
+            spaceBetween: 10,
+            grabCursor: true,
+            speed: 2000,
+            loop: true,
+            autoplay: {
+                delay: 0, 
+                disableOnInteraction:false
+            }, 
+            breakpoints: {
+                560: {
+                    slidesPerView: '3',
+                },
+                768: {
+                    slidesPerView: 'auto', 
+                }, 
+            }, 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.partners-next',
+                prevEl: '.partners-prev',
+            }
+        });
+    }  
+ 
+    if (document.querySelector('.partners--press .swiper-partners')) {
+        const swiperPartners = new Swiper('.partners--press .swiper-partners', { 
             
             slidesPerView: '2',
             spaceBetween: 10,
