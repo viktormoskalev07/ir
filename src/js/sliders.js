@@ -10,23 +10,18 @@ if (document.querySelector('.swiper-milestones')) {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1.6,
-
+               slidesPerView: 1.6, 
             },
-            480: {
-
-                slidesPerView: 2,
-
+            480: { 
+                slidesPerView: 2, 
             },
             1024: {
-                slidesPerView: 3,
-
+                slidesPerView: 3, 
             },
             1600: {
                 slidesPerView: 4,
             }
-        }
-
+        } 
     });
 }
 
@@ -83,35 +78,36 @@ if (document.querySelector('.swiper-cases')) {
         },
     });
 }
-
-if (document.querySelector('.swiper-partners')) {
-    const swiperPartners = new Swiper('.swiper-partners', {
-        
-        slidesPerView: 'auto',
-        slidesPerView: '2',
-        spaceBetween: 10,
-        grabCursor: true,
-        speed: 3000,
-        loop: true,
-        autoplay: {
-            delay: 0, 
-        },
-       
-        breakpoints: {
-            560: {
-                slidesPerView: '3',
-            },
-            768: {
-                slidesPerView: 'auto',
+ 
+    if (document.querySelector('.swiper-partners')) {
+        const swiperPartners = new Swiper('.swiper-partners', { 
+            
+            slidesPerView: '2',
+            spaceBetween: 10,
+            grabCursor: true,
+            speed: 2000,
+            loop: true,
+            autoplay: {
+                delay: 0, 
+                disableOnInteraction:false
             }, 
-        }, 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.partners-next',
-            prevEl: '.partners-prev',
-        }
-    });
-}
+            breakpoints: {
+                560: {
+                    slidesPerView: '3',
+                },
+                768: {
+                    slidesPerView: 'auto', 
+                }, 
+            }, 
+            // Navigation arrows
+            navigation: {
+                nextEl: '.partners-next',
+                prevEl: '.partners-prev',
+            }
+        });
+    }  
+ 
+
 
 if (document.querySelector('.swiper-latest-updates')) {
     const swiperLatestUpdates = new Swiper('.swiper-latest-updates', {
@@ -120,8 +116,7 @@ if (document.querySelector('.swiper-latest-updates')) {
         slidesPerView: 1.2,
         centeredSlides: true,
         grabCursor: true,
-        loop: true,
-
+        loop: true, 
         breakpoints: {
             768: {
                 slidesPerView: 2,
