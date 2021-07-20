@@ -16,9 +16,7 @@
     }
     @include xl{
       padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 40px;
-      padding-bottom: 44px;
+      padding-right: 5px; 
     }
   .swiper {
     &-container {
@@ -92,9 +90,29 @@
 }
 
 .homepage.partners{
+  .swiper-wrapper{
+    @include xl{
+    transform: none !important; 
+    max-width: 100% !important;
+    padding:0 5px;
+    justify-content: space-between;
+    }
+  }
   .swiper-slide{
+    @include xl{
+      flex-shrink: 1 !important;
+    }
+
     img{
-      height: 92px;
+     height: 54px;
+      @include md{
+        height: 98px;
+      }
+    }
+  }
+  @include xl {
+    .swiper-slide-duplicate{
+        display: none;
     }
   }
 }

@@ -253,7 +253,7 @@
         }
 
         .wpcf7-list-item-label {
-          padding-top: 7px;
+          padding-top: 2px;
         }
 
         input {
@@ -263,8 +263,7 @@
           padding-bottom: 8px;
           font-size: $font-main;
           padding-top: 25px;
-          width: 100%;
-
+          width: 100%; 
           &::placeholder {
             color: black;
           }
@@ -389,6 +388,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        align-items: center;
 
         @include lg {
           justify-content: flex-start;

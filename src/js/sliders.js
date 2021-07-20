@@ -82,7 +82,7 @@ if (document.querySelector('.swiper-cases')) {
     if (document.querySelector('.homepage .swiper-partners')) {  
   
         const swiperPartners = new Swiper('.homepage .swiper-partners', {  
-            slidesPerView: '2',
+            slidesPerView: '2', 
             spaceBetween: 10,
             grabCursor: true,
             speed: 2000,
@@ -92,12 +92,24 @@ if (document.querySelector('.swiper-cases')) {
                 disableOnInteraction:false
             }, 
             breakpoints: {
-                560: {
+                380: {
                     slidesPerView: '3',
                 },
-                768: {
+                560: {
+                    slidesPerView: '4',
+                },
+                1100: {
+                    slidesPerView: '6',
+                },
+          
+                1440: {
                     slidesPerView: 'auto', 
-                }, 
+                    spaceBetween: 10,
+                    loop: false,
+                    allowTouchMove: false,
+                    autoplay: false,
+                    grabCursor:false
+                }
             }, 
             // Navigation arrows
             navigation: {
