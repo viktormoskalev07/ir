@@ -193,3 +193,5 @@ function togglescroll(){
 // toggleMinImg();
 // toggle min-img 
 
+
+@@include('__form7.js')
