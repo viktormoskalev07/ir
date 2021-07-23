@@ -1,9 +1,5 @@
 .partners {
-  &.container{
-    @include xxl{
-          max-width: 1980px;
-    } 
-  }
+ 
   &.container.homepage{
         max-width: 1300px;
   }
@@ -63,8 +59,7 @@
     .swiper {
       &-wrapper {
         align-items: center;
-        transition-timing-function: linear;
- 
+        transition-timing-function: linear; 
       }
 
       &-slide {
@@ -114,5 +109,11 @@
     .swiper-slide-duplicate{
         display: none;
     }
+  }
+}
+
+.partners{
+  .swiper-wrapper{
+      transition-timing-function: linear;
   }
 }

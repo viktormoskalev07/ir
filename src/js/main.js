@@ -1,11 +1,11 @@
-body=document.querySelector("body");
-html=document.querySelector("html");
-header=document.querySelector("header");
-btnMenu=document.querySelector(".nav__burger");
+const body=document.querySelector("body");
+const html=document.querySelector("html");
+const header=document.querySelector("header");
+const btnMenu=document.querySelector(".nav__burger");
 
 
 // мобильное меню
-nav = document.querySelector(".nav");
+// const nav = document.querySelector(".nav");
 btnMenu.addEventListener("click" , togglenav);
 document.querySelector(".nav__menu").onclick = closenav;  
 function closenav(){
@@ -36,21 +36,21 @@ function hidescroll(){
 
 function showscroll(){
   body.style.paddingRight=0;
-  body.style.overflow="visible"
+  body.style.overflow="visible";
 }
 
-let scrolid = 0 ;
-function togglescroll(){
-  if (scrolid==0){
-    body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
-    body.style.overflow="hidden";
-    scrolid=1;
-  } else{
-    body.style.paddingRight=0;
-    body.style.overflow="visible"
-    scrolid=0;
-  }
-}
+// let scrolid = 0 ;
+// function togglescroll(){
+//   if (scrolid==0){
+//     body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
+//     body.style.overflow="hidden";
+//     scrolid=1;
+//   } else{
+//     body.style.paddingRight=0;
+//     body.style.overflow="visible";
+//     scrolid=0;
+//   }
+// }
 
 // отключить прокрутку
 
@@ -150,7 +150,7 @@ function togglescroll(){
           } 
         });
       } 
-        accordionInit('.accordion-health')
+        accordionInit('.accordion-health');
     
 // accordion
 

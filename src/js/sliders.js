@@ -119,33 +119,46 @@ if (document.querySelector('.swiper-cases')) {
         });
     }  
  
-    if (document.querySelector('.partners--press .swiper-partners')) {
-        const swiperPartners = new Swiper('.partners--press .swiper-partners', { 
-            
-            slidesPerView: '2',
-            spaceBetween: 10,
-            grabCursor: true,
-            speed: 2000,
-            loop: true,
-            autoplay: {
-                delay: 0, 
-                disableOnInteraction:false
-            }, 
-            breakpoints: {
-                560: {
-                    slidesPerView: '3',
-                },
-                768: {
-                    slidesPerView: 'auto', 
-                }, 
-            }, 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.partners-next',
-                prevEl: '.partners-prev',
-            }
-        });
-    }  
+    window.addEventListener('load', function(){
+            setTimeout(() => {
+                if (document.querySelector('.partners--press .swiper-partners')) {
+                    const swiperPartners = new Swiper('.partners--press .swiper-partners', { 
+                        
+                        slidesPerView: '2',
+                        spaceBetween: 10,
+                        grabCursor: true,
+                        speed: 2000,
+                        loop: true,
+                        autoplay: {
+                            delay: 0, 
+                            disableOnInteraction:false
+                        }, 
+                        breakpoints: {
+                            560: {
+                                slidesPerView: '3',
+                            },
+                            768: {
+                                slidesPerView: 'auto', 
+                            } , 
+                            1300: {
+                                slidesPerView: 'auto', 
+                                spaceBetween: 0,
+                                loop:false,
+                                speed:5000, 
+                            }  
+                        
+                        }, 
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.partners-next',
+                            prevEl: '.partners-prev',
+                        }
+                    });
+                }  
+            }, 500);
+
+    })
+   
  
 
 
