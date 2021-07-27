@@ -54,4 +54,8 @@
         @import 'components/press/press-articles';
         @import 'components/press/press-releases';
         @import 'components/press/press-kit';
+
+        @import 'components/hero/automotive-hero';
+        @import 'components/automotive/auto-description.scss';
+        @import 'components/automotive/auto-how-work.scss';
       }

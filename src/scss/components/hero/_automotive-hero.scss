@@ -1,0 +1,67 @@
+.automotive-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px; 
+
+  @include lg {
+    margin-bottom: 91px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -65%;
+    top: 0;
+    left: 0;
+    background-image: url('../images/backgrounds/accent-grad-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 120%;
+
+    @include sm {
+      right: -30%;
+      bottom: -10%;
+      background-size: 100%;
+    }
+    @include xl {
+      right: 0;
+      bottom: 0;
+      background-size: 65%;
+    }
+  }
+
+  .index-hero__content {
+    padding: 77px 10px 35px 36px;
+
+    @include md {
+      padding: 78px 0 354px 65px;
+    }
+    @include xl {
+      padding: 180px 153px 178px 119px;
+    }
+    @include xxl {
+      padding: 350px 153px 350px 72px;
+    }
+    h1 {
+      margin-bottom: 18px;
+
+      @include xl {
+        margin-bottom: 23px;
+        max-width: 75%;
+      }
+    }
+    p {
+      max-width: 95%;
+      letter-spacing: .015em;
+      line-height: 28px;
+      font-weight: 300;
+
+      @include xl {
+        width: 75%;
+        max-width: 100%;
+        letter-spacing: -.025em;
+      }
+    }
+  }
+}
