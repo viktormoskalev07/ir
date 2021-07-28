@@ -120,10 +120,10 @@
 
 	}
 
-	&__burger {
-		width: 21px;
-		padding: 6px;
-		box-sizing: content-box;
+	&__burger { 
+		 height: 33px;
+		width: 33px;
+		padding: 6px; 
 		display: block;
 		border: none;
 		background-color: transparent;
@@ -133,8 +133,10 @@
 		flex-direction: column;
 
 		@include lg {
-			width: 33px;
-			padding: 0px;
+			 
+			height: 43px;
+			width: 43px;
+			padding: 5px;
 			margin-top: -5px;
 		}
 
@@ -244,6 +246,9 @@
 	}
 
 	.nav__burger {
+		 &:focus{
+			 outline-color: black;
+		 }
 		&__row {
 			margin: 0;
 			background-color: #fff;
@@ -253,8 +258,7 @@
 			transform: translateY(100%) rotate(-45deg);
 		}
 
-		&__row:nth-child(2) {
-
+		&__row:nth-child(2) { 
 			opacity: 0;
 			width: 0;
 		}

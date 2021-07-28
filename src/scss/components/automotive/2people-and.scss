@@ -1,28 +1,38 @@
  
 
 .auto-people{
+    @include lg{
+        padding: 30px 0;
+       margin-bottom: 100px; 
+    }
     .container{
         position: relative;
-    }
-
+        max-width: 1200px;
+    } 
     &__bg{
         position: absolute;
-      top: 50px;
-      left: 0;
-      right: 0;
+        top: 50px;
+        left: 0;
+        right: 0;
+
         pointer-events: none;
         @include md{
             right: -50px;
             top: -280px;
             bottom: -20px;
         }
+        @include xl{
+            right: -190px;
+            img{
+                width: 100%;
+            }
+        }
         @include xxl{
             right: -290px;
             img{
                 width: 100%;
             }
-        }
-     
+        } 
     }
     &__content{
             @include md {
@@ -30,38 +40,46 @@
             }
        
     }
-    &__left{  
-        @include md {
-            width: 45%;
-            h3{
-                text-align: left;
+    &__left{   
+        h3{
+            text-align: left;
+            max-width: 100%;
+            @include md{
+                max-width:402px ;
+                margin: 0;
+                margin-bottom: 31px;
             }
+        }
+        @include md {
+            width: 50%; 
         }  
     }
     &__right{
         order: 2;
         @include md {    
-            width: 55%;
+            width: 50%;
         } 
         &__container{ 
              padding-bottom: 80%;
              position: relative;
               margin-top: 5px;
-             @include md{
-                 
-            padding-bottom: 100%;
+             @include md{ 
+                padding-bottom: 100%;
                 margin-top: 50px;
             }
         }
-        &__img{ 
-          
-            top: 0;
-            left: 0;right: 0;bottom: 0;
+        &__img{  
+            top: -30px;
+            left: -50px;right: -50px;bottom: -30px;
             position: absolute;
+            pointer-events: none;
+            @include sm{
+                    top: 0;bottom: 0;left: 0;right: 0;
+            }
             @include lg {     
-                left: -80px;
-                right: -20px;
-                bottom: -20px;
+                left: -90px;
+                right: -100px;
+                bottom: -120px;
             } 
             img{
                 width: 100%;
@@ -70,9 +88,3 @@
         }
     }
 }
-
-// .container{
-//     border:solid red 1px;
-//    background-color: rgba(255, 0, 0, 0.075);
-//    background-clip: content-box;
-// }

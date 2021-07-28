@@ -32,10 +32,10 @@
   }
 
   .index-hero__content {
-    padding: 77px 10px 35px 36px;
+    padding: 77px 10px 77px 30px;
 
     @include md {
-      padding: 78px 0 354px 65px;
+      padding: 278px 0 154px 65px;
     }
     @include xl {
       padding: 180px 153px 178px 119px;
@@ -44,20 +44,29 @@
       padding: 350px 153px 350px 72px;
     }
     h1 {
+      text-shadow:  1px 1px 2px  black;
       margin-bottom: 18px;
-
-      @include xl {
+      font-size: 36px;
+      @include lg {
         margin-bottom: 23px;
         max-width: 75%;
+        font-size: 64px;
       }
     }
     p {
+      text-shadow:  1px 1px 2px  black;
+      @include lg{
+      font-size: 21px;
+
+      }
+      
       max-width: 95%;
       letter-spacing: .015em;
       line-height: 28px;
       font-weight: 300;
 
       @include xl {
+        text-shadow: unset;
         width: 75%;
         max-width: 100%;
         letter-spacing: -.025em;

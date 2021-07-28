@@ -6,15 +6,29 @@
         core interaction principles:</p>
    
     <div class="auto-how-work__content">
-        <div class="row">
-          <div class="col-md-6">
-            @@include('__card-how.html')
-            @@include('__card-how.html')
-          </div>
-          <div class="col-md-6">
-            @@include('__card-how.html')
-            @@include('__card-how.html')
-          </div>
+        <div class="row"> 
+            @@include('__card-how.html', {
+              img:1 , 
+              title:'Set expectations, explain actions',
+              text:'The agent acts as a trust manager and “expectation setter” to cabin occupants, explaining its actions as needed in real-time and helping mitigate reduced driver take-over capabilities and automation overreliance.              '
+              } )  
+            @@include('__card-how.html',   {
+              img:2 , 
+            title:'Embed a sense of user control',
+            text:'With technology taking over more tasks, people desire a sense of control at all times. The agent does this by asking for the user’s input and confirmation, and reflecting back what was communicated.            '
+            } ) 
+        </div>
+        <div class="row"> 
+            @@include('__card-how.html', {
+              img:3 , 
+              title:'Interact, but don’t interrupt',
+              text:'The agent uses contextual awareness to maintain a balance between proactivity and interruptibility, and understands the nuances of when and how to engage people most effectively.               '
+              } )  
+            @@include('__card-how.html',   {
+              img:4 , 
+            title:'At the right moment and time, in the right way',
+            text:'Through awareness of context and its surroundings, the agent knows how to proactively anticipate the user’s needs.      '
+            } ) 
         </div>
     </div>
 </section>

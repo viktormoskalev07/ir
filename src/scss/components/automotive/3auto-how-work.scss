@@ -1,20 +1,70 @@
 .auto-how-work {
-   
-  &__description { 
+  padding: 50px 0;
+  .container{
+    max-width: 1200px;
+  }
+  @include lg{
+    padding: 100px 0;
+    h3{
+      margin-bottom: 38px;
+    }
+  }
+   &__description  { 
     max-width: 755px;
     margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+ 
+ 
+    $paddingauto:40px; 
+  .row{
+    @include sm{
+      margin :0px (-$paddingauto); 
+    }
+
+  }
+  .col-sm-6{
+    @include sm{
+        padding: 0 $paddingauto;
+    }
+  
   }
 
-  &__content {
-    
-  }
-  
-  .row{
-    
-  }
 }
 .auto__card{
- 
+  max-width: 278px; 
+    @include sm{
+      max-width: unset;
+      text-align: left;
+    } 
+   margin-left: auto;
+   margin-right: auto;
+    text-align: center;  
+    margin-bottom: 40px;
+    h5{
+      margin-bottom: 10px;
+    }
+    p{
+      margin-top: 10px;
+    } 
+    &__img{
+      width: 153px;
+      margin: 0 auto; 
+      @include sm{ 
+        margin: 0; 
+        height: 200px;
+      }
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      img{
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+    } 
+    
 }
 
  

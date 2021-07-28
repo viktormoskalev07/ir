@@ -1,20 +1,21 @@
 .main-automotive{
     p{ 
-         font-size: 14px; 
+        font-size: 14px; 
         font-weight: 100;
         line-height: 22px;
         letter-spacing: 0em;
-        text-align: center; 
+        
         @include md { 
             font-size: 16px;  
             line-height: 30px;
             letter-spacing: 0em;
-            text-align: left; 
+           
         }
     }
 }
-
-
-@import './1auto-description.scss';
-@import './3auto-how-work.scss';
+ 
+@import './1auto-description.scss'; 
 @import './2people-and.scss';
+@import './3auto-how-work.scss';
+@import './4auto-possibilities.scss';
+@import './5auto-talk.scss';

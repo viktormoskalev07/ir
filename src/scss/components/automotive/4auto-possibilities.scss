@@ -1,0 +1,68 @@
+ 
+.auto-possibilities {
+    background-color: #202A5C;
+    color: white; 
+    .container {
+        max-width: 780px;
+    } 
+    padding:50px 0; 
+    &__title {
+        color: white;
+        font-size: 18px;
+        
+        line-height: 1.2;
+        letter-spacing: 0.02em; 
+        @include sm {
+            font-size: 25px;
+            font-weight: 600;
+        } 
+        @include lg {
+            font-size: 45px; 
+        }
+    }
+
+    &__subtitle.auto-possibilities__subtitle {
+        text-align: center;
+        margin-bottom: 60px;
+        @include sm {
+            font-weight: 600;
+        }
+    }
+
+    &__content {
+        @include sm {
+            display: flex;
+        }
+    }
+
+    &__img {
+        flex-shrink: 0;
+        width: 150px;
+        margin-bottom: 44px;
+        @include md{
+            width: 180px;
+        }
+       
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        margin: 0 auto;
+    }
+
+    &__right {
+        text-align: center;
+        @include sm {
+            padding-left: 90px;
+            text-align: left;
+        }
+
+        &__title.auto-possibilities__right__title {
+            font-weight: 600; 
+            font-size: 16px; 
+            line-height: 22px;
+            letter-spacing: 0.02em; 
+            letter-spacing: 0.02em;
+        }
+    }
+}
