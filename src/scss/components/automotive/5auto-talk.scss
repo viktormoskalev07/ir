@@ -23,6 +23,7 @@
             font-weight: 700;
             line-height: 72px;
             letter-spacing: 0.02em;  
+            margin-bottom: 33px;
         }
        
         background: linear-gradient(91.83deg, #487CFF 17.21%, #C3AEFF 87.99%, #C3AEFF 88%); 
@@ -37,6 +38,8 @@
         @include md{
              line-height: 38px;
         font-size: 23px; 
+        letter-spacing: -0.6px;
+        margin-bottom: 35px;
         }
       
     }

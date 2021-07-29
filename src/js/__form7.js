@@ -2,6 +2,7 @@ function formActive() {
     const formParent = document.querySelector('.form__block');
 
     function thankOnForm() {
+        formParent.classList.add('form-was-submitted');  
         const thankHtml = `   
         <div class="form__overlay__img"></div>
         <p class="form__overlay__thanks">Thanks for reaching out!</p>
@@ -11,7 +12,12 @@ function formActive() {
         const thankDiv = document.createElement('div');
         thankDiv.className = 'form__overlay';
         thankDiv.innerHTML = thankHtml;
+        thankDiv.style.opacity=0;
         formParent.append(thankDiv);
+        setTimeout(() => {
+            thankDiv.style.opacity=1;
+        }, 500);
+       
     }
     if (formParent) {
         window.addEventListener('load', function () {
@@ -25,13 +31,12 @@ function formActive() {
                     formParent.classList.remove('form-submitting-process');
                 }, 800);
             }, false);
-            document.addEventListener('wpcf7submit', function () {
-                formParent.classList.add('form-was-submitted');
-                setTimeout(() => {
-                    thankOnForm();
-                }, 300);
+            document.addEventListener('wpcf7submit', function () { 
+                    thankOnForm(); 
             }, false);
         });
     } 
+ 
+    thankOnForm();
 }
 formActive();

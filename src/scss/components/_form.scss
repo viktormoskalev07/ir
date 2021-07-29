@@ -451,6 +451,7 @@
   }
 
   &__overlay{
+    transition: 0.5s;
     text-align: center;
     padding: 20px;
    
@@ -520,13 +521,10 @@ transition: 0.3;
   .wpcf7-form{
     opacity: 0;
   }
-}
-
-.wpcf7{
-
-}
-
-
+  .wpcf7-response-output{
+    display: none;
+  }
+} 
 .form-submitting-process{
 opacity: 0.9;
 *{
@@ -536,3 +534,4 @@ opacity: 0.9;
 cursor:wait;
  
 }
+

@@ -17,18 +17,24 @@
   }
  
  
-    $paddingauto:40px; 
+    $paddingauto:30px;  
+    $paddingauto2:90px;  
   .row{
     @include sm{
       margin :0px (-$paddingauto); 
-    }
+    } 
+    @include lg{
+      margin :0px (-$paddingauto2); 
+    } 
 
   }
   .col-sm-6{
     @include sm{
         padding: 0 $paddingauto;
-    }
-  
+    } 
+    @include lg{
+        padding: 0 $paddingauto2;
+    } 
   }
 
 }
