@@ -61,6 +61,13 @@
         margin-top: 10px;
         margin-bottom: 20px;
         letter-spacing: 1px;
+        &:hover{
+            background-color:darken($blue , 15%);    
+        }
+        &:focus{
+            background-color:darken($blue , 35%); 
+
+        }
     }
 
 }
