@@ -35,8 +35,6 @@ function formActive() {
                     thankOnForm(); 
             }, false);
         });
-    } 
- 
-    thankOnForm();
+    }  
 }
 formActive();
