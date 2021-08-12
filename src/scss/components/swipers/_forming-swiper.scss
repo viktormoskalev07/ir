@@ -54,7 +54,7 @@
 
   .swiper-forming {
     margin: auto;
-    overflow: hidden; 
+    overflow: hidden;
     @include md {
       width: 83%;
     }
@@ -88,7 +88,7 @@
               margin-bottom: 34px;
               margin-top: 32px;
             }
-            @include xxl {    
+            @include xxl {
               margin-top: 42px;
               margin-bottom: 42px;
             }
@@ -117,7 +117,7 @@
           }
         }
       }
-  
+
     }
   }
   &-pagination {
@@ -125,7 +125,7 @@
   }
   &-next, &-prev {
     top: 28%;
-   
+
     @include lg {
       top: 38%;
     }
@@ -163,7 +163,7 @@
       letter-spacing: .06em;
       @include lg{
         margin-bottom: 38px;
-      }      
+      }
     }
     .forming__quote{
       @include md{
@@ -188,8 +188,8 @@
     .forming .swiper-forming .swiper-slide p:not(:last-of-type){
       margin-bottom: 33px;
     }
-    
+
   }
- 
+
 
 }
