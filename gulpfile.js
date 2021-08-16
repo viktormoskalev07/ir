@@ -13,6 +13,9 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
+    postcss = require('gulp-postcss'),
+    mqpacker = require('css-mqpacker'),
+    sortCSSmq = require('sort-css-media-queries'),
     reload = browserSync.reload;
 
     var path = {
@@ -75,7 +78,10 @@ gulp.task('style:build', async function () {
     gulp.src(path.src.style) //Выберем наш main.scss
         // .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass().on('error', sass.logError)) //Скомпилируем
-        .pipe(prefixer('last 2 versions')) //Добавим вендорные префиксы
+        .pipe(prefixer('last 1 versions')) //Добавим вендорные префиксы
+        // .pipe(postcss([mqpacker({
+        //   sort: sortCSSmq
+        // })])) //sort 
         .pipe(cssmin()) //Сожмем
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css)) //И в build

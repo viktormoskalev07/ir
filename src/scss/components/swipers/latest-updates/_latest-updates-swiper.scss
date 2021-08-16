@@ -2,13 +2,20 @@
   padding: 50px 0;
 
   @include md {
-    padding: 77px 20px 80px;
+    &.container{
+       padding: 77px 20px 80px;
+    }
+   
   }
   @include xl {
+    &.container{
     padding-top: 100px;
+    }
   }
   @include xxl {
+    &.container{
     padding-top: 120px;
+    }
   }
 
   &__caption {

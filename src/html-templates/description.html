@@ -16,10 +16,48 @@
         </video>               -->
 
         <div class="iframe__wrap">
-          <iframe class="iframe__embed" src="https://www.youtube.com/embed/emrqHpC8Bs8" data-src='https://www.youtube-nocookie.com/embed/emrqHpC8Bs8;' title="YouTube video player"
-            frameborder="0" 
+          <iframe class="lazy-video__activator-js iframe__embed" src="" data-src='https://www.youtube-nocookie.com/embed/emrqHpC8Bs8'
+            title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen="true"></iframe>
+
+          <script>
+            const videoLoder = () => {
+              const video = document.querySelector('.lazy-video__activator-js');
+              let loaded = 1;
+              const videoStart = () => { 
+                  video.src = video.dataset.src;
+                  loaded = 0;  
+              } 
+              if (video) {
+                let videoTimeout = 8000; 
+                setTimeout(() => {
+                  if (loaded) {
+                    videoStart();
+                  }
+                }, videoTimeout);
+                const options = {
+                  rootMargin: '-20px',
+                  threshold: 0.01
+                }
+                const callback = function (entries, observer) {
+                  entries.forEach(ent => {
+                    if (!ent.isIntersecting) {
+                      return false
+                    }
+                    if (loaded) {
+                      videoStart();
+                    }
+                    observer.unobserve(ent.target)
+                  });
+                };
+                const observer = new IntersectionObserver(callback, options);
+                observer.observe(video);
+              } 
+            } 
+            window.addEventListener('load' , videoLoder );
+            
+          </script>
 
           <!-- <div class="iframe__overlay">
             <div class="overlay__logo">
@@ -36,7 +74,7 @@
               </svg>
             </div>
           </div> -->
- 
+
           <!-- <script>
             const videoBtn = document.querySelector('.overlay__btn')
             const embedVideo = document.querySelector('.iframe__embed')
@@ -72,7 +110,8 @@
       <div class="description__block-content">
         <h3>It all starts with empathy</h3>
         <p>
-          Technology is woven into our lives to assist us. Yet it’s utilitarian and doesn't form a true relationship with us. To satisfy our need for connection and engagement, technology needs to project empathy.
+          Technology is woven into our lives to assist us. Yet it’s utilitarian and doesn't form a true relationship
+          with us. To satisfy our need for connection and engagement, technology needs to project empathy.
         </p>
       </div>
     </div>
@@ -86,7 +125,10 @@
       </svg>
       <div class="description__block-content">
         <h3>Fusing technology with psychology</h3>
-        <p>After years of research and user studies combining psychology, behavioral sciences, and advanced cognitive AI capabilities, we built the first-ever empathetic digital companion — one that delivers our needs while projecting empathy and gently encouraging engagement, trust, and collaboration between the companion and the user.</p>
+        <p>After years of research and user studies combining psychology, behavioral sciences, and advanced cognitive AI
+          capabilities, we built the first-ever empathetic digital companion — one that delivers our needs while
+          projecting empathy and gently encouraging engagement, trust, and collaboration between the companion and the
+          user.</p>
       </div>
     </div>
   </div>

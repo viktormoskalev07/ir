@@ -9,7 +9,7 @@ footer {
   flex-grow: 1;
   overflow: hidden;
 }
-&.body{ 
+ .body{ 
   @include x {
     padding-right: 0 !important;
     overflow: auto !important;
