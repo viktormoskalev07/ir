@@ -3,12 +3,14 @@
   position: relative;
   padding: 58px 0 36px;
   background-color: #fff;
-  background-image: url("../images/description/description-bg-1.png");
+  
+  background-image: url("../images/description/description-bg-1-mob.png");
   background-size: 155%;
   background-repeat: no-repeat;
   background-position: 0 35%;
 
   @include md {
+    background-image: url("../images/description/description-bg-1.png");
     padding: 102px 0 8px;
     background-size: 100%;
     background-position: -200px 47%;

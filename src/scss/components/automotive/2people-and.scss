@@ -1,37 +1,35 @@
  
 
 .auto-people{
+    position: relative;
     @include lg{
-        padding: 30px 0;
-       margin-bottom: 100px; 
+        padding: 30px 0  120px 0;
+       margin-bottom: 10px; 
     }
     .container{
-        position: relative;
+       
         max-width: 1200px;
     } 
     &__bg{
         position: absolute;
-        top: 50px;
-        left: 0;
+        top: -90px;
+        left: -60px;
         right: 0;
+        img{
+            width: 100%;
+        }
 
         pointer-events: none;
-        @include md{
-            right: -50px;
-            top: -280px;
-            bottom: -20px;
+        @include md{ 
+            left: 0;
+            top: -180px;    
         }
-        @include xl{
-            right: -190px;
-            img{
-                width: 100%;
-            }
+        @include xl{ 
+          top:-400px; 
         }
         @include xxl{
-            right: -290px;
-            img{
-                width: 100%;
-            }
+            right: 0px;
+            top:-500px; 
         } 
     }
     &__content{

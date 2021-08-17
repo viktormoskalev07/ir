@@ -26,6 +26,11 @@ if (document.querySelector('.swiper-milestones')) {
 
 if (document.querySelector('.swiper-forming')) {
 	const swiperForming = new Swiper('.swiper-forming', {
+		 
+			autoplay: {
+			  delay: 3000,
+			},
+		  
 		// autoHeight: true,
 		loop: true,
 		grabCursor: true,
@@ -117,8 +122,7 @@ if (document.querySelector('.homepage .swiper-partners')) {
 	})
 }
 
-window.addEventListener('load', function () {
-	setTimeout(() => {
+  
 		if (document.querySelector('.partners--press .swiper-partners')) {
 			const swiperPartners = new Swiper('.partners--press .swiper-partners', {
 				slidesPerView: '2',
@@ -151,8 +155,8 @@ window.addEventListener('load', function () {
 				},
 			})
 		}
-	}, 500)
-})
+ 
+ 
 
 if (document.querySelector('.swiper-latest-updates')) {
 	const swiperLatestUpdates = new Swiper('.swiper-latest-updates', {
